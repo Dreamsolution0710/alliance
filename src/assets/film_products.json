@@ -1,0 +1,258 @@
+[
+  {
+    "src": "/assets/images/products2/ratingsystemblown1.jpg",
+    "title": "HIGHEST CLING",
+    "description": "SteelFlex Blown hand  film is your choice for the toughest load in very extreme conditions. SteelFlex Blown’s aggressive…",
+    "category": "hand",
+    "route": "/products/productsviewhandfilm1",
+    "intro": "/assets/images/products2/steelflex_blownhand.png"
+  },
+  {
+    "src": "/assets/images/products2/ratingsystemcast1.jpg",
+    "title": "",
+    "route": "/products/productsviewhandfilm2",
+    "description": "SteelFlex Cast hand film is your everyday choice to handle your traditional loads. With a quiet release and high puncture resistance, users will enjoy the ease of application…",
+    "category": "hand",
+    "intro": "/assets/images/products2/s_cast_hand.png"
+  },
+  {
+    "src": "/assets/images/products2/ratingsystemsecure.jpg",
+    "route": "/products/productsviewhandfilm3",
+    "title": "BEST VALUE",
+    "description": "SteelFlex Secure utilizes ultra thin film technology, reduces material consumption, and worker fatigue. This film is constructed….",
+    "category": "hand",
+    "intro": "/assets/images/products2/s_secure_prestretch.png"
+  },
+  {
+    "src": "/assets/images/products2/ratingsystemxtreme1.jpg",
+    "route": "/products/productsviewhandfilm4",
+    "title": "LOWEST COST PER FOOT",
+    "description": "SteelFlex Xtreme is the most advanced down gauge hand film on the market. SteelFlex Xtreme’s new formula offers greater…",
+    "category": "hand",
+    "intro": "/assets/images/products2/s_xtreme1.png"
+  },
+  {
+    "src": "/assets/images/products2/ratingsystemairforce1.jpg",
+    "route": "/products/productsviewhandfilm5",
+    "title": "",
+    "description": "Steelflex Airforce Open Film offer breathable load containment with power bands that offer incredible strength and stabilization. Steelflex Airforce Open Film are ideal for..",
+    "category": "hand",
+    "intro": "/assets/images/products2/s_airforce_open2.png"
+  },
+  {
+    "src": "/assets/images/products2/ratingsystembandflex.jpg",
+    "route": "/products/productsviewhandfilm6",
+    "title": "",
+    "description": "What happens when you put the power of vented films and the versatility of stretch banding together? AirForce Bandflex is the result of years……",
+    "category": "hand",
+    "intro": "/assets/images/products2/airforce_bandflex2.png"
+  },
+  {
+    "src": "/assets/images/products2/ratingsystemtitaniumflex.jpg",
+    "route": "/products/productsviewhandfilm7",
+    "title": "HIGHEST HAND CONTAINMENT OF ANY FILM",
+    "description": "Reinforced Titanium is an extremely light weight roll which makes both…",
+    "category": "hand",
+    "intro": "/assets/images/products2/titanium_flexprestretch1.png"
+  },
+  {
+    "src": "/assets/images/products2/ratingsystemspectrum1.jpg",
+    "route": "/products/productsviewhandfilm8",
+    "title": "BEST OPACITY WITH ENVIRONMENTAL SOURCE REDUCTION",
+    "description": "Steelflex Spectrum is available in 7 colors. Alliance Plastics…",
+    "category": "hand",
+    "intro": "/assets/images/products2/steelflex_spectrum1.png"
+  },
+  {
+    "src": "/assets/images/products2/ratingsystemspectrumplus1.jpg",
+    "route": "/products/productsviewhandfilm9",
+    "title": "BEST OPACITY WITH ENVIRONMENTAL SOURCE REDUCTION",
+    "description": "Steelflex Spectrum is available in 7 colors. Alliance Plastics is your colored film headquarters…",
+    "category": "hand",
+    "intro": "/assets/images/products2/spectrum_plus-hand.png"
+  },
+  {
+    "src": "/assets/images/products2/ratingsystembandflexreg1.jpg",
+    "route": "/products/productsviewhandfilm10",
+    "title": "HIGHEST CLING",
+    "description": "Constructed with a 3” standard core, each case comes with a disposable handle for your convenience. Market your own brand for as little as one case. Mix and Match…",
+    "category": "hand",
+    "intro": "/assets/images/products2/bandflex_regular1.png"
+  },
+  {
+    "src": "/assets/images/products2/ratingsystembandflextreme1.jpg",
+    "route": "/products/productsviewhandfilm11",
+    "title": "",
+    "description": "Utilizing today’s most high performance films, Bandflex Xtreme provides savings as well as greater performance. Experience less neck-down and wider coverage using this film…",
+    "category": "hand",
+    "intro": "/assets/images/products2/bandflex_xtreme1.png"
+  },
+  {
+    "src": "/assets/images/products2/ratingsystembandflexspect1.jpg",
+    "route": "/products/productsviewhandfilm12",
+    "title": "",
+    "description": "Date code, identify and organize your warehouse with Bandlfex Spectrum. Available in 7 colors…",
+    "category": "hand",
+    "intro": "/assets/images/products2/bandflex_spectrum1.png"
+  },
+  {
+    "src": "/assets/images/products2/ratingsystemxcorext.jpg",
+    "route": "/products/productsviewhandfilm13",
+    "title": "",
+    "description": "Constructed with a 1” extended core handle for ease of use. Rubber Handles are available upon request…",
+    "category": "hand",
+    "intro": "/assets/images/products2/x-core_regular2.png"
+  },
+  {
+    "src": "/assets/images/products2/ratingsystemxcorext.jpg",
+    "route": "/products/productsviewhandfilm14",
+    "title": "",
+    "description": "Constructed with a 1” extended core handle for ease of use. Rubber Handles are available upon request…",
+    "category": "hand",
+    "intro": "/assets/images/products2/x-core_xtreme1.png"
+  },
+  {
+    "src": "/assets/images/products2/ratingsystemxcorespect.jpg",
+    "route": "/products/productsviewhandfilm15",
+    "title": "",
+    "description": "Constructed with a 1” extended core handle for ease of use. Rubber Handles are available upon request…",
+    "category": "hand",
+    "intro": "/assets/images/products2/x-core_spectrum1.png"
+  },
+  {
+    "src": "/assets/images/products2/ratingsystemxwrappereg.jpg",
+    "route": "/products/productsviewhandfilm16",
+    "title": "",
+    "description": "Constructed with a 1.75” core, each case comes with an EZ brake handle. Stabilize, bundle, and identify products quickly…",
+    "category": "hand",
+    "intro": "/assets/images/products2/x-wrapper_regular1.png"
+  },
+  {
+    "src": "/assets/images/products2/ratingsystemxwrapperxt.jpg",
+    "route": "/products/productsviewhandfilm17",
+    "title": "",
+    "description": "Constructed with a 1.75” core, each case comes with an EZ brake handle. Stabilize, bundle, and identify products quickly, safely…",
+    "category": "hand",
+    "intro": "/assets/images/products2/x-wrapper_xtreme1.png"
+  },
+  {
+    "src": "/assets/images/products2/ratingsystemxwrapperspect.jpg",
+    "route": "/products/productsviewhandfilm18",
+    "title": "",
+    "description": "Constructed with a 1.75” core, each case comes with an EZ brake handle. Stabilize, bundle, and identify products quickly, safely and easily with Bandflex X-Wrapper. Available in 7 colors…",
+    "category": "hand",
+    "intro": "/assets/images/products2/x-wraper_spectrum.png"
+  },
+  {
+    "src": "/assets/images/products2/ratingsystemblown.jpg",
+    "route": "/products/productsviewmachinefilm1",
+    "title": "",
+    "description": "SteelFlex Blown machine film is your choice for the toughest load in very extreme conditions. SteelFlex Blown’s aggressive cling…",
+    "category": "machine",
+    "intro": "/assets/images/products2/steelflex_blown_machine.png"
+  },
+  {
+    "src": "/assets/images/products2/ratingsystemcast.jpg",
+    "route": "/products/productsviewmachinefilm2",
+    "title": "",
+    "description": "SteelFlex Cast machine film is your everyday choice to handle your traditional loads. With a quiet release and high puncture resistance, users will enjoy the ease…",
+    "category": "machine",
+    "intro": "/assets/images/products2/cast_machine.png"
+  },
+  {
+    "src": "/assets/images/products2/ratingsystems_plus.jpg",
+    "route": "/products/productsviewmachinefilm3",
+    "title": "LOWEST ROLL COST",
+    "description": "SteelFlex Plus is the next generation of high performance stretch film. The cost effectiveness…",
+    "category": "machine",
+    "intro": "/assets/images/products2/steelflex_plus1.png"
+  },
+  {
+    "src": "/assets/images/products2/ratingsystemxtreme.jpg",
+    "route": "/products/productsviewmachinefilm4",
+    "title": "",
+    "description": "SteelFlex Xtreme Machine film is an ultra high performance stretch film that provides unmatched puncture and speed capabilitles. SteelFlex Xtreme Dellvers load containment at gauge levels unseen in the market place…",
+    "category": "machine",
+    "intro": "/assets/images/products2/s_xtreme.png"
+  },
+  {
+    "src": "/assets/images/products2/ratingsystemelevation.jpg",
+    "route": "/products/productsviewmachinefilm5",
+    "title": "",
+    "description": "Every one states they have good puncture, high holding force and excellent elongation. These are bland and overused generic marketing terms…",
+    "category": "machine",
+    "intro": "/assets/images/products2/s_elevation.png"
+  },
+  {
+    "src": "/assets/images/products2/ratingsystemairforce.jpg",
+    "route": "/products/productsviewmachinefilm6",
+    "title": "",
+    "description": "Vented Airforce Open Pre-Stretch Films offer breathable load containment with power bands that offer incredible strength and…",
+    "category": "machine",
+    "intro": "/assets/images/products2/s_airforce_open3.png"
+  },
+  {
+    "src": "/assets/images/products2/ratingsystemairforcevented.jpg",
+    "title": "",
+    "route": "/products/productsviewmachinefilm7",
+    "description": "Vented Airforce Close Hole offers breathable load containment with power bands that offer incredible strength and stabilization. Steelflex Airforce is ideal…",
+    "category": "machine",
+    "intro": "/assets/images/products2/airforce_vented2.png"
+  },
+  {
+    "src": "/assets/images/products2/ratingsystemventedmax.jpg",
+    "route": "/products/productsviewmachinefilm8",
+    "title": "HIGHEST VENTILATION FILM LOAD CONTAINMENT",
+    "description": "Vented Airforce Max offers breathable load containment with power bands that…",
+    "category": "machine",
+    "intro": "/assets/images/products2/airforce_max_vented1.png"
+  },
+  {
+    "src": "/assets/images/products2/ratingsystemtitanium.jpg",
+    "route": "/products/productsviewmachinefilm9",
+    "title": "HIGHEST LOAD CONTAINMENT OF ANY FILM",
+    "description": "Steelflex Titanium utilizes the patent pending Power Bands. Extreme force will be applied to loads…",
+    "category": "machine",
+    "intro": "/assets/images/products2/titanium3.png"
+  },
+  {
+    "src": "/assets/images/products2/ratingsystemspectrum.jpg",
+    "route": "/products/productsviewmachinefilm10",
+    "title": "BEST OPACITY WITH ENVIRONMENTAL SOURCE REDUCTION",
+    "description": "Steelflex Spectrum is available in 7 colors…",
+    "category": "machine",
+    "intro": "/assets/images/products2/steelflex_spectrum.png"
+  },
+  {
+    "src": "/assets/images/products2/ratingsystemspectrumplus.jpg",
+    "route": "/products/productsviewmachinefilm11",
+    "title": "BEST OPACITY WITH ENVIRONMENTAL SOURCE REDUCTION",
+    "description": "Steelflex Spectrum is available in 7 colors…",
+    "category": "machine",
+    "intro": "/assets/images/products2/spectrum_plus.png"
+  },
+  {
+    "src": "/assets/images/products2/ratingsystembandflexreg.jpg",
+    "route": "/products/productsviewmachinefilm12",
+    "title": "",
+    "description": "For automatic or semi-automatic machinery, our Bandflex Machine Film is made to work with all equipment. At high pre stretch levels and any puncture…",
+    "category": "machine",
+    "intro": "/assets/images/products2/bandflex_regular.png"
+  },
+  {
+    "src": "/assets/images/products2/ratingsystembandflextreme.jpg",
+    "route": "/products/productsviewmachinefilm13",
+    "title": "",
+    "description": "For automatic or semi-automatic machinery and offering the highest puncture resistance, load retention and environmental source of total opacity bundling…",
+    "category": "machine",
+    "intro": "/assets/images/products2/bandflex_xtreme.png"
+  },
+  {
+    "src": "/assets/images/products2/ratingsystembandflexspect.jpg",
+    "route": "/products/productsviewmachinefilm14",
+    "title": "",
+    "description": "Utilizing our Spectrum and Spectrum plus formulas, we can offer a high grade machine option for those who want the security …",
+    "category": "machine",
+    "intro": "/assets/images/products2/bandflex_spectrum.png"
+  }
+]

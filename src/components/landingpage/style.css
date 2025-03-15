@@ -1,0 +1,43 @@
+.custom-bullet {
+  display: inline-block;
+  width: 40px; /* Adjust length */
+  height: 4px; /* Adjust thickness */
+  background-color: #d1d5db; /* Default gray color */
+  border-radius: 2px;
+  margin: 0 5px;
+  transition: background-color 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #facc15 !important; /* Yellow for active bullet */
+}
+
+@keyframes bgPos {
+  0% {
+    background-position: 0% 100%; /* Start at bottom-left corner */
+  }
+  50% {
+    background-position: 100% 0%; /* Move to top-right corner */
+  }
+  100% {
+    background-position: 0% 100%; /* Return to bottom-left corner */
+  }
+}
+
+.animation-bgPos {
+  animation: bgPos 100s linear infinite; /* Adjust the duration as needed */
+}
+
+.bgCustom {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: calc(100% + 150px);
+  height: calc(100% + 150px);
+  /* will-change: transform; */
+  transform: translate3d(75px, -75px, 0) rotate(0.001deg);
+  background-size: cover;
+  pointer-events: none;
+  zoom: 1; /* Note: zoom is non-standard, check compatibility */
+  z-index: -1;
+}

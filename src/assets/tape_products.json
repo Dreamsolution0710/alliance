@@ -1,0 +1,34 @@
+[
+  {
+    "src": "/assets/images/products3/r_s_acrylic2.jpg",
+    "route": "/products/productsviewhandtape1",
+    "title": "HIGHEST SHEER VALUE",
+    "description": "Global Pack Acrylic is the right choice to seal cartons in a multitude of environments. Available in both hand and machine…",
+    "category": "hand",
+    "intro": "/assets/images/products3/acrylic-hand.png"
+  },
+  {
+    "src": "/assets/images/products3/r_s_hotmelt1.jpg",
+    "route": "/products/productsviewhandtape2",
+    "title": "HIGHEST SHEER VALUE",
+    "description": "Global Pack Melt is made in the USA . This Hot Melt Tape is quality assured with the convenience of…",
+    "category": "hand",
+    "intro": "/assets/images/products3/hotmelt-hand.png"
+  },
+  {
+    "src": "/assets/images/products3/r_s_acrylic2.jpg",
+    "route": "/products/productsviewmachinetape1",
+    "title": "MADE IN USA",
+    "description": "Global Pack Acrylic is the right choice to seal cartons in a multitude of environments. Available in both hand and machine…",
+    "category": "machine",
+    "intro": "/assets/images/products3/acrylic-machine.png"
+  },
+  {
+    "src": "/assets/images/products3/r_s_hotmelt.jpg",
+    "route": "/products/productsviewmachinetape2",
+    "title": "MADE IN USA",
+    "description": "Global Pack Melt is made in the USA . This Hot Melt Tape is quality assured with the convenience of quick tack…",
+    "category": "machine",
+    "intro": "/assets/images/products3/hotmelt-machine.png"
+  }
+]

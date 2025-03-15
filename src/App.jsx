@@ -1,0 +1,66 @@
+import { useEffect, useState } from "react";
+import Header from "./components/header/Header";
+import Footer from "./components/footer/Footer";
+import AppRouter from "./AppRouter";
+import { Commet } from "react-loading-indicators";
+import ScrollUpTo from "./components/landingpage/ScrollUpTo";
+import { useLocation } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css"; // Import the CSS for toast styling
+
+function App() {
+  const [isloading, setIsloading] = useState(false);
+  const [showContent, setShowContent] = useState(false);
+  const [textColor, setTextColor] = useState(0);
+  const location = useLocation();
+
+  useEffect(() => {
+    setIsloading(true);
+    console.log(location.pathname);
+    const timer = setTimeout(() => {
+      setIsloading(false);
+      setShowContent(true);
+    }, 3000);
+
+    return () => clearTimeout(timer);
+  }, [location.pathname]);
+
+  return (
+    <>
+      {isloading ? (
+        <div className="relative w-full h-screen overflow-hidden">
+          <div className="absolute inset-0 flex flex-col justify-center items-center lg:scale-150">
+            <Commet
+              color={["#33CCCC", "#33CC36", "#B8CC33", "#FCCA00"]}
+              size="large"
+              textColor=""
+            />
+            <p
+              className={` uppercase lg:text-[32px]  text-[#54c1e5] font-medium tracking-[0.025em]`}
+            >
+              alliance plastic
+            </p>
+          </div>
+        </div>
+      ) : (
+        <div className={`relative`}>
+          <div
+            className={`opacity-0 ${
+              showContent
+                ? "animate-fade animate-duration-1000 animate-ease-linear opacity-100"
+                : ""
+            }`}
+          >
+            <Header />
+            <AppRouter />
+            <ScrollUpTo />
+            <Footer />
+          </div>
+          <ToastContainer />
+        </div>
+      )}
+    </>
+  );
+}
+
+export default App;

@@ -1,0 +1,19 @@
+[
+  {
+    "src": "/assets/images/products3/ratingsystemedgeguard1.jpg",
+    "route": "/products/productsviewedgeguard1",
+
+    "title": "GREATEST STACKING STRENGH",
+    "description": "Alliance Edgeguard uses the very best raw materials to construct it’s…",
+    "category": "edge",
+    "intro": "/assets/images/products3/edgeguard.png"
+  },
+  {
+    "route": "/products/productsviewedgeguard2",
+    "src": "/assets/images/products3/ratingsystemedgeguarddx.jpg",
+    "title": "GREATEST STACKING STRENGH",
+    "description": "Raw materials make all the difference. Edge Guard DX will reduce waste, increase margin, and save…",
+    "category": "edge",
+    "intro": "/assets/images/products3/edgeguarddx.png"
+  }
+]
