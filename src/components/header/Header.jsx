@@ -60,11 +60,11 @@ const products = [
     href: "/products/films",
     icon: RectangleGroupIcon,
   },
-  {
-    name: "Tapes",
-    href: "/products/tapes",
-    icon: ArchiveBoxIcon,
-  },
+  // {
+  //   name: "Tapes",
+  //   href: "/products/tapes",
+  //   icon: ArchiveBoxIcon,
+  // },
   {
     name: "Edgeguard",
     href: "/products/edges",
