@@ -1,0 +1,223 @@
+[
+  {
+    "mainSrc": "/assets/images/AddProducts/steelflex.jpg",
+    "type": "machine",
+    "backSrc": "/assets/images/AddProducts/ratingsystemblown.jpg",
+    "content": "Designed for a variety of machine film applications, Steelflex is a cast film with excellent pre-stretch, puncture, and load retention. Steelflex machine film provides a great combination of performance and value.",
+    "benefits": [
+      "Very versatile for most applications",
+      "Excellent puncture resistance",
+      "Consistent load-holding force",
+      "Excellent clarity and quiet unwind"
+    ],
+    "pathView": "/products/productsviewmachinefilm1",
+    "markSrc": "/assets/images/AddProducts/steelflex-logo.jpg"
+  },
+  {
+    "type": "machine",
+    "mainSrc": "/assets/images/AddProducts/steelflex-plus.jpg",
+    "backSrc": "/assets/images/AddProducts/ratingsystems_plus.jpg",
+    "content": "Steelflex Plus offers savings through superior performance at competitive price. It is a very machine-friendly film that replaces thicker, obsolete films in standard gauge. Great Choice for those who want to source reduce and remain cost effective",
+    "benefits": [
+      "High-performance machine film",
+      "Excellent puncture resistance",
+      "Excellent machinability",
+      "Competitive unit cost"
+    ],
+    "pathView": "/products/productsviewmachinefilm3",
+    "markSrc": "/assets/images/AddProducts/steelflex-plus-logo.jpg"
+  },
+  {
+    "type": "machine",
+    "mainSrc": "/assets/images/AddProducts/steelflex.jpg",
+    "backSrc": "/assets/images/AddProducts/ratingsystemxtreme.jpg",
+    "content": "Designed for a variety of machine film applications, Steelflex is a cast film with excellent pre-stretch, puncture, and load retention. Steelflex machine film provides a great combination of performance and value.",
+    "benefits": [
+      "Very versatile for most applications",
+      "Excellent puncture resistance",
+      "Consistent load-holding force",
+      "Excellent clarity and quiet unwind"
+    ],
+    "pathView": "/products/productsviewmachinefilm4",
+    "markSrc": "/assets/images/AddProducts/steelflex-xtreme-logo.jpg"
+  },
+  {
+    "type": "machine",
+    "mainSrc": "/assets/images/AddProducts/steelflex-nano.jpg",
+    "backSrc": "",
+    "content": "Steelflex Nano is Ultra-High Performance machine film that allows you to down gauge without sacrificing performance. SX Nano is designed to provide the highest combination of stretch % and load containment. Extremely resistant to puncture and propagate, while performing on high-speed automatic wrappers.",
+    "benefits": [
+      "55-LAYER Nano Extrusion Technology",
+      "Durable with excellent puncture and tear resistance",
+      "Lowest cost per load with maximum load containment",
+      " Quiet film application",
+      " Sustainable Source Reduction ability"
+    ],
+    "pathView": "/coming",
+    "markSrc": "/assets/images/AddProducts/steelflex-nano-logo.jpg"
+  },
+  {
+    "type": "machine",
+    "mainSrc": "/assets/images/AddProducts/steelflex.jpg",
+    "backSrc": "/assets/images/AddProducts/ratingsystemelevation.jpg",
+    "content": "COMING 2025!!! Our goal is to develop the highest performing machine stretch film in the market today with the latest technology!",
+    "benefits": [
+      "67-LAYER Nano Extrusion Technology",
+      "Highest Tear & Puncture in the market",
+      "Ultra-Thin Film Options",
+      "Over 300% on Load Performance",
+      "Sustainable Source Reduction ability"
+    ],
+    "pathView": "/products/productsviewmachinefilm5",
+    "markSrc": "/assets/images/AddProducts/elevation-67-logo.jpg"
+  },
+  {
+    "type": "hand",
+    "mainSrc": "/assets/images/AddProducts/steelflex.jpg",
+    "backSrc": "/assets/images/AddProducts/ratingsystemcast1.jpg",
+    "content": "SteelFlex hand film is your everyday choice to handle your traditional loads. With a quiet release and high puncture resistance, users will enjoy the ease of application. Lock your loads in place and have peace of mind that Steelflex will get your load to your destination safe and sound.",
+    "benefits": [
+      "Multi-layer cast film",
+      "Highest Tear & Puncture in the market",
+      "Quiet unwind",
+      "Over 300% on Load Performance",
+      "Clear optics for scanning"
+    ],
+    "pathView": "/products/productsviewhandfilm2",
+    "markSrc": "/assets/images/AddProducts/steelflex-logo.jpg"
+  },
+  {
+    "type": "hand",
+    "mainSrc": "/assets/images/AddProducts/phoenix-film.jpg",
+    "backSrc": "",
+    "content": "A workhorse in the warehouse that has high puncture resistance, great cling and stiffness. It can be used in almost any hand film application because of its toughness and outstanding cling properties.",
+    "benefits": [
+      "Aggressive cling",
+      "Excellent load containment",
+      "Great puncture resistance"
+    ],
+    "pathView": "/coming",
+    "markSrc": "/assets/images/AddProducts/phoenix.jpg"
+  },
+  {
+    "type": "hand",
+    "mainSrc": "/assets/images/AddProducts/steelflex-xtreme-hand.jpg",
+    "backSrc": "",
+    "content": "Steelflex Xtreme is a proven Ultra High Performance hand film with excellent puncture and load containment. This hand film’s ultra-thin and ultra-strong design allows for reduction in both packaging materials and film usage resulting in a cost effective, sustainable solution.",
+    "benefits": [
+      "Ultra-thin hand film engineered to replace much thicker products",
+      "Versatile for all load applications",
+      "Stiffer and stronger film design",
+      "Exceptional puncture and tear resistance",
+      "Quiet unwind and clear optics"
+    ],
+    "pathView": "/coming",
+    "markSrc": "/assets/images/AddProducts/steelflex-xtreme-logo.jpg"
+  },
+  {
+    "type": "hand",
+    "mainSrc": "/assets/images/AddProducts/bolt-hand.jpg",
+    "backSrc": "",
+    "content": "Innovative new dispenser designed to be the lightest and fastest wrapping method. One Hand walk forward method utilizing 20 gauge film with variable tension giving operators the Lightest and most ergonomic option at under 4 lbs. total.",
+    "benefits": [
+      "Fast roll change and wrapping",
+      "Twist tensioning for optimal pallet containment",
+      "Uses sustainable 5 micron pre-stretch film",
+      "Anti fatigue / injury",
+      "No film snapping"
+    ],
+    "pathView": "/coming",
+    "markSrc": "/assets/images/AddProducts/bolt-logo.jpg"
+  },
+  {
+    "type": "sustainable",
+    "mainSrc": "/assets/images/AddProducts/steelflex-renew-stretch.jpg",
+    "backSrc": "",
+    "content": "Steelflex Renew, our new high-performance film with 30% post-consumer recycled content.",
+    "benefits": [
+      "Consistent on pallet performance",
+      "Down Gauge capabilities",
+      "High pre-stretch up to 300%",
+      "Available in 63 and 80 gauge versions"
+    ],
+    "pathView": "/coming",
+    "markSrc": "/assets/images/AddProducts/renew-steelflex.jpg"
+  },
+  {
+    "type": "sustainable",
+    "mainSrc": "/assets/images/AddProducts/steelflex-green-stretch.jpg",
+    "backSrc": "",
+    "content": "A recycled high-quality hand and machine film with up to 30% post-industrial waste. Now you can “Go Greener” while maintaining a highly containment force needed to protect your shipments. Steelflex Green is designed to help you achieve your sustainability goals while promoting load safety.",
+    "benefits": [
+      "Sustainable",
+      "High containment force",
+      "No easy snapping",
+      "Carbon reduction",
+      "Load safety"
+    ],
+    "pathView": "/coming",
+    "markSrc": "/assets/images/AddProducts/steelflex-green.jpg"
+  },
+  {
+    "type": "sustainable",
+    "mainSrc": "/assets/images/AddProducts/sttelflex-bio.jpg",
+    "backSrc": "",
+    "content": "Steelflex Bio machine and hand film powered by BioGlow, a unique technology additive that promotes biodegradation by breaking apart the chain of polymers, helping to reintegrate it into the ecosystem. In laboratory tests, biodegradation occurred in just 2 years and 3 months.",
+    "benefits": [
+      "BioGlow additive",
+      "Very versatile film for most applications",
+      "High puncture resistance",
+      "Consistent load-holding force",
+      "Excellent clarity and quiet unwind"
+    ],
+    "pathView": "/coming",
+    "markSrc": "/assets/images/AddProducts/steelflex-bio.jpg"
+  },
+  {
+    "type": "specialty",
+    "mainSrc": "/assets/images/AddProducts/spectrum.jpg",
+    "backSrc": "",
+    "content": "The Spectrum brand offering includes stretch film products that provide enduring performance, maximum efficiency and unmatched value. Our full suite of stretch films offers the best quality and selection for your most demanding applications. Available in 7 colors: black, white, blue, red, green, yellow and orange.",
+    "benefits": [
+      "Standard and high-performance hand, machine and narrow width rolls",
+      "Load and brand identification",
+      "Tamper evidence",
+      "Product dating"
+    ],
+    "pathView": "/coming",
+    "markSrc": "/assets/images/AddProducts/spectrum-logo.jpg"
+  },
+  {
+    "type": "specialty",
+    "mainSrc": "/assets/images/AddProducts/airforce-vented.jpg",
+    "backSrc": "",
+    "content": "Steelflex Airforce Open Films offer breathable load containment with power bands that offer incredible strength and stabilization. Steelflex Air Force Open Films are ideal for chilled or frozen products. Dairy products, ice cream, floral, meat, fish, and frozen snacks are excellent applications.",
+    "benefits": [
+      "Reduce load cost",
+      "Lower environmental impact",
+      "Ultra high performance film",
+      "100% recyclable",
+      "Ultra high clarity",
+      "Premium puncture resistance",
+      "Remarkable load retention"
+    ],
+    "pathView": "/coming",
+    "markSrc": "/assets/images/AddProducts/air-force-vented-logo.jpg"
+  },
+  {
+    "type": "specialty",
+    "mainSrc": "/assets/images/AddProducts/titanium-1.jpg",
+    "backSrc": "",
+    "content": "Steelflex Titanium utilizes the patent pending Power Bands. Extreme force will be applied to loads to contain heavy, awkward, and hard to wrap pallets. Excellent for replacing heavy gauge film and film reduction. If Steelflex Titanium can’t wrap it, it can’t be wrapped at all! Steelflex Titanium is available in three different strengths: 80, 100, and 150.",
+    "benefits": [
+      "Eliminate film breaks",
+      "Crystal clear optics",
+      "Ultra-high performance film",
+      "Unmatched load containment",
+      "Reduce film usage",
+      "Controls the toughest loads"
+    ],
+    "pathView": "/coming",
+    "markSrc": "/assets/images/AddProducts/spectrum-logo.jpg"
+  }
+]

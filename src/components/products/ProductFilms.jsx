@@ -3,8 +3,11 @@ import { Link } from "react-router-dom";
 import { ArrowRightIcon, Download, FileText } from "lucide-react";
 
 import { FaApple, FaGooglePlay } from "react-icons/fa";
-import ProductCard from "./ProductCard";
-import filmData from "./../../assets/film_products.json";
+// import ProductCard from "./ProductCard";
+// import filmData from "./../../assets/film_products.json";
+
+import films from "./../../assets/newProduct/films.json";
+import NewAddProductCard from "./NewAddProductCard";
 
 const ProductFilms = () => {
   const [current, setCurrent] = useState("all");
@@ -92,30 +95,50 @@ const ProductFilms = () => {
                   >
                     Machine films
                   </li>
+                  <li
+                    className={`px-[25px] mb-[10px] hover:text-[#54c1e5] cursor-pointer ${
+                      current === "sustainable"
+                        ? "text-[#54c1e5] border-b-2 md:border-0 border-[#54c1e5]"
+                        : ""
+                    } transition-all duration-300 ease-linear`}
+                    onClick={() => setCurrent("sustainable")}
+                  >
+                    Sustainable
+                  </li>
+                  <li
+                    className={`px-[25px] mb-[10px] hover:text-[#54c1e5] cursor-pointer ${
+                      current === "specialty"
+                        ? "text-[#54c1e5] border-b-2 md:border-0 border-[#54c1e5]"
+                        : ""
+                    } transition-all duration-300 ease-linear`}
+                    onClick={() => setCurrent("specialty")}
+                  >
+                    Specialty
+                  </li>
                 </ul>
                 {current === "all"
-                  ? filmData.map((data, index) => (
-                      <ProductCard
+                  ? films.map((film, index) => (
+                      <NewAddProductCard
                         key={index}
-                        index={index}
-                        src={data.src}
-                        title={data.title}
-                        description={data.description}
-                        intro={data.intro}
-                        route={data.route}
+                        mainSrc={film.mainSrc}
+                        markSrc={film.markSrc}
+                        content={film.content}
+                        benefits={film.benefits}
+                        backSrc={film.backSrc}
+                        pathView={film.pathView}
                       />
                     ))
-                  : filmData
-                      .filter((film) => film.category === current)
-                      .map((data, index) => (
-                        <ProductCard
+                  : films
+                      .filter((film) => film.type === current)
+                      .map((film, index) => (
+                        <NewAddProductCard
                           key={index}
-                          index={index}
-                          src={data.src}
-                          title={data.title}
-                          description={data.description}
-                          intro={data.intro}
-                          route={data.route}
+                          mainSrc={film.mainSrc}
+                          markSrc={film.markSrc}
+                          content={film.content}
+                          benefits={film.benefits}
+                          backSrc={film.backSrc}
+                          pathView={film.pathView}
                         />
                       ))}
               </div>
@@ -165,26 +188,26 @@ const ProductFilms = () => {
                       alliance app
                     </p>
                   </div>
-                  <Link
-                    to="https://apps.apple.com/us/app/alliance-plastics/id959236111"
-                    target="_blank"
-                    className="flex items-center text-white gap-5 hover:text-[#151515] "
-                  >
-                    <FaApple className="w-[40px] h-[40px]" />
-                    <p className="text-[24px] font-bold text-justify">
-                      App Store
-                    </p>
-                  </Link>
-                  <Link
-                    to=""
-                    target="_blank"
-                    className="flex items-center text-white gap-5 hover:text-[#151515]  "
-                  >
-                    <FaGooglePlay className="w-[40px] h-[40px]" />
-                    <p className="text-[24px] font-bold text-justify">
-                      Google Play
-                    </p>
-                  </Link>
+                  <div className="flex flex-col items-center justify-center gap-5">
+                    <Link
+                      to="https://itunes.apple.com/us/app/alliance-plastics/id959236111?mt=8"
+                      target="_blank"
+                    >
+                      <img
+                        src="https://www.f-cdn.com/assets/main/en/assets/footer/app-store.svg"
+                        className="hover:translate-y-[1%] hover:translate-x-[1%]"
+                      />
+                    </Link>
+                    <Link
+                      to="https://play.google.com/store/apps/details?id=com.src.adrien.strechfilm&hl=en"
+                      target="_blank"
+                    >
+                      <img
+                        src="https://www.f-cdn.com/assets/main/en/assets/footer/google-play.svg"
+                        className="hover:translate-y-[1%] hover:translate-x-[1%]"
+                      />
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>

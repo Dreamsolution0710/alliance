@@ -326,7 +326,7 @@ export default function LandingPage() {
               }`}
             >
               {/* Left Part (Text) */}
-              <p className="bg-sky-500 tracking-widest font-bold group-hover:bg-[#54c1e5] text-white px-12 py-6 transition-colors flex items-center text-md">
+              <p className="bg-sky-500 tracking-widest font-bold group-hover:bg-[#54c1e5] text-white px-12 py-6 transition-colors flex items-center lg:text-md max-h-[72px]">
                 READ MORE
               </p>
               {/* Right Part (Arrow) */}

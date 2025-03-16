@@ -3,8 +3,10 @@ import { Link } from "react-router-dom";
 import { ArrowRightIcon, Download, FileText } from "lucide-react";
 
 import { FaApple, FaGooglePlay } from "react-icons/fa";
-import ProductCard from "./ProductCard";
-import EdgeDatas from "./../../assets/edgeGuard.json";
+// import ProductCard from "./ProductCard";
+// import EdgeDatas from "./../../assets/edgeGuard.json";
+import edges from "./../../assets/newProduct/edges.json";
+import EdgeGuardCard from "./EdgeGuardCard";
 
 const ProductFilms = () => {
   const [current, setCurrent] = useState("all");
@@ -61,39 +63,7 @@ const ProductFilms = () => {
           <div className="lg:grid lg:grid-cols-4 gap-4 flex flex-col items-center lg:items-start">
             <div className="col-span-3 px-[15px]">
               <div className="mb-[50px] flex justify-center items-center flex-col ">
-                {/* <ul className="list-none text-[#777777] text-[14px] uppercase flex flex-col justify-center items-center md:flex-row tracking-[0.1em] leading-[1.33] font-bold">
-                  <li
-                    className={`px-[25px] mb-[10px] hover:text-[#54c1e5] ${
-                      current === "all"
-                        ? "text-[#54c1e5] border-b-2 md:border-0 border-[#54c1e5]"
-                        : ""
-                    } transition-all duration-300 ease-linear cursor-pointer`}
-                    onClick={() => setCurrent("all")}
-                  >
-                    All
-                  </li>
-                  <li
-                    className={`px-[25px] mb-[10px] hover:text-[#54c1e5]  cursor-pointer ${
-                      current === 1
-                        ? "text-[#54c1e5] border-b-2 md:border-0 border-[#54c1e5]"
-                        : ""
-                    } transition-all duration-300 ease-linear `}
-                    onClick={() => setCurrent("hand")}
-                  >
-                    Hand Films
-                  </li>
-                  <li
-                    className={`px-[25px] mb-[10px] hover:text-[#54c1e5] cursor-pointer ${
-                      current === 2
-                        ? "text-[#54c1e5] border-b-2 md:border-0 border-[#54c1e5]"
-                        : ""
-                    } transition-all duration-300 ease-linear`}
-                    onClick={() => setCurrent("machine")}
-                  >
-                    Machine films
-                  </li>
-                </ul> */}
-                {current === "all"
+                {/* {current === "all"
                   ? EdgeDatas.map((data, index) => (
                       <ProductCard
                         index={index}
@@ -115,7 +85,15 @@ const ProductFilms = () => {
                           route={data.route}
                         />
                       )
-                    )}
+                    )} */}
+                {edges.map((data, index) => (
+                  <EdgeGuardCard
+                    mainSrc={data.mainSrc}
+                    backSrc={data.backSrc}
+                    title={data.title}
+                    content={data.content}
+                  />
+                ))}
               </div>
               <div className="flex text-[#151515] justify-center"></div>
             </div>

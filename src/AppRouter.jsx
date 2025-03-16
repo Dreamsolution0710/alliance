@@ -18,6 +18,7 @@ import Representative from "./components/tools/Representative";
 import ProductTapes from "./components/products/ProductTapes";
 import ProductEdges from "./components/products/ProductEdges";
 import viewData from "./assets/productsview.json";
+import Commitment from "./components/ourCompany/Commitment";
 const Productview = React.lazy(() =>
   import("./components/products/productsView/Productview")
 );
@@ -58,6 +59,7 @@ const AppRouter = () => {
       <Route path="/products/tapes" Component={ProductTapes} />
       <Route path="/products/edges" Component={ProductEdges} />
       <Route path="/representative" Component={Representative} />
+      <Route path="/commitment" Component={Commitment} />
     </Routes>
   );
 };

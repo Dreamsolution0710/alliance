@@ -120,7 +120,7 @@ const HeaderCarousels = () => {
 
                 {/* Title */}
                 <h2
-                  className={`lg:text-5xl text-3xl text-gray-900 lg:mt-2  lg:my-3 leading-15 ${
+                  className={`lg:text-5xl text-2xl text-gray-900 lg:mt-2  lg:my-3 leading-15 ${
                     views[index][1]
                       ? "animate-fade-left animate-ease-out animate-delay-2000 animate-duration-1500"
                       : ""
