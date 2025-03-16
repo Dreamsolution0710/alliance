@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRightIcon, Download, FileText } from "lucide-react";
 
-import { FaApple, FaGooglePlay } from "react-icons/fa";
+// import { FaApple, FaGooglePlay } from "react-icons/fa";
 // import ProductCard from "./ProductCard";
 // import EdgeDatas from "./../../assets/edgeGuard.json";
 import edges from "./../../assets/newProduct/edges.json";
@@ -141,26 +141,26 @@ const ProductFilms = () => {
                       alliance app
                     </p>
                   </div>
-                  <Link
-                    to="https://apps.apple.com/us/app/alliance-plastics/id959236111"
-                    target="_blank"
-                    className="flex items-center text-white gap-5 hover:text-[#151515] "
-                  >
-                    <FaApple className="w-[40px] h-[40px]" />
-                    <p className="text-[24px] font-bold text-justify">
-                      App Store
-                    </p>
-                  </Link>
-                  <Link
-                    to=""
-                    target="_blank"
-                    className="flex items-center text-white gap-5 hover:text-[#151515]  "
-                  >
-                    <FaGooglePlay className="w-[40px] h-[40px]" />
-                    <p className="text-[24px] font-bold text-justify">
-                      Google Play
-                    </p>
-                  </Link>
+                  <div className="flex flex-col items-center justify-center gap-5">
+                    <Link
+                      to="https://itunes.apple.com/us/app/alliance-plastics/id959236111?mt=8"
+                      target="_blank"
+                    >
+                      <img
+                        src="https://www.f-cdn.com/assets/main/en/assets/footer/app-store.svg"
+                        className="hover:translate-y-[1%] hover:translate-x-[1%]"
+                      />
+                    </Link>
+                    <Link
+                      to="https://play.google.com/store/apps/details?id=com.src.adrien.strechfilm&hl=en"
+                      target="_blank"
+                    >
+                      <img
+                        src="https://www.f-cdn.com/assets/main/en/assets/footer/google-play.svg"
+                        className="hover:translate-y-[1%] hover:translate-x-[1%]"
+                      />
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>
