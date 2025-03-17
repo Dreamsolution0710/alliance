@@ -188,7 +188,7 @@ const ContactUs = () => {
 
       <div>
         <div>
-          <div className="lg:py-[116px] py-[50px] bg-[url(/assets/images/contactus.jpg)] bg-cover">
+          <div className="lg:py-[116px] py-[50px] bg-[url(/assets/images/contactus.webp)] bg-cover">
             <div className="flex items-center justify-center">
               <div className="max-w-[1200px] w-auto px-[15px] flex flex-col justify-center items-center">
                 <h3 className="lg:text-[44px] text-[30px] text-white uppercase tracking-[0.1em] font-bold">
