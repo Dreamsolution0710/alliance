@@ -12,7 +12,7 @@ const Commitment = () => {
   return (
     <div className="overflow-hidden">
       <div>
-        <div className="py-[116px] bg-[url(/assets/images/sustainable.jpg)] bg-cover">
+        <div className="py-[116px] bg-[url(/assets/images/sustainable.webp)] bg-cover">
           <div className="flex items-center justify-center">
             <div className="max-w-[1200px] w-auto px-[15px] flex flex-col justify-center items-center">
               <h3 className="text-[44px] text-white uppercase tracking-[0.1em] font-bold">
