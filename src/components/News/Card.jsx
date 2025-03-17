@@ -55,7 +55,7 @@ export const Card2 = ({ src, postDate, blogTitle, index, routePath }) => {
     >
       <div className="relative text-left text-[#151515] bg-white z-[1] shadow-md shadow-[0_0_8px_0_rgba(0,0,0,0.09)] font-medium group">
         <div className="relative block overflow-hidden z-[-1] ">
-          <div class="absolute bg-[linear-gradient(to_bottom,_rgba(54,_102,_138,_0.15)_0%,_rgba(49,_89,_120,_0.33)_28%,_rgba(41,_66,_88,_0.7)_76%,_rgba(37,_54,_72,_0.85)_100%)] z-[1] top-0 bottom-0 left-0 right-0"></div>
+          <div className="absolute bg-[linear-gradient(to_bottom,_rgba(54,_102,_138,_0.15)_0%,_rgba(49,_89,_120,_0.33)_28%,_rgba(41,_66,_88,_0.7)_76%,_rgba(37,_54,_72,_0.85)_100%)] z-[1] top-0 bottom-0 left-0 right-0"></div>
           <img
             src={src}
             className="w-[100%] lg:w-[370px] lg:h-[365px] will-change-transform object-cover transition-all duration-250 ease h-auto z-[0] group-hover:scale-[110%]"

@@ -19,6 +19,7 @@ import ProductTapes from "./components/products/ProductTapes";
 import ProductEdges from "./components/products/ProductEdges";
 import viewData from "./assets/productsview.json";
 import Commitment from "./components/ourCompany/Commitment";
+import Calculator from "./components/calculator/Calculator";
 const Productview = React.lazy(() =>
   import("./components/products/productsView/Productview")
 );
@@ -31,6 +32,7 @@ const AppRouter = () => {
       <Route path="/contactus" Component={ContactUs} />
       <Route path="/ourcompany" Component={OurCompany} />
       <Route path="/news" Component={News} />
+      <Route path="/calculator" Component={Calculator} />
       <Route path="/news/blogview202010" Component={BlogPost_October_2020} />
       <Route path="/news/blogview202009" Component={BlogPost_September_2020} />
       <Route path="/news/blogview202008" Component={BlogPost_Auguest_2020} />

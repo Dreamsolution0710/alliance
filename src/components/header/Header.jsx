@@ -14,6 +14,7 @@ import {
 import {
   AdjustmentsVerticalIcon,
   Bars3Icon,
+  CalculatorIcon,
   ChartPieIcon,
   CursorArrowRaysIcon,
   RectangleGroupIcon,
@@ -78,6 +79,11 @@ const company = [
     name: "About US",
     href: "/ourcompany",
     icon: ChartPieIcon,
+  },
+  {
+    name: "Calculator",
+    href: "/calculator",
+    icon: CalculatorIcon,
   },
   {
     name: "Learn About Our Commitment To Dury",

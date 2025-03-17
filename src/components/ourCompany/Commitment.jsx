@@ -8,10 +8,7 @@ const Commitment = () => {
     threshold: 0.2,
     triggerOnce: true,
   });
-  const { ref1, inView1 } = useInView({
-    threshold: 0.2,
-    triggerOnce: true,
-  });
+
   return (
     <div className="overflow-hidden">
       <div>

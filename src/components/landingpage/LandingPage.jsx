@@ -337,7 +337,6 @@ export default function LandingPage() {
                 />
               </span>
             </Link>
-            {/* <div class="w-full h-full bg-gray-800 clip-slant"></div> */}
           </div>
           {/* Right Side - Navigation (Appears Above Middle Side on Mobile) */}
           <div className="w-full lg:w-2/5 bg-white text-white flex flex-col ">
