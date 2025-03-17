@@ -11,7 +11,6 @@ import "react-toastify/dist/ReactToastify.css"; // Import the CSS for toast styl
 function App() {
   const [isloading, setIsloading] = useState(false);
   const [showContent, setShowContent] = useState(false);
-  const [textColor, setTextColor] = useState(0);
   const location = useLocation();
 
   useEffect(() => {
@@ -38,7 +37,7 @@ function App() {
             <p
               className={` uppercase lg:text-[32px]  text-[#54c1e5] font-medium tracking-[0.025em]`}
             >
-              alliance plastic
+              alliance plastics
             </p>
           </div>
         </div>
