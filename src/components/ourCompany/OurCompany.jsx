@@ -318,7 +318,7 @@ const OurCompany = () => {
               <div className="lg:hidden flex justify-center items-center flex-wrap gap-10 mt-[20px]">
                 {buttons.map((button, index) => (
                   <div
-                    className={`uppercase border-b-1 border-[#e1e1e1] w-auto text-[14px] py-[10px] relative font-medium group `}
+                    className={`uppercase border-b-1 border-[#e1e1e1] w-auto text-[14px] py-[10px] relative font-medium group cursor-pointer`}
                     onClick={() => setCurrentSlide(index)}
                     key={index}
                   >
