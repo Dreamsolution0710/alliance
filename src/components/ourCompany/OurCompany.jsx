@@ -318,11 +318,11 @@ const OurCompany = () => {
               <div className="lg:hidden flex justify-center items-center flex-wrap gap-10 mt-[20px]">
                 {buttons.map((button, index) => (
                   <div
-                    className={`uppercase border-b-1 border-[#e1e1e1] w-auto text-[14px] py-[10px] relative font-medium group cursor-pointer`}
+                    className={`uppercase border-b-1 border-[#e1e1e1] w-auto text-[14px] py-[10px] relative font-medium group`}
                     onClick={() => setCurrentSlide(index)}
                     key={index}
                   >
-                    <p>{button}</p>
+                    <p className="cursor-pointer">{button}</p>
                     {index === currentSlide && (
                       <div className="absolute bottom-0 left-0 border-1  border-[#fee25f] w-[40px]"></div>
                     )}
