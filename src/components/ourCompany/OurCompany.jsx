@@ -239,6 +239,16 @@ const OurCompany = () => {
                   size={12}
                   className="text-[#151515] font-black"
                 />
+                <Link
+                  to="/landing"
+                  className="text-[12px] text-[#777777] hover:text-[#54c1e5] uppercase cursor-pointer px-[17px] font-medium leading-[1.5] tracking-[0.13em]"
+                >
+                  Our company
+                </Link>
+                <ArrowRightIcon
+                  size={12}
+                  className="text-[#151515] font-black"
+                />
                 <span className="text-[12px] text-[#151515] uppercase font-black px-[17px] leading-[1.5] tracking-[0.13em]">
                   About us
                 </span>
