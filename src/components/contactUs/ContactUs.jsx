@@ -109,7 +109,7 @@ const ContactUs = () => {
 
     setIsLoading(true);
     axios
-      .post("/send-email", {
+      .post("https://allianceplastics.net/upgrade/server.php", {
         from: email,
         subject,
         content: content.replace(/\n/g, "<br>"),

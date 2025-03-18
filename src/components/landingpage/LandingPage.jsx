@@ -545,14 +545,14 @@ export default function LandingPage() {
         </div>
       </div>
 
-      <div className="pb-[100px]">
+      {/* <div className="pb-[100px]">
         <div>
           <h1 className="text-gray-900 uppercase text-4xl text-center mb-20">
             Our Products
           </h1>
         </div>
         <MultipleCarousel />
-      </div>
+      </div> */}
     </div>
   );
 }
