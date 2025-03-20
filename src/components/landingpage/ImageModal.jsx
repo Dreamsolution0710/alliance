@@ -13,10 +13,12 @@ import {
   FreeMode,
   Controller,
 } from "swiper/modules";
+import "./style.css";
 
 export default function ImageModal({ isOpen, onClose, images, currentIndex }) {
   const [mainSwiper, setMainSwiper] = useState(null);
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
+  const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
     if (isOpen) {
@@ -40,11 +42,10 @@ export default function ImageModal({ isOpen, onClose, images, currentIndex }) {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed top-[90px] bottom-0 left-0 right-0 flex items-center justify-center z-[150]">
-      <div className="relative shadow-lg p-4 w-full h-full flex flex-col bg-gradient-to-b from-sky-500/50 to-sky-700/50 overflow-y-auto">
+    <div className="fixed top-[90px] right-0 left-0 bottom-0 flex items-center justify-center z-150!">
+      <div className="relative shadow-lg p-4 w-full h-full flex flex-col bg-[rgba(255,255,255,0.7)] overflow-y-auto">
         {/* Header */}
-        <div className="flex justify-between items-center mb-2 pb-2">
-          <span className="font-semibold"></span>
+        <div className="absolute right-[16px] top-[16px] z-200">
           <button className="p-2 rounded hover:bg-gray-200" onClick={onClose}>
             <XMarkIcon className="w-8 h-8 text-black" />
           </button>
@@ -77,21 +78,37 @@ export default function ImageModal({ isOpen, onClose, images, currentIndex }) {
         <Swiper
           onSwiper={setThumbsSwiper}
           initialSlide={currentIndex}
+          onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
           spaceBetween={10}
-          slidesPerView={4}
+          slidesPerView={8}
+          centeredSlides={true}
           watchSlidesProgress={true}
           modules={[FreeMode, Thumbs, Mousewheel, Controller]}
-          className="w-1/3 mt-[10px] opacity-0 lg:opacity-100"
+          className="w-full mt-[10px] bg-[rgba(22,22,22,0.5)] p-4 rounded-md "
           mousewheel={true}
-          freeMode={true}
+          breakpoints={{
+            640: {
+              slidesPerView: 12, // For medium screens (md)
+            },
+            1024: {
+              slidesPerView: 18, // For large screens (lg)
+            },
+          }}
         >
           {images.map((image, index) => (
             <SwiperSlide key={index}>
               <img
                 src={image.src}
                 alt={`Slide ${index + 1}`}
-                className="w-full lg:h-32 h-16 object-cover"
+                className={`object-contain ${
+                  index === activeIndex ? "border-2 border-white " : ""
+                }`}
               />
+              {index === activeIndex ? (
+                <div className="absolute top-0 right-0 left-0 bottom-0 bg-gradient-to-b from-sky-500/50 to-sky-700/50" />
+              ) : (
+                ""
+              )}
             </SwiperSlide>
           ))}
         </Swiper>

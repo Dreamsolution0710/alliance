@@ -82,7 +82,7 @@ export default function Header() {
 
   return (
     <header
-      className={`relative bg-gray-100 w-full sticky top-0 z-[100] ${
+      className={`bg-gray-100 w-full fixed top-0 z-100 ${
         scrollPostion < 100
           ? ""
           : "shadow-md transition-all duration-400 ease-in-out"
