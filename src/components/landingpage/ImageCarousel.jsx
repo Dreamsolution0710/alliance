@@ -10,9 +10,6 @@ import ImageModal from "./ImageModal";
 
 const images = [
   {
-    src: "/assets/images/1200x1600image/image1.jpg",
-  },
-  {
     src: "/assets/images/1200x1600image/image2.jpg",
   },
   {
@@ -85,7 +82,7 @@ const ImageCarousel = () => {
   return (
     <div className=" flex items-center justify-center">
       <Swiper
-        slidesPerView={5}
+        slidesPerView={1}
         grid={{
           rows: 2,
           fill: true,
@@ -93,7 +90,15 @@ const ImageCarousel = () => {
         spaceBetween={10}
         autoplay={{ delay: 2500, disableOnInteraction: false }}
         modules={[Grid, Pagination, Autoplay]}
-        className="w-full h-[100vh] px-4"
+        className="w-full px-4"
+        breakpoints={{
+          640: {
+            slidesPerView: 3, // For medium screens (md)
+          },
+          1024: {
+            slidesPerView: 5, // For large screens (lg)
+          },
+        }}
       >
         {images.map((item, index) => (
           <SwiperSlide key={index} onClick={() => openModal(index)}>

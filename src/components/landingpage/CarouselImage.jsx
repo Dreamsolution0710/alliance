@@ -19,7 +19,7 @@ const CarouselImage = ({ src }) => {
 
   return (
     <div
-      className="relative overflow-hidden w-full h-full group aspect-[7/8]"
+      className="relative overflow-hidden w-full h-full group"
       onMouseEnter={(e) => {
         setHoverDirection(getDirection(e));
         setIsHovered(true);

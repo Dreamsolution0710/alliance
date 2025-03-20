@@ -5,12 +5,6 @@ import "swiper/css";
 
 const images = [
   {
-    src: "/assets/images/headerslides/headerslide4.jpg",
-    alt: "Slide 4",
-    subScript: "GLOBALPACK",
-    content: "MADE IN USA",
-  },
-  {
     src: "/assets/images/headerslides/headerslide1.webp",
     alt: "Slide 1",
     subScript: "Alliance Plastics – A Foundation of Trust",
@@ -123,6 +117,13 @@ const HeaderCarousels = () => {
         }}
         className="h-screen"
       >
+        <SwiperSlide className="flex items-center justify-center h-screen">
+          <img
+            src={"/assets/images/headerslides/headerslide4.jpg"}
+            alt={"first slide"}
+            className="w-full h-full object-cover absolute top-0 left-0"
+          />
+        </SwiperSlide>
         {images.map((image, index) => (
           <SwiperSlide
             key={`${index}-${activeIndex}`}
