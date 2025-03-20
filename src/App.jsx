@@ -35,12 +35,8 @@ function App() {
               textColor=""
             />
             <p
-              className={`uppercase lg:text-[32px] text-[#54c1e5] font-medium tracking-[0.025em] animate-text-reveal bg-gradient-to-r from-[#54c1e5] to-[#33CCCC] bg-clip-text text-transparent transform hover:scale-105 transition-all duration-300 ease-in-out
-                ${
-                  showContent
-                    ? "opacity-100 translate-y-0"
-                    : "opacity-0 translate-y-4"
-                }`}
+              className={`uppercase lg:text-[32px] text-[#54c1e5]  font-medium tracking-[0.025em] animate-text-reveal bg-gradient-to-r from-[#54c1e5] to-[#33CCCC] bg-clip-text text-transparent transform hover:scale-105 transition-all duration-300 ease-in-out
+                ${showContent ? "translate-y-0" : "translate-y-4"}`}
               style={{
                 animationDelay: "0.5s",
                 animationDuration: "1s",

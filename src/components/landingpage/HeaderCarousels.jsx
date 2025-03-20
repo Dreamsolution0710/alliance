@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Mousewheel } from "swiper/modules";
+import { Autoplay, Mousewheel } from "swiper/modules";
 import "swiper/css";
 
 const images = [
@@ -8,21 +8,20 @@ const images = [
     src: "/assets/images/headerslides/headerslide1.webp",
     alt: "Slide 1",
     subScript: "Alliance Plastics – A Foundation of Trust",
-    content: " Built on service, reliability, and lasting partnerships.",
+    content: " Built on service, reliability, lasting partnerships",
   },
   {
     src: "/assets/images/headerslides/headerslide2.jpg",
     alt: "Slide 2",
     subScript: "Strategically Located for Efficiency",
     content:
-      "Our facility ensures fast, reliable delivery and seamless operations.",
+      "Our facility ensures fast, reliable delivery, seamless operations",
   },
   {
     src: "/assets/images/headerslides/headerslide3.jpg",
     alt: "Slide 3",
     subScript: "Cutting-Edge Manufacturing Technology",
-    content:
-      "nnovative processes for high-quality, cost-effective plastic solutions.",
+    content: "North america's, 1st 67-layer, stretch films",
   },
   // {
   //   src: "/assets/images/headerslides/headerslide4.jpg",
@@ -112,8 +111,12 @@ const HeaderCarousels = () => {
           sensitivity: SCROLL_SENSITIVITY,
           releaseOnEdges: true,
         }}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
         speed={TRANSITION_SPEED}
-        modules={[Mousewheel]}
+        modules={[Mousewheel, Autoplay]}
         onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
         onReachEnd={() => {
           setTimeout(() => setAllowPageScroll(true), 500);
@@ -164,7 +167,13 @@ const HeaderCarousels = () => {
                   animationFillMode: "forwards",
                 }}
               >
-                {image.content}
+                {image.content &&
+                  image.content.split(",").map((item, index) => (
+                    <>
+                      {item}
+                      <br />
+                    </>
+                  ))}
               </h2>
             </div>
           </SwiperSlide>
