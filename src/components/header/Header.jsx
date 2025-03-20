@@ -91,7 +91,7 @@ export default function Header() {
       <nav
         aria-label="Global"
         className={`mx-auto flex max-w-[1200px] items-center justify-between py-6 px-3 bg-gray-100 transition-all duration-200 ease-linear ${
-          scrollPostion < 100 ? "lg:py-10" : ""
+          scrollPostion < 100 ? "lg:py-7" : ""
         }`}
       >
         <div className="flex lg:flex-1 ">
