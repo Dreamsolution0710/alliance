@@ -82,7 +82,7 @@ export default function Header() {
 
   return (
     <header
-      className={`relative bg-gray-100 sticky top-0 z-100 ${
+      className={`relative bg-gray-100 w-full sticky top-0 z-[100] ${
         scrollPostion < 100
           ? ""
           : "shadow-md transition-all duration-400 ease-in-out"
@@ -106,12 +106,6 @@ export default function Header() {
               src="/assets/images/splash_logo.png"
               className="h-8 w-auto logo"
             />
-
-            {/* <img
-              alt=""
-              src="/assets/images/logoalliance1.webp"
-              className="h-8 w-auto logo"
-            /> */}
           </Link>
         </div>
         <div className="flex lg:hidden">
@@ -317,27 +311,7 @@ export default function Header() {
                 >
                   About Us
                 </Link>
-                {/* <Disclosure as="div" className="-mx-3 ">
-                  <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 pr-3.5 pl-3 text-base/7 font-semibold text-gray-900 hover:text-[#54c1e5] hover:cursor-pointer">
-                    Tools
-                    <ChevronDownIcon
-                      aria-hidden="true"
-                      className="size-5 flex-none group-data-open:rotate-180"
-                    />
-                  </DisclosureButton>
-                  <DisclosurePanel className="mt-2 space-y-2">
-                    {tools.map((item) => (
-                      <DisclosureButton
-                        key={item.name}
-                        as="a"
-                        href={item.href}
-                        className="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:text-[#54c1e5]"
-                      >
-                        {item.name}
-                      </DisclosureButton>
-                    ))}
-                  </DisclosurePanel>
-                </Disclosure> */}
+
                 <Link
                   to="/academy"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:text-[#54c1e5]"

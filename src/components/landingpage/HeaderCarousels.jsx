@@ -5,6 +5,12 @@ import "swiper/css";
 
 const images = [
   {
+    src: "/assets/images/headerslides/headerslide4.jpg",
+    alt: "Slide 4",
+    subScript: "GLOBALPACK",
+    content: "MADE IN USA",
+  },
+  {
     src: "/assets/images/headerslides/headerslide1.webp",
     alt: "Slide 1",
     subScript: "Alliance Plastics – A Foundation of Trust",
@@ -23,12 +29,6 @@ const images = [
     subScript: "Cutting-Edge Manufacturing Technology",
     content: "North america's, 1st 67-layer, stretch films",
   },
-  // {
-  //   src: "/assets/images/headerslides/headerslide4.jpg",
-  //   alt: "Slide 4",
-  //   subScript: "GLOBALPACK",
-  //   content: "MADE IN USA",
-  // },
 ];
 
 const SCROLL_DELAY = 2000; // Increased delay to prevent accidental scrolling

@@ -192,47 +192,6 @@ const Academy = () => {
                     ))}
                   {/* </div> */}
                 </div>
-                <div>
-                  {/* <div>
-                  <div className="lg:block hidden relative mt-[20px]">
-                    {buttons.map((button, index) => (
-                      <div
-                        className={`uppercase border-b-1 border-[#e1e1e1] text-[14px] lg:py-[20px] py-[10px] relative font-medium group`}
-                        onClick={() => setCurrent(index)}
-                        key={index}
-                      >
-                        <p>{button}</p>
-                        {index === current && (
-                          <div className="absolute bottom-0 left-0 border-1  border-[#fee25f] w-[40px]"></div>
-                        )}
-
-                        {index !== current && (
-                          <div className="absolute w-0 border-1 invisible bottom-0 left-0 border-[#fee25f] transition-all ease-linear duration-500 group-hover:w-[100%] group-hover:visible"></div>
-                        )}
-                      </div>
-                    ))}
-                  </div>
-
-                  <div className="lg:hidden flex justify-center items-center flex-wrap gap-10 mt-[20px]">
-                    {buttons.map((button, index) => (
-                      <div
-                        className={`uppercase border-b-1 border-[#e1e1e1] w-auto text-[14px] py-[10px] relative font-medium group `}
-                        onClick={() => setCurrent(index)}
-                        key={index}
-                      >
-                        <p className="cursor-pointer">{button}</p>
-                        {index === current && (
-                          <div className="absolute bottom-0 left-0 border-1  border-[#fee25f] w-[40px]"></div>
-                        )}
-
-                        {index !== current && (
-                          <div className="absolute w-0 border-1 invisible bottom-0 left-0 border-[#fee25f] transition-all ease-linear duration-500 group-hover:w-[100%] group-hover:visible"></div>
-                        )}
-                      </div>
-                    ))}
-                  </div>
-                </div> */}
-                </div>
               </div>
             </div>
             <div className="flex flex-col gap-5 md:px-0 px-[30px]">

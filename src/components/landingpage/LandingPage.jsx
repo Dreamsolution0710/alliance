@@ -7,15 +7,7 @@ import {
   ArrowRightIcon,
   EnvelopeIcon,
 } from "@heroicons/react/24/outline";
-import {
-  BoxesIcon,
-  ChevronRight,
-  Handshake,
-  LightbulbIcon,
-  Settings,
-  TagsIcon,
-  Truck,
-} from "lucide-react";
+
 import "./style.css";
 import HeaderCarousels from "./HeaderCarousels";
 // import MultipleCarousel from "./MultipleCarousel";
@@ -27,6 +19,7 @@ import "swiper/css/pagination";
 import "swiper/css/autoplay";
 import ToolsComponent from "./ToolsComponent";
 import ServicesSection from "./ServicesSection";
+import ImageCarousel from "./ImageCarousel";
 
 const teams = [
   {
@@ -187,7 +180,6 @@ export default function LandingPage() {
       <ServicesSection />
 
       <ToolsComponent />
-
       {/* our team*/}
       <div>
         <div className="hidden lg:flex lg:justify-center lg:my-[100px]">
@@ -371,12 +363,13 @@ export default function LandingPage() {
         </div>
       </div>
 
+      <ImageCarousel />
       {/* <div className="pb-[100px]">
         <div>
           <h1 className="text-gray-900 uppercase text-4xl text-center mb-20">
             Our Products
           </h1>
-        </div>
+          </div>
         <MultipleCarousel />
       </div> */}
     </div>

@@ -39,29 +39,6 @@ const ProductFilms = () => {
           <div className="lg:grid lg:grid-cols-4 gap-4 flex flex-col items-center lg:items-start">
             <div className="col-span-3 px-[15px]">
               <div className="mb-[50px] flex justify-center items-center flex-col ">
-                {/* {current === "all"
-                  ? EdgeDatas.map((data, index) => (
-                      <ProductCard
-                        index={index}
-                        src={data.src}
-                        title={data.title}
-                        description={data.description}
-                        intro={data.intro}
-                        route={data.route}
-                      />
-                    ))
-                  : EdgeDatas.filter((film) => film.category === current).map(
-                      (data, index) => (
-                        <ProductCard
-                          index={index}
-                          src={data.src}
-                          title={data.title}
-                          description={data.description}
-                          intro={data.intro}
-                          route={data.route}
-                        />
-                      )
-                    )} */}
                 {edges.map((data, index) => (
                   <EdgeGuardCard
                     mainSrc={data.mainSrc}
@@ -77,7 +54,7 @@ const ProductFilms = () => {
               <div className="flex justify-center">
                 <Link to="/representative">
                   <img
-                    src="/assets/images/representative/imgtopbannergreen.jpg"
+                    src="/assets/images/representative/imgtopbannerblue.jpg"
                     className="object-cover"
                   />
                 </Link>

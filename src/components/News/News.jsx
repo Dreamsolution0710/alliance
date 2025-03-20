@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { ArrowRightIcon } from "lucide-react";
+// import { ArrowRightIcon } from "lucide-react";
 
 import { Card1, Card2 } from "./Card";
 import HeaderSlot from "../utils/HeaderSlot";
@@ -7,7 +7,7 @@ import HeaderSlot from "../utils/HeaderSlot";
 const pages = [1, 2, 3];
 
 const News = () => {
-  const [selectPage, setSelectPage] = useState(0);
+  // const [selectPage, setSelectPage] = useState(0);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -23,11 +23,7 @@ const News = () => {
             title: "home",
             src: "/",
           },
-          {
-            title: "news",
-            src: "/news",
-          },
-          "blog",
+          "news",
         ]}
       />
       <div className="lg:py-[90px] py-[50px] lg:flex justify-center items-center">
@@ -76,7 +72,7 @@ const News = () => {
               blogTitle={"Ron’s Market Review June 2020"}
             />
           </div>
-          <div className="flex items-center justify-center">
+          {/* <div className="flex items-center justify-center">
             <ul className="list-none flex px-[70px] lg:max-w-[870px] justify-center items-center lg:w-[870px] text-[#151515] relative transition-all duration-300 ease-linear">
               {pages.map((page, index) => (
                 <li
@@ -98,7 +94,7 @@ const News = () => {
                 <ArrowRightIcon size={24} />
               </li>
             </ul>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

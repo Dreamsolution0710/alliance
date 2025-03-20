@@ -46,7 +46,7 @@ const ToolsComponent = () => {
     <div className="relative w-full overflow-hidden flex flex-col lg:flex-row">
       {/* Left Side - Image */}
       <img
-        src="/assets/images/bgalliancemenu.jpg"
+        src="/assets/images/1280x768images/image5.jpg"
         width={"500px"}
         height={"300px"}
         className="object-cover lg:w-1/2 w-full"
