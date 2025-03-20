@@ -51,7 +51,7 @@ const HeaderCarousels = () => {
         setIsInView(entry.isIntersecting);
       },
       {
-        threshold: 0.8, // Trigger when 80% of the element is visible
+        threshold: 0.3, // Trigger when 80% of the element is visible
       }
     );
 
@@ -147,7 +147,7 @@ const HeaderCarousels = () => {
               }}
             >
               <p
-                className="text-lg md:text-xl font-semibold uppercase py-5 text-white bg-clip-text bg-gradient-to-r from-white to-white/90 tracking-wider transform hover:scale-105 transition-all duration-300 ease-in-out font-poppins opacity-0 animate-fade-up"
+                className="text-lg md:text-2xl font-bold uppercase py-5 text-white bg-clip-text bg-gradient-to-r from-white to-white/80 tracking-[0.15em] transform hover:scale-105 transition-all duration-500 ease-in-out font-poppins opacity-0 animate-fade-up text-center"
                 style={{
                   animationDelay: "1700ms",
                   animationDuration: "800ms",
@@ -157,7 +157,7 @@ const HeaderCarousels = () => {
                 {image.subScript}
               </p>
               <h2
-                className="lg:text-4xl md:text-3xl uppercase text-2xl font-bold text-center lg:mt-2 lg:my-3 leading-tight text-white bg-clip-text bg-gradient-to-r from-white to-white/90 tracking-wide transform hover:scale-105 transition-all duration-300 ease-in-out font-playfair opacity-0 animate-fade-up"
+                className="lg:text-4xl md:text-3xl uppercase text-3xl font-extrabold text-center lg:mt-3 lg:my-4 leading-relaxed text-white bg-clip-text bg-gradient-to-r from-white to-white/80 tracking-[0.1em] transform hover:scale-105 transition-all duration-500 ease-in-out font-playfair opacity-0 animate-fade-up"
                 style={{
                   animationDelay: "2500ms",
                   animationDuration: "800ms",

@@ -57,9 +57,9 @@ const ToolsComponent = () => {
           <h2
             key={`title-${animationKey}`}
             ref={ref3}
-            className={`text-2xl md:text-4xl text-gray-900 opacity-0 tracking-widest text-center lg:text-left transition-all duration-500 ease-in-out ${
+            className={`font-playfair text-2xl md:text-4xl text-transparent opacity-0 tracking-[0.2em] text-center lg:text-left transition-all duration-700 ease-in-out leading-relaxed ${
               isInview3
-                ? "animate-fade-down animate-duration-500 opacity-100 translate-y-0 animate-ease-in-out animate-delay-100"
+                ? "animate-fade-down animate-duration-700 opacity-100 translate-y-0 animate-ease-in-out animate-delay-200 bg-gradient-to-r from-sky-600 to-sky-400 bg-clip-text font-semibold"
                 : ""
             }`}
           >
@@ -68,7 +68,7 @@ const ToolsComponent = () => {
           <p
             key={`text-${animationKey}`}
             ref={ref3}
-            className={`text-gray-700 mt-4 opacity-0 text-center lg:text-left transition-all duration-500 ease-in-out ${
+            className={`font-poppins text-base md:text-lg text-gray-600 mt-8 opacity-0 text-center lg:text-left transition-all duration-700 ease-in-out leading-loose tracking-wider ${
               isInview3
                 ? "animate-fade animate-duration-500 opacity-100 translate-y-0 animate-ease-in-out animate-delay-300"
                 : ""
@@ -80,18 +80,16 @@ const ToolsComponent = () => {
             key={`link-${animationKey}`}
             to={slides[currentSlide].path}
             ref={ref3}
-            className={`flex items-center justify-center lg:justify-start mt-10 group transition-all duration-500 ease-in-out ${
+            className={`flex items-center justify-center lg:justify-start mt-14 group transition-all duration-700 ease-in-out ${
               isInview3
                 ? "animate-fade-down animate-ease-in-out animate-duration-500 animate-delay-500"
                 : ""
             }`}
           >
-            {/* Left Part (Text) */}
-            <p className="bg-sky-500 tracking-widest font-bold group-hover:bg-[#54c1e5] text-white px-12 py-6 transition-colors flex items-center lg:text-md max-h-[72px]">
+            <p className="font-poppins bg-gradient-to-r from-sky-500 to-sky-400 tracking-[0.25em] font-bold group-hover:from-sky-400 group-hover:to-sky-500 text-white px-12 py-6 transition-all duration-500 ease-in-out flex items-center text-sm md:text-base max-h-[72px] hover:shadow-xl ">
               READ MORE
             </p>
-            {/* Right Part (Arrow) */}
-            <span className="group-hover:bg-sky-500 bg-[#54c1e5] p-6 transition-colors flex items-center justify-center">
+            <span className="group-hover:bg-sky-500 bg-[#54c1e5] p-6 transition-all duration-500 ease-in-out flex items-center justify-center hover:shadow-xl  bg-gradient-to-r from-sky-400 to-sky-500 group-hover:from-sky-500 group-hover:to-sky-400 border-l-1">
               <ChevronRight
                 size={24}
                 className="text-white group-hover:animate-shake"
