@@ -259,11 +259,11 @@ export default function Header() {
         <div className="fixed inset-0 z-10" />
         <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
-            <Link to="/" className="-m-1.5 p-1.5">
+            <Link to="/" className="-m-3.5 p-3.5">
               <img
                 alt=""
                 src="/assets/images/logoalliance.png"
-                className="h-8 w-auto"
+                className="h-8 w-auto logo ml-3"
               />
             </Link>
             <button
@@ -305,12 +305,27 @@ export default function Header() {
                     ))}
                   </DisclosurePanel>
                 </Disclosure>
-                <Link
-                  to="/ourcompany"
-                  className="text-md/6 font-semibold text-gray-900 hover:text-[#54c1e5]"
-                >
-                  About Us
-                </Link>
+                <Disclosure as="div" className="-mx-3 ">
+                  <DisclosureButton className="group flex w-full hover:cursor-pointer items-center justify-between rounded-lg py-2 pr-3.5 pl-3 text-base/7 font-semibold text-gray-900 hover:text-[#54c1e5]">
+                    Our Company
+                    <ChevronDownIcon
+                      aria-hidden="true"
+                      className="size-5 flex-none group-data-open:rotate-180"
+                    />
+                  </DisclosureButton>
+                  <DisclosurePanel className="mt-2 space-y-2">
+                    {company.map((item) => (
+                      <DisclosureButton
+                        key={item.name}
+                        as="a"
+                        href={item.href}
+                        className="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:text-[#54c1e5]"
+                      >
+                        {item.name}
+                      </DisclosureButton>
+                    ))}
+                  </DisclosurePanel>
+                </Disclosure>
 
                 <Link
                   to="/academy"
@@ -334,14 +349,14 @@ export default function Header() {
               <div className="py-6">
                 <div className="space-x-3">
                   <button
-                    className="p-3 border rounded-lg hover:bg-gray-100 flex items-center justify-center"
+                    className="p-3 border rounded-lg hover:bg-gray-100 flex items-center justify-center gap-5"
                     onClick={handleCall}
                   >
                     <FaPhone className="text-gray-700 text-lg" />
                     <span className="text-gray-700">+1 888-643-1432</span>
                   </button>
                   <button
-                    className="p-3 border rounded-lg hover:bg-gray-100 flex items-center justify-center"
+                    className="p-3 border rounded-lg hover:bg-gray-100 flex items-center justify-center gap-5"
                     onClick={handleEmail}
                   >
                     <FaEnvelope className="text-gray-700 text-lg" />
@@ -350,7 +365,7 @@ export default function Header() {
                       <br /> Dallas, TX * Las Vegas, NV
                     </span>
                   </button>
-                  <button className="p-3 border rounded-lg hover:bg-gray-100 flex items-center justify-center">
+                  <button className="p-3 border rounded-lg hover:bg-gray-100 flex items-center justify-center gap-5">
                     <FaMapMarkerAlt className="text-gray-700 text-lg" />
                     <span className="text-gray-700">
                       info@allianceplastics.net

@@ -134,7 +134,7 @@ const HeaderCarousels = () => {
               className="w-full h-full object-cover absolute top-0 left-0"
             />
             <div
-              className={`absolute top-0  lg:bottom-[100%] px-[20px] lg:right-[55%] lg:left-[10%] flex flex-col justify-center items-center bg-gradient-to-b from-sky-500/50 to-sky-700/50 transition-all duration-700 opacity-0 ease-in-out ${
+              className={`absolute top-0  bottom-0 left-0 right-0 lg:bottom-[100%] px-[20px] lg:right-[55%] lg:left-[10%] flex flex-col justify-center items-center bg-gradient-to-b from-sky-500/50 to-sky-700/50 transition-all duration-700 opacity-0 ease-in-out ${
                 isInView ? "animate-flip-down opacity-100" : ""
               }`}
               style={{
@@ -160,7 +160,7 @@ const HeaderCarousels = () => {
                 {image.subScript}
               </p>
               <h2
-                className="lg:text-4xl md:text-3xl uppercase text-3xl font-extrabold text-center lg:mt-3 lg:my-4 leading-relaxed text-white bg-clip-text bg-gradient-to-r from-white to-white/80 tracking-[0.1em] transform hover:scale-105 transition-all duration-500 ease-in-out font-playfair opacity-0 animate-fade-up"
+                className="lg:text-4xl md:text-3xl uppercase text-3xl  font-extrabold text-center lg:mt-3 lg:my-4 leading-relaxed text-white bg-clip-text bg-gradient-to-r from-white to-white/80 tracking-[0.1em] transform hover:scale-105 transition-all duration-500 ease-in-out font-playfair opacity-0 animate-fade-up"
                 style={{
                   animationDelay: "2500ms",
                   animationDuration: "800ms",

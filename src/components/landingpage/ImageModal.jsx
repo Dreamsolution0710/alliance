@@ -81,7 +81,7 @@ export default function ImageModal({ isOpen, onClose, images, currentIndex }) {
           slidesPerView={4}
           watchSlidesProgress={true}
           modules={[FreeMode, Thumbs, Mousewheel, Controller]}
-          className="w-1/3 mt-[10px]"
+          className="w-1/3 mt-[10px] opacity-0 lg:opacity-100"
           mousewheel={true}
           freeMode={true}
         >
@@ -90,7 +90,7 @@ export default function ImageModal({ isOpen, onClose, images, currentIndex }) {
               <img
                 src={image.src}
                 alt={`Slide ${index + 1}`}
-                className="w-full h-32 object-cover"
+                className="w-full lg:h-32 h-16 object-cover"
               />
             </SwiperSlide>
           ))}
