@@ -10,6 +10,7 @@ import "swiper/css/autoplay";
 import MemberCard from "../landingpage/MemberCard";
 import { useInView } from "./../landingpage/useInView";
 import Youtuber from "../allianceAcademy/Youtuber";
+import HeaderSlot from "../utils/HeaderSlot";
 
 const teams = [
   {
@@ -214,49 +215,21 @@ const OurCompany = () => {
 
   return (
     <div className="overflow-hidden">
-      <div>
-        <div className="py-[116px] bg-[url(/assets/images/aboutus.webp)] bg-cover">
-          <div className="flex items-center justify-center">
-            <div className="max-w-[1200px] w-auto px-[15px] flex flex-col justify-center items-center">
-              <h3 className="text-[44px] text-white uppercase tracking-[0.1em] font-bold">
-                about us
-              </h3>
-              <div className="border-b-4 border-[rgba(255,255,255,0.6)] w-[64px] h-[44px]"></div>
-            </div>
-          </div>
-        </div>
-        <div className="py-[20px] bg-[#f3f3f3]">
-          <div className="flex item-center justify-center">
-            <div className="max-w-[1200px] flex justify-center items-center">
-              <div className="flex items-center">
-                <Link
-                  to="/landing"
-                  className="text-[12px] text-[#777777] hover:text-[#54c1e5] uppercase cursor-pointer px-[17px] font-medium leading-[1.5] tracking-[0.13em]"
-                >
-                  home
-                </Link>
-                <ArrowRightIcon
-                  size={12}
-                  className="text-[#151515] font-black"
-                />
-                <Link
-                  to="/landing"
-                  className="text-[12px] text-[#777777] hover:text-[#54c1e5] uppercase cursor-pointer px-[17px] font-medium leading-[1.5] tracking-[0.13em]"
-                >
-                  Our company
-                </Link>
-                <ArrowRightIcon
-                  size={12}
-                  className="text-[#151515] font-black"
-                />
-                <span className="text-[12px] text-[#151515] uppercase font-black px-[17px] leading-[1.5] tracking-[0.13em]">
-                  About us
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <HeaderSlot
+        imgSrc={"/assets/images/aboutus.webp"}
+        title={"about us"}
+        router={[
+          {
+            title: "home",
+            src: "/",
+          },
+          {
+            title: "our company",
+            src: "/",
+          },
+          "about us",
+        ]}
+      />
       <div className="flex items-center justify-center">
         <div className="max-w-[1200px] py-[80px] lg:w-[1200px]">
           <div className="lg:grid lg:grid-cols-4 flex flex-col-reverse text-[#151515]">

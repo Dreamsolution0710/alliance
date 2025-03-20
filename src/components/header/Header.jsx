@@ -22,39 +22,7 @@ import {
 } from "@heroicons/react/24/outline";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import { FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
-
-// const tools = [
-//   {
-//     name: "Cross Reference",
-//     href: "#",
-//     icon: ChartPieIcon,
-//   },
-//   {
-//     name: "Xpress Shipping",
-//     href: "#",
-//     icon: CursorArrowRaysIcon,
-//   },
-//   {
-//     name: "Downloads",
-//     href: "#",
-//     icon: FingerPrintIcon,
-//   },
-//   {
-//     name: "Videos",
-//     href: "#",
-//     icon: SquaresPlusIcon,
-//   },
-//   {
-//     name: "Sample Request Center",
-//     href: "#",
-//     icon: ArrowPathIcon,
-//   },
-//   {
-//     name: "Career Forms",
-//     href: "#",
-//     icon: ArrowPathIcon,
-//   },
-// ];
+import "./../landingpage/style.css";
 
 const products = [
   {
@@ -62,11 +30,6 @@ const products = [
     href: "/products/films",
     icon: RectangleGroupIcon,
   },
-  // {
-  //   name: "Tapes",
-  //   href: "/products/tapes",
-  //   icon: ArchiveBoxIcon,
-  // },
   {
     name: "Edgeguard",
     href: "/products/edges",
@@ -131,13 +94,24 @@ export default function Header() {
           scrollPostion < 100 ? "lg:py-10" : ""
         }`}
       >
-        <div className="flex lg:flex-1">
-          <Link to="" className="-m-1.5 p-1.5">
+        <div className="flex lg:flex-1 ">
+          <Link
+            to="/"
+            className={`-m-1.5 p-1.5 flex md:scale-125 transition-all duration-300 ease-linear ${
+              scrollPostion < 100 ? "lg:scale-200" : "lg:scale-150"
+            }`}
+          >
             <img
               alt=""
-              src="/assets/images/logoalliance.png"
-              className="h-8 w-auto md:scale-125 lg:scale-150"
+              src="/assets/images/splash_logo.png"
+              className="h-8 w-auto logo"
             />
+
+            {/* <img
+              alt=""
+              src="/assets/images/logoalliance1.webp"
+              className="h-8 w-auto logo"
+            /> */}
           </Link>
         </div>
         <div className="flex lg:hidden">
@@ -152,7 +126,7 @@ export default function Header() {
         </div>
         <PopoverGroup className="hidden lg:flex lg:gap-x-6">
           <Link
-            to="/landing"
+            to="/"
             className="text-md/6 font-semibold text-gray-900 hover:text-[#54c1e5]"
           >
             Home
@@ -291,7 +265,7 @@ export default function Header() {
         <div className="fixed inset-0 z-10" />
         <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
-            <Link to="/landing" className="-m-1.5 p-1.5">
+            <Link to="/" className="-m-1.5 p-1.5">
               <img
                 alt=""
                 src="/assets/images/logoalliance.png"
@@ -311,7 +285,7 @@ export default function Header() {
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
                 <Link
-                  to="/landing"
+                  to="/"
                   className="-mx-3 block rounded-lg px-3 py-2 font-semibold text-gray-900 hover:!text-orange-500"
                 >
                   Home

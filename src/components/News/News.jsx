@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { ArrowRightIcon } from "lucide-react";
-import { Link } from "react-router-dom";
 
 import { Card1, Card2 } from "./Card";
+import HeaderSlot from "../utils/HeaderSlot";
 
 const pages = [1, 2, 3];
 
@@ -15,43 +15,21 @@ const News = () => {
 
   return (
     <div>
-      <div>
-        <div className="lg:py-[116px] py-[50px] bg-[url(/assets/images/download.webp)] bg-cover">
-          <div className="flex items-center justify-center">
-            <div className="max-w-[1200px] w-auto px-[15px] flex flex-col justify-center items-center">
-              <h3 className="lg:text-[44px] text-[30px] text-white uppercase tracking-[0.1em] font-bold">
-                News
-              </h3>
-              <div className="border-b-4 border-[rgba(255,255,255,0.6)] w-[64px] lg:h-[44px] h-[30px]"></div>
-            </div>
-          </div>
-        </div>
-        <div className="py-[20px] bg-[#f3f3f3]">
-          <div className="flex item-center justify-center">
-            <div className="max-w-[1200px] flex justify-center items-center">
-              <div className="flex items-center">
-                <Link
-                  to="/landing"
-                  className="text-[12px] text-[#777777] hover:text-[#54c1e5] uppercase cursor-pointer px-[17px] font-medium leading-[1.5] tracking-[0.13em]"
-                >
-                  home
-                </Link>
-                <ArrowRightIcon className="text-[#151515] font-black w-[16px] h-[14px]" />
-                <Link
-                  to="/news"
-                  className="text-[12px] text-[#777777] hover:text-[#54c1e5] uppercase cursor-pointer px-[17px] font-medium leading-[1.5] tracking-[0.13em]"
-                >
-                  news
-                </Link>
-                <ArrowRightIcon className="text-[#151515] font-black w-[16px] h-[14px]" />
-                <span className="text-[12px] text-[#151515] uppercase font-black px-[17px] leading-[1.5] tracking-[0.13em]">
-                  blog
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <HeaderSlot
+        imgSrc={"/assets/images/download.webp"}
+        title={"news"}
+        router={[
+          {
+            title: "home",
+            src: "/",
+          },
+          {
+            title: "news",
+            src: "/news",
+          },
+          "blog",
+        ]}
+      />
       <div className="lg:py-[90px] py-[50px] lg:flex justify-center items-center">
         <div className="lg:max-w-[1200px] lg:w-[1200px]">
           <div className="md:grid lg:grid-cols-3 lg:grid-rows-2 md:grid-cols-2">

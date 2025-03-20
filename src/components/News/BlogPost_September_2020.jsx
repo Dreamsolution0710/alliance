@@ -37,7 +37,7 @@ const BlogPost = () => {
             <div className="max-w-[1200px] flex justify-center items-center">
               <div className="flex items-center">
                 <Link
-                  to="/landing"
+                  to="/"
                   className="text-[12px] text-[#777777] hover:text-[#54c1e5] uppercase cursor-pointer px-[17px] font-medium leading-[1.5] tracking-[0.13em]"
                 >
                   home

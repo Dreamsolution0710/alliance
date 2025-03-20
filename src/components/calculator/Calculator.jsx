@@ -10,6 +10,7 @@ import Edgeguarddx from "./Edgeguarddx";
 import EdgeguardDxl from "./EdgeguardDxl";
 import Emissions from "./Emissions";
 import MetricConversion from "./MetricConversion";
+import HeaderSlot from "../utils/HeaderSlot";
 
 const buttons = [
   "weight per roll",
@@ -41,47 +42,21 @@ const Calculator = () => {
   }, []);
   return (
     <div className="overflow-hidden">
-      <div>
-        <div className="relative lg:py-[116px] py-[50px] bg-[url(/assets/images/calculator.webp)] bg-cover">
-          <div className="flex items-center justify-center">
-            <div className="max-w-[1200px] w-auto px-[15px] flex flex-col justify-center items-center">
-              <h3 className="lg:text-[44px] text-[30px] text-white uppercase tracking-[0.1em] font-bold z-2">
-                Calculator
-              </h3>
-              <div className="border-b-4 border-[rgba(255,255,255,0.6)] w-[64px] lg:h-[44px] h-[30px] z-2"></div>
-            </div>
-          </div>
-          <div className="absolute top-0 bottom-0 right-0 left-0 bg-[rgba(0,0,0,0.15)] z-1"></div>
-        </div>
-        <div className="py-[20px] bg-[#f3f3f3]">
-          <div className="flex item-center justify-center">
-            <div className="max-w-[1200px] flex justify-center items-center">
-              <div className="flex items-center">
-                <Link
-                  to="/landing"
-                  className="text-[12px] text-[#777777] hover:text-[#54c1e5] uppercase cursor-pointer px-[17px] font-medium leading-[1.5] tracking-[0.13em]"
-                >
-                  home
-                </Link>
-                <ArrowRightIcon className="text-[#151515] font-black w-[16px] h-[14px]" />
-                <Link
-                  to="/landing"
-                  className="text-[12px] text-[#777777] hover:text-[#54c1e5] uppercase cursor-pointer px-[17px] font-medium leading-[1.5] tracking-[0.13em]"
-                >
-                  our company
-                </Link>
-                <ArrowRightIcon
-                  size={12}
-                  className="text-[#151515] font-black"
-                />
-                <span className="text-[12px] text-[#151515] uppercase font-black px-[17px] leading-[1.5] tracking-[0.13em]">
-                  Calculator
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <HeaderSlot
+        imgSrc={"/assets/images/calculator.webp"}
+        title={"calculator"}
+        router={[
+          {
+            title: "home",
+            src: "/",
+          },
+          {
+            title: "OUR company",
+            src: "/",
+          },
+          "calculator",
+        ]}
+      />
       <div className="flex justify-center items-center text-[#151515] py-[90px]">
         <div className="max-w-[1200px] w-full">
           <div className="lg:grid lg:grid-cols-4 lg:gap-5 flex flex-col">

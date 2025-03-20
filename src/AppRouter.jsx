@@ -27,8 +27,7 @@ const Productview = React.lazy(() =>
 const AppRouter = () => {
   return (
     <Routes>
-      <Route path="/" element={<Navigate to="/landing" replace />} />
-      <Route path="/landing" Component={LandingPage} />
+      <Route path="/" Component={LandingPage} />
       <Route path="/contactus" Component={ContactUs} />
       <Route path="/ourcompany" Component={OurCompany} />
       <Route path="/news" Component={News} />

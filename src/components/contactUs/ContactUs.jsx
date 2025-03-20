@@ -21,6 +21,7 @@ import {
   CubeIcon,
 } from "@heroicons/react/24/outline";
 import { toast } from "react-toastify";
+import HeaderSlot from "../utils/HeaderSlot";
 // const urls = [
 //   {
 //     src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3269.963683739017!2d-80.9635551!3d34.9575189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88568672e093de53%3A0xdcc5d59fab31d3d1!2s2805%20Commerce%20Dr%2C%20Rock%20Hill%2C%20SC%2029730%2C%20EE.%20UU.!5e0!3m2!1ses-419!2smx!4v1730312184882!5m2!1ses-419!2smx",
@@ -109,7 +110,7 @@ const ContactUs = () => {
 
     setIsLoading(true);
     axios
-      .post("https://allianceplastics.net/upgrade/server.php", {
+      .post("http://localhost/upgrade/server.php", {
         from: email,
         subject,
         content: content.replace(/\n/g, "<br>"),
@@ -185,45 +186,18 @@ const ContactUs = () => {
           </div>
         </div>
       )}
-
       <div>
-        <div>
-          <div className="lg:py-[116px] py-[50px] bg-[url(/assets/images/contactus.webp)] bg-cover">
-            <div className="flex items-center justify-center">
-              <div className="max-w-[1200px] w-auto px-[15px] flex flex-col justify-center items-center">
-                <h3 className="lg:text-[44px] text-[30px] text-white uppercase tracking-[0.1em] font-bold">
-                  Contact US
-                </h3>
-                <div className="border-b-4 border-[rgba(255,255,255,0.6)] w-[64px] lg:h-[44px] h-[30px]"></div>
-              </div>
-            </div>
-          </div>
-          <div className="py-[20px] bg-[#f3f3f3]">
-            <div className="flex item-center justify-center">
-              <div className="max-w-[1200px] flex justify-center items-center">
-                <div className="flex items-center">
-                  <Link
-                    to="/landing"
-                    className="text-[12px] text-[#777777] hover:text-[#54c1e5] uppercase cursor-pointer px-[17px] font-medium leading-[1.5] tracking-[0.13em]"
-                  >
-                    home
-                  </Link>
-                  {/* <ArrowRightIcon className="text-[#151515] font-black w-[16px] h-[14px]" />
-                <Link
-                  to="/news"
-                  className="text-[12px] text-[#777777] hover:text-[#54c1e5] uppercase cursor-pointer px-[17px] font-medium leading-[1.5] tracking-[0.13em]"
-                >
-                  news
-                </Link> */}
-                  <ArrowRightIcon className="text-[#151515] font-black w-[16px] h-[14px]" />
-                  <span className="text-[12px] text-[#151515] uppercase font-black px-[17px] leading-[1.5] tracking-[0.13em]">
-                    Contact us
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <HeaderSlot
+          imgSrc={"/assets/images/contactus.webp"}
+          title={"Contact Us"}
+          router={[
+            {
+              title: "home",
+              src: "/",
+            },
+            "Contact us",
+          ]}
+        />
         <div className="py-[80px] text-[#151515] flex justify-center" ref={ref}>
           <div className="lg:w-[1200px] lg:max-w-[1200px]  px-[15px] pb-[50px] lg:grid lg:grid-cols-4 flex flex-col justify-center">
             <div className="lg:col-span-3 lg:pr-[128px]">

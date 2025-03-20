@@ -7,6 +7,7 @@ import { ArrowRightIcon, Download, FileText } from "lucide-react";
 // import EdgeDatas from "./../../assets/edgeGuard.json";
 import edges from "./../../assets/newProduct/edges.json";
 import EdgeGuardCard from "./EdgeGuardCard";
+import HeaderSlot from "../utils/HeaderSlot";
 
 const ProductFilms = () => {
   const [current, setCurrent] = useState("all");
@@ -18,46 +19,21 @@ const ProductFilms = () => {
 
   return (
     <div>
-      <div>
-        <div className="py-[116px] bg-[url(/assets/images/bg-counter-6.jpg)] bg-cover">
-          <div className="flex items-center justify-center">
-            <div className="max-w-[1200px] w-auto px-[15px] flex flex-col justify-center items-center">
-              <h3 className="text-[44px] text-white uppercase tracking-[0.1em] font-bold text-center">
-                EdgeGuard
-              </h3>
-              <div className="border-b-4 border-[rgba(255,255,255,0.6)] w-[64px] h-[44px]"></div>
-            </div>
-          </div>
-        </div>
-        <div className="py-[20px] bg-[#f3f3f3]">
-          <div className="flex item-center justify-center">
-            <div className="max-w-[1200px] flex justify-center items-center">
-              <div className="flex items-center">
-                <Link
-                  to="/landing"
-                  className="text-[12px] text-[#777777] hover:text-[#54c1e5] uppercase cursor-pointer px-[17px] font-medium leading-[1.5] tracking-[0.13em]"
-                >
-                  home
-                </Link>
-                <ArrowRightIcon
-                  size={12}
-                  className="text-[#151515] font-black"
-                />
-                <Link className="text-[12px] text-[#777777] hover:text-[#54c1e5] uppercase cursor-pointer px-[17px] font-medium leading-[1.5] tracking-[0.13em]">
-                  Products
-                </Link>
-                <ArrowRightIcon
-                  size={12}
-                  className="text-[#151515] font-black"
-                />
-                <span className="text-[12px] text-[#151515] uppercase font-black px-[17px] leading-[1.5] tracking-[0.13em]">
-                  Edgeguard
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <HeaderSlot
+        imgSrc={"/assets/images/bg-counter-6.jpg"}
+        title={"edgeguard"}
+        router={[
+          {
+            title: "home",
+            src: "/",
+          },
+          {
+            title: "products",
+            src: "/products/edges",
+          },
+          "edgeguard",
+        ]}
+      />
       <div className="flex justify-center lg:py-[90px] py-[50px]">
         <div className="max-w-[1200px] w-[1200px] ">
           <div className="lg:grid lg:grid-cols-4 gap-4 flex flex-col items-center lg:items-start">
