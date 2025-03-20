@@ -112,7 +112,7 @@ const HeaderCarousels = () => {
           releaseOnEdges: true,
         }}
         autoplay={{
-          delay: 2500,
+          delay: 3500,
           disableOnInteraction: false,
         }}
         speed={TRANSITION_SPEED}
