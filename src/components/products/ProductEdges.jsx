@@ -2,9 +2,6 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRightIcon, Download, FileText } from "lucide-react";
 
-// import { FaApple, FaGooglePlay } from "react-icons/fa";
-// import ProductCard from "./ProductCard";
-// import EdgeDatas from "./../../assets/edgeGuard.json";
 import edges from "./../../assets/newProduct/edges.json";
 import EdgeGuardCard from "./EdgeGuardCard";
 import HeaderSlot from "../utils/HeaderSlot";
@@ -20,7 +17,7 @@ const ProductFilms = () => {
   return (
     <div>
       <HeaderSlot
-        imgSrc={"/assets/images/bg-counter-6.jpg"}
+        imgSrc={"/assets/images/edgeguard2.webp"}
         title={"edgeguard"}
         router={[
           {
@@ -45,6 +42,7 @@ const ProductFilms = () => {
                     backSrc={data.backSrc}
                     title={data.title}
                     content={data.content}
+                    pathView={data.pathView}
                   />
                 ))}
               </div>

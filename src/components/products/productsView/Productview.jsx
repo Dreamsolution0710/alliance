@@ -192,7 +192,7 @@ const Productview = ({
                 <div className="flex items-center gap-3  bottom-24 right-0 z-50 ">
                   {/* Custom Pagination */}
                   <p className="text-[#151515] leading-[22px] tracking-[0.05em] font-normal text-[18px]">
-                    Photo {String(current).padStart(2, "0")}
+                    {String(current).padStart(2, "0")}
                   </p>
                   <span className="grow" />
 
@@ -286,7 +286,7 @@ const Productview = ({
                   <div className="flex items-center gap-3  bottom-24 right-0 z-50 ">
                     {/* Custom Pagination */}
                     <p className="text-[#151515] leading-[22px] tracking-[0.05em] font-normal text-[18px]">
-                      Photo {String(current).padStart(2, "#")}
+                      {String(current).padStart(2, "#")}
                     </p>
                     <span className="grow" />
 
@@ -331,7 +331,7 @@ const Productview = ({
             </div>
             {youtubeId
               ? youtubeId.map((id, index) => (
-                  <div className="flex justify-center md:scale-150 py-[100px] animate-fade-up animate-duration-200 animate-delay-2000 animate-ease-linear">
+                  <div className="flex justify-center py-[100px] animate-fade-up animate-duration-200 animate-delay-2000 animate-ease-linear">
                     <Youtuber videoId={id} />
                   </div>
                 ))

@@ -95,16 +95,13 @@ export default function Header() {
         }`}
       >
         <div className="flex lg:flex-1 ">
-          <Link
-            to="/home"
-            className={`-m-1.5 p-1.5 flex md:scale-125 transition-all duration-300 ease-linear ${
-              scrollPostion < 100 ? "lg:scale-200" : "lg:scale-150"
-            }`}
-          >
+          <Link to="/home" className={`-m-1.5 p-1.5 flex`}>
             <img
               alt=""
               src="/assets/images/splash_logo.png"
-              className="h-8 w-auto logo"
+              className={`logo h-[70px] transition-all duration-300 ease-linear ${
+                scrollPostion < 100 ? "scale-[100%]" : "scale-[80%]"
+              }`}
             />
           </Link>
         </div>
@@ -257,7 +254,9 @@ export default function Header() {
         className="lg:hidden"
       >
         <div className="fixed inset-0 z-10" />
-        <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <DialogPanel
+          className={`fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10`}
+        >
           <div className="flex items-center justify-between">
             <Link to="/home" className="-m-3.5 p-3.5">
               <img

@@ -14,8 +14,7 @@ const images = [
     src: "/assets/images/headerslides/headerslide2.jpg",
     alt: "Slide 2",
     subScript: "Strategically Located for Efficiency",
-    content:
-      "Our facility ensures fast, reliable delivery, seamless operations",
+    content: "Fast delivery, precision, seamless operations",
   },
   {
     src: "/assets/images/headerslides/headerslide3.jpg",

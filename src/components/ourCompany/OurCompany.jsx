@@ -250,8 +250,14 @@ const OurCompany = () => {
                 </div>
                 <div className="mt-[35px]">
                   {currentSlide === 4 ? (
-                    <div className="md:scale-200 md:my-[200px] bg-[#777777] w-fit">
-                      <Youtuber videoId={aboutus[currentSlide].src} />
+                    <div className="flex flex-col gap-5">
+                      <div className="bg-[#777777] w-full">
+                        <Youtuber videoId={aboutus[currentSlide].src} />
+                      </div>
+
+                      <div className="bg-[#777777] w-full">
+                        <Youtuber videoId={"QDi3v3dCyiI"} />
+                      </div>
                     </div>
                   ) : (
                     <img

@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useInView } from "react-intersection-observer";
 
-const EdgeGuardCard = ({ mainSrc, content, backSrc, title }) => {
+const EdgeGuardCard = ({ mainSrc, content, backSrc, title, pathView }) => {
   const { ref, inView } = useInView({
     threshold: 0.2,
     triggerOnce: true,
@@ -34,12 +34,7 @@ const EdgeGuardCard = ({ mainSrc, content, backSrc, title }) => {
           <h5 className="lg:text-[36px] text-[24px] mb-[20px]">{title}</h5>
           <p className="text-wrap">{content}</p>
         </div>
-        {/* <div>
-          <h5 className="text-[24px]">Features & Benefits</h5>
-          <ul className="list-disc pl-[20px]">
-            {benefits && benefits.map((benefit, index) => <li>{benefit}</li>)}
-          </ul>
-        </div>
+
         {pathView !== "/coming" && (
           <Link
             className="absolute right-0 bottom-0 text-[#151515] hover:text-[#54c1e5]"
@@ -47,7 +42,7 @@ const EdgeGuardCard = ({ mainSrc, content, backSrc, title }) => {
           >
             View More
           </Link>
-        )} */}
+        )}
       </div>
     </div>
   );

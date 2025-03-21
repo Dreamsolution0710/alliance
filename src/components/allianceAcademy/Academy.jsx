@@ -176,7 +176,7 @@ const Academy = () => {
                     ))}
                   {current === 1 &&
                     videos.map((video, index) => (
-                      <div className="bg-[#777777] w-fit">
+                      <div className="bg-[#777777] w-full">
                         <Youtuber videoId={video.src} key={index} />
                       </div>
                     ))}
