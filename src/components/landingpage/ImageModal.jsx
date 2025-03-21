@@ -20,17 +20,30 @@ export default function ImageModal({ isOpen, onClose, images, currentIndex }) {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
   const [activeIndex, setActiveIndex] = useState(0);
 
+  // Handle scroll lock and swiper cleanup
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = "hidden"; // Disable background scrolling
     } else {
       document.body.style.overflow = ""; // Restore scrolling when modal closes
+      // Cleanup Swiper instances when modal closes
+      if (mainSwiper) {
+        mainSwiper.destroy();
+        setMainSwiper(null);
+      }
+      if (thumbsSwiper) {
+        thumbsSwiper.destroy();
+        setThumbsSwiper(null);
+      }
     }
 
     return () => {
       document.body.style.overflow = ""; // Cleanup on unmount
+      // Ensure Swiper instances are destroyed on unmount
+      if (mainSwiper) mainSwiper.destroy();
+      if (thumbsSwiper) thumbsSwiper.destroy();
     };
-  }, [isOpen]);
+  }, [isOpen, mainSwiper, thumbsSwiper]);
 
   useEffect(() => {
     if (mainSwiper && thumbsSwiper) {
