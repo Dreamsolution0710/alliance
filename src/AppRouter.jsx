@@ -52,6 +52,9 @@ const AppRouter = () => {
               contextImg={view.contextImg}
               youtubeId={view.youtubeId}
               prevLink={view.prevLink}
+              headerImg={view.headerImg}
+              headerTitle={view.headerTitle}
+              router={view.router}
             />
           }
           key={index}

@@ -24,6 +24,7 @@ import {
   Pagination,
 } from "swiper/modules";
 import Youtuber from "./../../allianceAcademy/Youtuber";
+import HeaderSlot from "../../utils/HeaderSlot";
 
 const Productview = ({
   title,
@@ -31,6 +32,9 @@ const Productview = ({
   carouselImg,
   contextImg,
   youtubeId,
+  headerImg,
+  headerTitle,
+  router,
   prevLink,
 }) => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
@@ -42,43 +46,7 @@ const Productview = ({
 
   return (
     <div>
-      <div>
-        <div className="lg:py-[116px] py-[50px] bg-[url(/assets/images/film.webp)] bg-cover">
-          <div className="flex items-center justify-center">
-            <div className="max-w-[1200px] w-auto px-[15px] flex flex-col justify-center items-center">
-              <h3 className="lg:text-[44px] text-[30px] text-white uppercase tracking-[0.1em] font-bold">
-                {prevLink ? prevLink.split("/").pop() : ""}
-              </h3>
-              <div className="border-b-4 border-[rgba(255,255,255,0.6)] w-[64px] lg:h-[44px] h-[30px]"></div>
-            </div>
-          </div>
-        </div>
-        <div className="py-[20px] bg-[#f3f3f3]">
-          <div className="flex item-center justify-center">
-            <div className="max-w-[1200px] flex justify-center items-center">
-              <div className="flex items-center">
-                <Link
-                  to="/"
-                  className="text-[12px] text-[#777777] hover:text-[#54c1e5] uppercase cursor-pointer px-[17px] font-medium leading-[1.5] tracking-[0.13em]"
-                >
-                  home
-                </Link>
-                <ArrowRightIcon className="text-[#151515] font-black w-[16px] h-[14px]" />
-                <Link
-                  to={prevLink}
-                  className="text-[12px] text-[#777777] hover:text-[#54c1e5] uppercase cursor-pointer px-[17px] font-medium leading-[1.5] tracking-[0.13em]"
-                >
-                  {prevLink ? prevLink.split("/").pop() : ""}
-                </Link>
-                <ArrowRightIcon className="text-[#151515] font-black w-[16px] h-[14px]" />
-                <span className="text-[12px] text-[#151515] uppercase font-black px-[17px] leading-[1.5] tracking-[0.13em]">
-                  View
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <HeaderSlot imgSrc={headerImg} title={headerTitle} router={router} />
       <div className="flex justify-center items-center lg:py-[90px] py-[50px] overflow-hidden">
         <div className="max-w-[1200px] w-[1200px] flex flex-col-reverse lg:flex-row">
           <div className="lg:w-5/12 w-auto px-[30px] lg:px-0 text-center md:text-left ">

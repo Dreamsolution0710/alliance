@@ -99,7 +99,7 @@ export default function Header() {
             <img
               alt=""
               src="/assets/images/splash_logo.png"
-              className={`logo h-[70px] transition-all duration-300 ease-linear ${
+              className={`logo h-[60px] transition-all duration-300 ease-linear ${
                 scrollPostion < 100 ? "scale-[100%]" : "scale-[80%]"
               }`}
             />

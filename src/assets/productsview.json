@@ -2,6 +2,19 @@
   {
     "route": "/products/productsviewhandfilm1",
     "prevLink": "/products/films",
+    "headerImg": "/assets/images/film.webp",
+    "headerTitle": "Films",
+    "router": [
+      {
+        "title": "home",
+        "src": "/"
+      },
+      {
+        "title": "products",
+        "src": "/products/films"
+      },
+      "films"
+    ],
     "title": "STEELFLEX BLOWN",
     "description": "SteelFlex Blown hand film is your choice for the toughest load in very extreme conditions. SteelFlex Blown’s aggressive cling properties is a great product for extreme cold conditions. Also great for heavy industrial conditions.",
     "carouselImg": [
@@ -30,6 +43,19 @@
   },
   {
     "route": "/products/productsviewhandfilm2",
+    "headerImg": "/assets/images/film.webp",
+    "headerTitle": "Films",
+    "router": [
+      {
+        "title": "home",
+        "src": "/"
+      },
+      {
+        "title": "products",
+        "src": "/products/films"
+      },
+      "films"
+    ],
     "prevLink": "/products/films",
     "title": "STEELFLEX CAST",
     "description": "SteelFlex Cast hand film is your everyday choice to handle your traditional loads. With a quiet release and high puncture resistance, users will enjoy the ease of application. Lock your loads in place and have peace of mind that Steelflex will get your load to your destination safe and sound.",
@@ -61,6 +87,19 @@
   {
     "route": "/products/productsviewhandfilm3",
     "prevLink": "/products/films",
+    "headerImg": "/assets/images/film.webp",
+    "headerTitle": "Films",
+    "router": [
+      {
+        "title": "home",
+        "src": "/"
+      },
+      {
+        "title": "products",
+        "src": "/products/films"
+      },
+      "films"
+    ],
     "title": "STEELFLEX SECURE PRE-STRETCH",
     "description": "SteelFlex Secure utilizes ultra thin film technology, reduces material consumption, and worker fatigue. This film is constructed to handle the demands for almost all hand film applications. Providing strength, cost savings, and environmental source reduction, SteelFlex Secure is the leading choice for hand film applications.",
     "carouselImg": [
@@ -96,6 +135,19 @@
   {
     "route": "/products/productsviewhandfilm4",
     "prevLink": "/products/films",
+    "headerImg": "/assets/images/film.webp",
+    "headerTitle": "Films",
+    "router": [
+      {
+        "title": "home",
+        "src": "/"
+      },
+      {
+        "title": "products",
+        "src": "/products/films"
+      },
+      "films"
+    ],
     "title": "STEELFLEX XTREME",
     "description": "SteelFlex Xtreme is the most advanced down gauge hand film on the market. SteelFlex Xtreme’s new formula offers greater puncture and tear resistance at razor thin gauges. Experience the crystal clear optics, low neck down, and quiet release that give you the consistent performance you have come to expect from SteelFlex Xtreme Hand Film!",
     "carouselImg": [
@@ -140,6 +192,19 @@
   },
   {
     "route": "/products/productsviewhandfilm5",
+    "headerImg": "/assets/images/film.webp",
+    "headerTitle": "Films",
+    "router": [
+      {
+        "title": "home",
+        "src": "/"
+      },
+      {
+        "title": "products",
+        "src": "/products/films"
+      },
+      "films"
+    ],
     "prevLink": "/products/films",
     "title": "VENTED AIRFORCE OPEN",
     "description": "Steelflex Airforce Open Films offer breathable load containment with power bands that offer incredible strength and stabilization. Steelflex Airforce Open Films are ideal for chilled or frozen products. Dairy products, ice cream, floral, meat, fish, and frozen snacks are excellent applications.",
@@ -166,6 +231,19 @@
   },
   {
     "route": "/products/productsviewhandfilm6",
+    "headerImg": "/assets/images/film.webp",
+    "headerTitle": "Films",
+    "router": [
+      {
+        "title": "home",
+        "src": "/"
+      },
+      {
+        "title": "products",
+        "src": "/products/films"
+      },
+      "films"
+    ],
     "prevLink": "/products/films",
     "title": "STEELFLEX AIRFORCE BANDFLEX",
     "description": "What happens when you put the power of vented films and the versatility of stretch banding together? AirForce Bandflex is the result of years of research to offer the very best of both items to give you the convenience of having an affordable and compact alternative to vented handfilms and hand netting.",
@@ -200,6 +278,19 @@
   },
   {
     "route": "/products/productsviewhandfilm7",
+    "headerImg": "/assets/images/film.webp",
+    "headerTitle": "Films",
+    "router": [
+      {
+        "title": "home",
+        "src": "/"
+      },
+      {
+        "title": "products",
+        "src": "/products/films"
+      },
+      "films"
+    ],
     "prevLink": "/products/films",
     "title": "STEELFLEX TITANIUM FLEX PRE-STRETCH",
     "description": "Steelflex Titanium is an extremely light weight roll which makes both pre-stretched and oriented films easy to handle. Steelflex Titanium reduces worker fatigue, roll damage, and waste. Enjoy the benefits of source reduction without sacrificing strength!",
@@ -246,6 +337,19 @@
   },
   {
     "route": "/products/productsviewhandfilm8",
+    "headerImg": "/assets/images/film.webp",
+    "headerTitle": "Films",
+    "router": [
+      {
+        "title": "home",
+        "src": "/"
+      },
+      {
+        "title": "products",
+        "src": "/products/films"
+      },
+      "films"
+    ],
     "prevLink": "/products/films",
     "title": "STEELFLEX SPECTRUM",
     "description": "Steelflex Spectrum is available in 7 colors. Alliance Plastics is your colored film headquarters. Along with our standard machine and hand put ups, we can convert to meet your needs. Never turn down or walk away from an opportunity to provide solutions.",
@@ -290,6 +394,19 @@
   },
   {
     "route": "/products/productsviewhandfilm9",
+    "headerImg": "/assets/images/film.webp",
+    "headerTitle": "Films",
+    "router": [
+      {
+        "title": "home",
+        "src": "/"
+      },
+      {
+        "title": "products",
+        "src": "/products/films"
+      },
+      "films"
+    ],
     "prevLink": "/products/films",
     "title": "STEELFLEX SPECTRUM PLUS",
     "description": "Alliance Plastics is your colored film headquarters. Steelflex Spectrum Plus is available in a wide range of 7 colors. Equip your customers with high performance source reduction film without sacrificing strength or puncture resistance.",
@@ -324,6 +441,19 @@
   },
   {
     "route": "/products/productsviewhandfilm10",
+    "headerImg": "/assets/images/film.webp",
+    "headerTitle": "Films",
+    "router": [
+      {
+        "title": "home",
+        "src": "/"
+      },
+      {
+        "title": "products",
+        "src": "/products/films"
+      },
+      "films"
+    ],
     "prevLink": "/products/films",
     "title": "BANDFLEX REGULAR",
     "description": "Constructed with a 3” standard core, each case comes with a disposable handle for your convenience. Market your own brand for as little as one case. Mix and Match to get your product delivered freight prepaid. Control your inventory turns, buy what you need when you need it.",
@@ -361,6 +491,19 @@
   {
     "route": "/products/productsviewhandfilm11",
     "prevLink": "/products/films",
+    "headerImg": "/assets/images/film.webp",
+    "headerTitle": "Films",
+    "router": [
+      {
+        "title": "home",
+        "src": "/"
+      },
+      {
+        "title": "products",
+        "src": "/products/films"
+      },
+      "films"
+    ],
     "title": "BANDFLEX XTREME",
     "description": "Utilizing today’s most high performance films, Bandflex Xtreme provides savings as well as greater performance. Experience less neck-down and wider coverage using this film. Provides cost savings, reduce worker fatigue and enjoy source reduction. Replaces gauges 80, 90 and 120.",
     "carouselImg": [
@@ -400,6 +543,19 @@
     "route": "/products/productsviewhandfilm12",
     "prevLink": "/products/films",
     "title": "BANDFLEX SPECTRUM",
+    "headerImg": "/assets/images/film.webp",
+    "headerTitle": "Films",
+    "router": [
+      {
+        "title": "home",
+        "src": "/"
+      },
+      {
+        "title": "products",
+        "src": "/products/films"
+      },
+      "films"
+    ],
     "description": "Date code, identify and orgranize your warehouse with Bandlfex Spectrum. Available in 7 colors. Market your own brand for as little as one case.",
     "carouselImg": [
       "/assets/images/products/handfilm12/principalbandspect.jpg",
@@ -436,6 +592,19 @@
     "prevLink": "/products/films",
     "title": "BANDFLEX X-CORE REGULAR",
     "description": "Constructed with a 1” extended core handle for ease of use. Rubber Handles are available upon request.",
+    "headerImg": "/assets/images/film.webp",
+    "headerTitle": "Films",
+    "router": [
+      {
+        "title": "home",
+        "src": "/"
+      },
+      {
+        "title": "products",
+        "src": "/products/films"
+      },
+      "films"
+    ],
     "carouselImg": [
       "/assets/images/products/handfilm13/principalpicture13.jpg",
       "/assets/images/products/handfilm13/xcorereg6-200x200.jpg",
@@ -475,6 +644,19 @@
     "prevLink": "/products/films",
     "title": "BANDFLEX X-CORE XTREME",
     "description": "Constructed with a 1” extended core handle for ease of use. Rubber Handles are available upon request.",
+    "headerImg": "/assets/images/film.webp",
+    "headerTitle": "Films",
+    "router": [
+      {
+        "title": "home",
+        "src": "/"
+      },
+      {
+        "title": "products",
+        "src": "/products/films"
+      },
+      "films"
+    ],
     "carouselImg": [
       "/assets/images/products/handfilm14/principalpicture28.jpg",
       "/assets/images/products/handfilm14/xcore_xtreme5-200x200.jpg",
@@ -517,6 +699,19 @@
     "prevLink": "/products/films",
     "title": "BANDFLEX X-CORE SPECTRUM",
     "description": "Constructed with a 1” extended core handle for ease of use. Rubber Handles are available upon request.",
+    "headerImg": "/assets/images/film.webp",
+    "headerTitle": "Films",
+    "router": [
+      {
+        "title": "home",
+        "src": "/"
+      },
+      {
+        "title": "products",
+        "src": "/products/films"
+      },
+      "films"
+    ],
     "carouselImg": [
       "/assets/images/products/handfilm15/principalpicture29.jpg",
       "/assets/images/products/handfilm15/xcorespectrum6-200x200.jpg",
@@ -546,6 +741,19 @@
     "route": "/products/productsviewhandfilm16",
     "prevLink": "/products/films",
     "title": "BANDFLEX X-WRAPPER REGULAR",
+    "headerImg": "/assets/images/film.webp",
+    "headerTitle": "Films",
+    "router": [
+      {
+        "title": "home",
+        "src": "/"
+      },
+      {
+        "title": "products",
+        "src": "/products/films"
+      },
+      "films"
+    ],
     "description": "Constructed with a 1.75” core, each case comes with an EZ brake handle. Stabilize, bundle, and identify products quickly, safely and easily with Bandflex X-Wrapper. Reduce worker fatigue with X-Wrapper Xtreme. Also enjoy the benefits of environmental source reduction. Market your brand with minimum of one case.",
     "carouselImg": [
       "/assets/images/products/handfilm16/principalpicture12.jpg",
@@ -578,6 +786,19 @@
   },
   {
     "route": "/products/productsviewhandfilm17",
+    "headerImg": "/assets/images/film.webp",
+    "headerTitle": "Films",
+    "router": [
+      {
+        "title": "home",
+        "src": "/"
+      },
+      {
+        "title": "products",
+        "src": "/products/films"
+      },
+      "films"
+    ],
     "prevLink": "/products/films",
     "title": "BANDFLEX X-WRAPPER XTREME",
     "description": "Constructed with a 1.75” core, each case comes with an EZ brake handle. Stabilize, bundle, and identify products quickly, safely and easily with Bandflex X-Wrapper. Reduce worker fatigue with X-Wrapper Xtreme. Also enjoy the benefits of environmental source reduction. Market your brand with minimum of one case.",
@@ -608,6 +829,19 @@
   {
     "route": "/products/productsviewhandfilm18",
     "prevLink": "/products/films",
+    "headerImg": "/assets/images/film.webp",
+    "headerTitle": "Films",
+    "router": [
+      {
+        "title": "home",
+        "src": "/"
+      },
+      {
+        "title": "products",
+        "src": "/products/films"
+      },
+      "films"
+    ],
     "title": "BANDFLEX X-WRAPPER SPECTRUM",
     "description": "Constructed with a 1.75” core, each case comes with an EZ brake handle. Stabilize, bundle, and identify products quickly, safely and easily with Bandflex X-Wrapper. Available in 7 colors. Reduce worker fatigue with X-Wrapper Xtreme. Also enjoy the benefits of environmental source reduction.",
     "carouselImg": [
@@ -635,6 +869,19 @@
 
   {
     "route": "/products/productsviewmachinefilm1",
+    "headerImg": "/assets/images/film.webp",
+    "headerTitle": "Films",
+    "router": [
+      {
+        "title": "home",
+        "src": "/"
+      },
+      {
+        "title": "products",
+        "src": "/products/films"
+      },
+      "films"
+    ],
     "prevLink": "/products/films",
     "title": "STEEL FLEX BLOWN (MACHINE FILMS)",
     "description": "SteelFlex Blown machine film is your choice for the toughest load in very extreme conditions. SteelFlex Blown’s aggressive cling properties is a great product for extreme cold conditions. Also great for heavy industrial conditions.",
@@ -671,126 +918,21 @@
     "youtubeId": ["EML2XEKFg3A"]
   },
   {
-    "route": "/products/productsviewhandtape1",
-    "prevLink": "/products/tapes",
-    "title": "GLOBALPACK ACRYLIC",
-    "description": "Global Pack Acrylic is the right choice to seal cartons in a multitude of environments. Available in both hand and machine put ups the flexibility provided will allow you to seal cartons safely in any situation. Global Pack Acrylic works well in hot or cold environments as well as dusty conditions.",
-    "carouselImg": [
-      "/assets/images/products/handtape1/principalpicture5.jpg",
-      "/assets/images/products/handtape1/applicationtape-200x200.jpg",
-      "/assets/images/products/handtape1/globalpackacry2-200x200.jpg",
-      "/assets/images/products/handtape1/globalpackacry3-200x200.jpg",
-      "/assets/images/products/handtape1/globalpackacry4-200x200.jpg",
-      "/assets/images/products/handtape1/globalpackacry5-200x200.jpg",
-      "/assets/images/products/handtape1/alliance-34-3-200x200.jpg",
-      "/assets/images/products/handtape1/alliance-30-1-200x200.jpg",
-      "/assets/images/products/handtape1/alliance-241-200x200.jpg",
-      "/assets/images/products/handtape1/Alliance-Web-331-200x200.jpg",
-      "/assets/images/products/handtape1/Alliance-Web-34-200x200.jpg",
-      "/assets/images/products/handtape1/alliance-18-1-200x200.jpg",
-      "/assets/images/products/handtape1/alliance-6-1-200x200.jpg"
-    ],
-    "contextImg": [
-      {
-        "title": "",
-        "src": "/assets/images/products/handtape1/benefitsred.jpg"
-      },
-      {
-        "title": "",
-        "src": "/assets/images/products/handtape1/featuresred.jpg"
-      },
-      {
-        "title": "",
-        "src": "/assets/images/products/handtape1/tablaglobalpackacrylich1.jpg"
-      }
-    ],
-    "youtubeId": ["ZeV6T3Aqajk"]
-  },
-  {
-    "route": "/products/productsviewhandtape2",
-    "prevLink": "/products/tapes",
-    "title": "GLOBALPACK HOT MELT",
-    "description": "Global Pack Melt is made in the USA . This Hot Melt Tape is quality assured with the convenience of quick tack characteristics. With high quality standards, hot melt tape can seal cartons in a wide range of conditions. This tape will not peel, crack or dry out.",
-    "carouselImg": [
-      "/assets/images/products/handtape2/principalpicture38.jpg",
-      "/assets/images/products/handtape2/globalpackhotm1-200x200.jpg",
-      "/assets/images/products/handtape2/globalpack1-200x200.jpg",
-      "/assets/images/products/handtape2/globalpackhotm2-200x200.jpg",
-      "/assets/images/products/handtape2/globalpackhotm3-200x200.jpg",
-      "/assets/images/products/handtape2/globalpackhotm4-200x200.jpg",
-      "/assets/images/products/handtape2/globalpackhotm5-200x200.jpg"
-    ],
-    "contextImg": [
-      {
-        "title": "",
-        "src": "/assets/images/products/handtape2/benefitsred2.jpg"
-      },
-      {
-        "title": "",
-        "src": "/assets/images/products/handtape2/featuresred2.jpg"
-      },
-      {
-        "title": "",
-        "src": "/assets/images/products/handtape2/tablaglobalpackhotmelth.jpg"
-      }
-    ],
-    "youtubeId": ["UyY76doYKNo"]
-  },
-  {
-    "route": "/products/productsviewmachinetape1",
-    "prevLink": "/products/tapes",
-    "title": "GLOBALPACK ACRYLIC (MACHINE TAPES)",
-    "description": "Global Pack Acrylic is the right choice to seal cartons in a multitude of environments. Available in both hand and machine put ups the flexibility provided will allow you to seal cartons safely in any situation. Global Pack Acrylic works well in hot or cold environments as well as dusty conditions.",
-    "carouselImg": [
-      "/assets/images/products/machinetape1/principalpicture37.jpg",
-      "/assets/images/products/machinetape1/acrylicmachine2-200x200.jpg",
-      "/assets/images/products/machinetape1/acrylicmachine-200x200.jpg"
-    ],
-    "contextImg": [
-      {
-        "title": "",
-        "src": "/assets/images/products/machinetape1/benefitsred1.jpg"
-      },
-      {
-        "title": "",
-        "src": "/assets/images/products/machinetape1/featuresred1.jpg"
-      },
-      {
-        "title": "",
-        "src": "/assets/images/products/machinetape1/tablaglobalpackacrylicm.jpg"
-      }
-    ],
-    "youtubeId": ["ZeV6T3Aqajk"]
-  },
-  {
-    "route": "/products/productsviewmachinetape2",
-    "prevLink": "/products/tapes",
-    "title": "GLOBALPACK HOT MELT (MACHINE TAPES)",
-    "description": "Global Pack Melt is made in the USA . This Hot Melt Tape is quality assured with the convenience of quick tack characteristics. With high quality standards, hot melt tape can seal cartons in a wide range of conditions. This tape will not peel, crack or dry out.",
-    "carouselImg": [
-      "/assets/images/products/machinetape2/principalpicture39.jpg",
-      "/assets/images/products/machinetape2/hotmeltmachine2-200x200.jpg",
-      "/assets/images/products/machinetape2/hotmeltmachine-200x200.jpg"
-    ],
-    "contextImg": [
-      {
-        "title": "",
-        "src": "/assets/images/products/machinetape2/benefitsred3.jpg"
-      },
-      {
-        "title": "",
-        "src": "/assets/images/products/machinetape2/featuresred3.jpg"
-      },
-      {
-        "title": "",
-        "src": "/assets/images/products/machinetape2/tablaglobalpackhotmeltm.jpg"
-      }
-    ],
-    "youtubeId": ["UyY76doYKNo"]
-  },
-  {
     "route": "/products/productsviewedgeguard2",
     "prevLink": "/products/edges",
+    "headerImg": "/assets/images/edgeguard2.webp",
+    "headerTitle": "edgeguard",
+    "router": [
+      {
+        "title": "home",
+        "src": "/"
+      },
+      {
+        "title": "products",
+        "src": "/products/edges"
+      },
+      "edgeguard"
+    ],
     "title": "EDGEGUARD DX",
     "description": "Raw materials make all the difference. Edge Guard DX will reduce waste, increase margin, and save your customers money. We buy a specific paper from the highest quality US made paper board. It’s made for us, slit for us and produced with our specifications. The controlling factors are density, moisture levels and the basis weight.",
     "carouselImg": [
@@ -830,6 +972,19 @@
     "route": "/products/productsviewedgeguard1",
     "prevLink": "/products/edges",
     "title": "EDGEGUARD",
+    "headerImg": "/assets/images/edgeguard2.webp",
+    "headerTitle": "edgeguard",
+    "router": [
+      {
+        "title": "home",
+        "src": "/"
+      },
+      {
+        "title": "products",
+        "src": "/products/edges"
+      },
+      "edgeguard"
+    ],
     "description": "Alliance Edgeguard uses the very best raw materials to construct it’s boards. No seconds or trim stock is used. Only 100% made to order raw materials paired with the high solid content in our glue recipe is used to ensure the highest quality board. Trust Alliance Edgeguard to get your products to their destination safely. Utilize Alliance Edgeguard to stabilize your loads, protect against edge damage, and reduce the cost of rejected product. Safely double and triple stack skids with Edgeguard’s industrial leading stacking strength. Enjoy an improved level of worker safety with our fully wrapped board. Reduce dermatitis and cuts with boards that have no sharp edges. No need for gloves to handle Alliance Edieguard. One and two color print is available. Promote your customers brand with a visible medium that stands out and is VERY affordable.",
     "carouselImg": [
       "/assets/images/products/edgeguard1/principalpicture16.jpg",
@@ -880,6 +1035,19 @@
       "/assets/images/products/machinefilm2/omega3-200x200.jpg",
       "/assets/images/products/machinefilm2/omega2-200x200.jpg"
     ],
+    "headerImg": "/assets/images/film.webp",
+    "headerTitle": "Films",
+    "router": [
+      {
+        "title": "home",
+        "src": "/"
+      },
+      {
+        "title": "products",
+        "src": "/products/films"
+      },
+      "films"
+    ],
     "contextImg": [
       {
         "title": "",
@@ -900,6 +1068,19 @@
     "route": "/products/productsviewmachinefilm3",
     "prevLink": "/products/films",
     "title": "STEELFLEX PLUS (MACHINE FILMS)",
+    "headerImg": "/assets/images/film.webp",
+    "headerTitle": "Films",
+    "router": [
+      {
+        "title": "home",
+        "src": "/"
+      },
+      {
+        "title": "products",
+        "src": "/products/films"
+      },
+      "films"
+    ],
     "description": "SteelFlex Plus is the next generation of high performance stretch film. The cost effectiveness and durability of Steelflex Plus makes it a great choice for those who want to source reduce. It can be called the “have it all” film.",
     "carouselImg": [
       "/assets/images/products/machinefilm3/principalpicture10.jpg",
@@ -936,6 +1117,19 @@
     "route": "/products/productsviewmachinefilm4",
     "prevLink": "/products/films",
     "title": "STEELFLEX XTREME (MACHINE FILMS)",
+    "headerImg": "/assets/images/film.webp",
+    "headerTitle": "Films",
+    "router": [
+      {
+        "title": "home",
+        "src": "/"
+      },
+      {
+        "title": "products",
+        "src": "/products/films"
+      },
+      "films"
+    ],
     "description": "SteelFlex Xtreme Machine film is an ultra high performance stretch film that provides unmatched puncture and speed capabilitles. SteelFlex Xtreme Dellvers load containment at gauge levels unseen in the market place.",
     "carouselImg": [
       "/assets/images/products/machinefilm4/principalpicture11.jpg",
@@ -965,6 +1159,19 @@
   {
     "route": "/products/productsviewmachinefilm5",
     "prevLink": "/products/films",
+    "headerImg": "/assets/images/film.webp",
+    "headerTitle": "Films",
+    "router": [
+      {
+        "title": "home",
+        "src": "/"
+      },
+      {
+        "title": "products",
+        "src": "/products/films"
+      },
+      "films"
+    ],
     "title": "STEELFLEX ELEVATION (MACHINE FILMS)",
     "description": "Every one states they have good puncture, high holding force and excellent elongation. These are bland and overused generic marketing terms. Look beyond the words and cheap talk. Elevate your expectations and elevate your performance to where no film has ever gone before: Most of our competitors accept mediocrity.",
     "carouselImg": [
@@ -997,6 +1204,19 @@
   },
   {
     "route": "/products/productsviewmachinefilm6",
+    "headerImg": "/assets/images/film.webp",
+    "headerTitle": "Films",
+    "router": [
+      {
+        "title": "home",
+        "src": "/"
+      },
+      {
+        "title": "products",
+        "src": "/products/films"
+      },
+      "films"
+    ],
     "prevLink": "/products/films",
     "title": "VENTED AIRFORCE OPEN (MACHINE FILMS)",
     "description": "Steelflex Airforce Open Films offer breathable load containment with power bands that offer incredible strength and stabilization. Steelflex Airforce Open Films are ideal for chilled or frozen products. Dairy products, ice cream, floral, meat, fish, and frozen snacks are excellent applications.",
@@ -1030,6 +1250,19 @@
   },
   {
     "route": "/products/productsviewmachinefilm7",
+    "headerImg": "/assets/images/film.webp",
+    "headerTitle": "Films",
+    "router": [
+      {
+        "title": "home",
+        "src": "/"
+      },
+      {
+        "title": "products",
+        "src": "/products/films"
+      },
+      "films"
+    ],
     "prevLink": "/products/films",
     "title": "AIRFORCE VENTED CLOSE HOLE",
     "description": "Steelflex Airforce Vented Film offers breathable load containment with power bands that offer incredible strength and stabilization. Steelflex Airforce is ideal for chilled or frozen products. Dairy products, ice cream, floral, meat, fish, and frozen snacks are excellent applications.",
@@ -1044,6 +1277,7 @@
       "/assets/images/products/machinefilm7/airforcevented2(12).jpg",
       "/assets/images/products/machinefilm7/airforcevented2(13).jpg"
     ],
+
     "contextImg": [
       {
         "title": "",
@@ -1066,6 +1300,19 @@
   },
   {
     "route": "/products/productsviewmachinefilm8",
+    "headerImg": "/assets/images/film.webp",
+    "headerTitle": "Films",
+    "router": [
+      {
+        "title": "home",
+        "src": "/"
+      },
+      {
+        "title": "products",
+        "src": "/products/films"
+      },
+      "films"
+    ],
     "prevLink": "/products/films",
     "title": "VENTED AIRFORCE MAX",
     "description": "Steelflex Airforce Max offers breathable load containment with power bands that offer incredible strength and stabilization. Steelflex Airforce is ideal for chilled or frozen products. Dairy products, ice cream, floral, meat, fish, and frozen snacks are excellent applications.",
@@ -1096,6 +1343,19 @@
   },
   {
     "route": "/products/productsviewmachinefilm9",
+    "headerImg": "/assets/images/film.webp",
+    "headerTitle": "Films",
+    "router": [
+      {
+        "title": "home",
+        "src": "/"
+      },
+      {
+        "title": "products",
+        "src": "/products/films"
+      },
+      "films"
+    ],
     "prevLink": "/products/films",
     "title": "REINFORCED TITANIUM",
     "description": "Steelflex Titanium utilizes the patent pending Power Bands. Extreme force will be applied to loads to contain heavy, awkward, and hard to wrap pallets. Excellent for replacing heavy gauge film and film reduction. If Steelflex Titanium can’t wrap it, it can’t be wrapped at all! Steelflex Titanium available in three different strengths: 80, 100 and 150.",
@@ -1140,6 +1400,19 @@
   },
   {
     "route": "/products/productsviewmachinefilm10",
+    "headerImg": "/assets/images/film.webp",
+    "headerTitle": "Films",
+    "router": [
+      {
+        "title": "home",
+        "src": "/"
+      },
+      {
+        "title": "products",
+        "src": "/products/films"
+      },
+      "films"
+    ],
     "prevLink": "/products/films",
     "title": "STEELFLEX SPECTRUM (MACHINE FILMS)",
     "description": "Steelflex Spectrum is available in 7 colors. Alliance Plastics is your colored film headquarters. Along with our standard machine and hand put ups, we can convert to meet your needs. Never turn down or walk away from an opportunity to provide solutions.",
@@ -1173,6 +1446,19 @@
   },
   {
     "route": "/products/productsviewmachinefilm11",
+    "headerImg": "/assets/images/film.webp",
+    "headerTitle": "Films",
+    "router": [
+      {
+        "title": "home",
+        "src": "/"
+      },
+      {
+        "title": "products",
+        "src": "/products/films"
+      },
+      "films"
+    ],
     "prevLink": "/products/films",
     "title": "STEELFLEX SPECTRUM PLUS (MACHINE FILMS)",
     "description": "Alliance Plastics is your colored film headquarters. Steelflex Spectrum Plus is available in a wide range of 7 colors. Equip your customers with high performance source reduction film without sacrificing strength or puncture resistance. Along with our standard machine and hand put ups, we can convert to meet your needs. Never turn down or walk away from an opportunity to provide solutions to prevent pilferage, identify, and organize your customer’s material with this environmental source reduction film.",
@@ -1215,6 +1501,19 @@
   },
   {
     "route": "/products/productsviewmachinefilm12",
+    "headerImg": "/assets/images/film.webp",
+    "headerTitle": "Films",
+    "router": [
+      {
+        "title": "home",
+        "src": "/"
+      },
+      {
+        "title": "products",
+        "src": "/products/films"
+      },
+      "films"
+    ],
     "prevLink": "/products/films",
     "title": "BANDFLEX REGULAR (MACHINE FILMS)",
     "description": "For automatic or semi-automatic machinery, our Bandflex Machine Film is made to work with all equipment. At high pre stretch levels and any puncture hazards, Bandflex Machine Film will give you the highest yield in the industry and we never utilize converter grade or seconds.",
@@ -1241,6 +1540,19 @@
   },
   {
     "route": "/products/productsviewmachinefilm13",
+    "headerImg": "/assets/images/film.webp",
+    "headerTitle": "Films",
+    "router": [
+      {
+        "title": "home",
+        "src": "/"
+      },
+      {
+        "title": "products",
+        "src": "/products/films"
+      },
+      "films"
+    ],
     "prevLink": "/products/films",
     "title": "BANDFLEX REGULAR (MACHINE FILMS)",
     "description": "For automatic or semi-automatic machinery, our Bandflex Machine Film is made to work with all equipment. At high pre stretch levels and any puncture hazards, Bandflex Machine Film will give you the highest yield in the industry and we never utilize converter grade or seconds.",
@@ -1269,6 +1581,19 @@
   },
   {
     "route": "/products/productsviewmachinefilm14",
+    "headerImg": "/assets/images/film.webp",
+    "headerTitle": "Films",
+    "router": [
+      {
+        "title": "home",
+        "src": "/"
+      },
+      {
+        "title": "products",
+        "src": "/products/films"
+      },
+      "films"
+    ],
     "prevLink": "/products/films",
     "title": "BANDFLEX SPECTRUM (MACHINE FILMS)",
     "description": "Alliance Plastics is your colored film headquarters. Bandflex spectrum is available in a wide range of 7 colors. Equip your customers with high-performance source reduction film without sacrificing strength or puncture resistance. Never turn down or walk away from an opportunity to provide solutions to prevent pilferage, identify, and organize your customer’s material with this environmental source reduction film.",
