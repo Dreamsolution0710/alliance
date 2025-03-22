@@ -830,7 +830,7 @@ const NanoTechnology = () => {
               transition={{ duration: 0.8, ease: "easeOut" }}
             >
               <h3 className="text-white md:text-[44px] text-[32px] bg-[#1977cc] px-[20px] py-[5px] border-l-[15px] border-[#54c1e5] rounded-tr-[50px] uppercase tracking-[0.075em] font-bold">
-                FleedBlock
+                FeedBlock
               </h3>
             </motion.div>
             <div className="md:grid grid-cols-2 gap-10 mt-[50px] flex flex-col items-center justify-center">
