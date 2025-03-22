@@ -50,7 +50,7 @@ const company = [
     icon: CalculatorIcon,
   },
   {
-    name: "Learn About Our Commitment To Dury",
+    name: "Learn About Our Commitment To Duty",
     href: "/commitment",
     icon: CursorArrowRaysIcon,
   },
