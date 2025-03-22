@@ -272,7 +272,7 @@ const OurCompany = () => {
             <div className="mb-[50px]">
               <div>
                 <h5 className="uppercase lg:text-[24px] text-[20px] leading-[1.25] tracking-[0.2em] font-medium lg:text-left text-center">
-                  25+ years of experience
+                  50+ years of experience
                 </h5>
               </div>
               <div className="lg:block hidden mt-[20px] relative mt-[20px]">

@@ -20,6 +20,8 @@ import ProductEdges from "./components/products/ProductEdges";
 import viewData from "./assets/productsview.json";
 import Commitment from "./components/ourCompany/Commitment";
 import Calculator from "./components/calculator/Calculator";
+import NanoTechnology from "./components/ourCompany/NanoTechnology";
+
 const Productview = React.lazy(() =>
   import("./components/products/productsView/Productview")
 );
@@ -65,6 +67,7 @@ const AppRouter = () => {
       <Route path="/products/edges" Component={ProductEdges} />
       <Route path="/representative" Component={Representative} />
       <Route path="/commitment" Component={Commitment} />
+      <Route path="/nanotech" Component={NanoTechnology} />
     </Routes>
   );
 };

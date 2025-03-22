@@ -32,8 +32,8 @@ const ProductFilms = () => {
       />
       <div className="flex justify-center lg:py-[90px] py-[50px]">
         <div className="max-w-[1200px] w-[1200px] ">
-          <div className="lg:grid lg:grid-cols-4 gap-4 flex flex-col items-center lg:items-start">
-            <div className="col-span-3 px-[15px]">
+          <div className="lg:grid lg:grid-cols-5 gap-4 flex flex-col items-center lg:items-start">
+            <div className="col-span-4 px-[15px]">
               <div className="mb-[50px] flex justify-center items-center flex-col ">
                 <ul className="list-none text-[#777777] text-[14px] uppercase flex flex-col justify-center items-center md:flex-row tracking-[0.1em] leading-[1.33] font-bold animate-flip-up animate-duration-200 animate-delay-1000 animate-ease-in">
                   <li

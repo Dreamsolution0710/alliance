@@ -7,19 +7,19 @@ const images = [
   {
     src: "/assets/images/headerslides/headerslide1.webp",
     alt: "Slide 1",
-    subScript: "Alliance Plastics – A Foundation of Trust",
+    subScript: "Alliance Plastics, A Foundation of Trust",
     content: " Built on service, reliability, lasting partnerships",
   },
   {
     src: "/assets/images/headerslides/headerslide2.jpg",
     alt: "Slide 2",
-    subScript: "Strategically Located for Efficiency",
+    subScript: "Strategically Located, for Efficiency",
     content: "Fast delivery, precision, seamless operations",
   },
   {
-    src: "/assets/images/headerslides/headerslide3.jpg",
+    src: "/assets/images/headerslides/headerslide3.png",
     alt: "Slide 3",
-    subScript: "Cutting-Edge Manufacturing Technology",
+    subScript: "Leading edge technology, for stretch film",
     content: "North america's, 1st 67-layer, stretch films",
   },
 ];
@@ -157,7 +157,13 @@ const HeaderCarousels = () => {
                   animationFillMode: "forwards",
                 }}
               >
-                {image.subScript}
+                {image.subScript &&
+                  image.subScript.split(",").map((item, index) => (
+                    <>
+                      {item}
+                      <br />
+                    </>
+                  ))}
               </p>
               <h2
                 className="lg:text-4xl md:text-3xl uppercase text-3xl  font-extrabold text-center lg:mt-3 lg:my-4 leading-relaxed text-white bg-clip-text bg-gradient-to-r from-white to-white/80 tracking-[0.1em] transform hover:scale-105 transition-all duration-500 ease-in-out font-playfair opacity-0 animate-fade-up"

@@ -2,8 +2,9 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRightIcon, Download, FileText } from "lucide-react";
 
-import edges from "./../../assets/newProduct/edges.json";
+// import edges from "./../../assets/newProduct/edges.json";
 import EdgeGuardCard from "./EdgeGuardCard";
+import EdgeGuardCard1 from "./EdgeGuardCard1";
 import HeaderSlot from "../utils/HeaderSlot";
 
 const ProductFilms = () => {
@@ -36,15 +37,16 @@ const ProductFilms = () => {
           <div className="lg:grid lg:grid-cols-4 gap-4 flex flex-col items-center lg:items-start">
             <div className="col-span-3 px-[15px]">
               <div className="mb-[50px] flex justify-center items-center flex-col ">
-                {edges.map((data, index) => (
+                {/* {edges.map((data, index) => (
                   <EdgeGuardCard
                     mainSrc={data.mainSrc}
-                    backSrc={data.backSrc}
                     title={data.title}
                     content={data.content}
                     pathView={data.pathView}
                   />
-                ))}
+                ))} */}
+                <EdgeGuardCard />
+                <EdgeGuardCard1 />
               </div>
               <div className="flex text-[#151515] justify-center"></div>
             </div>

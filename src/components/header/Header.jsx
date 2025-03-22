@@ -18,6 +18,7 @@ import {
   ChartPieIcon,
   CursorArrowRaysIcon,
   RectangleGroupIcon,
+  SparklesIcon,
   XMarkIcon,
 } from "@heroicons/react/24/outline";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
@@ -52,6 +53,11 @@ const company = [
     name: "Learn About Our Commitment To Dury",
     href: "/commitment",
     icon: CursorArrowRaysIcon,
+  },
+  {
+    name: "Nano 67",
+    href: "/nanotech",
+    icon: SparklesIcon,
   },
 ];
 

@@ -19,7 +19,8 @@ import "swiper/css/pagination";
 import "swiper/css/autoplay";
 import ToolsComponent from "./ToolsComponent";
 import ServicesSection from "./ServicesSection";
-import ImageCarousel from "./ImageCarousel";
+import ImageCarousel1 from "./ImageCarousel1";
+import ImageCarousel2 from "./ImageCarousel2";
 
 const teams = [
   {
@@ -363,7 +364,9 @@ export default function LandingPage() {
         </div>
       </div>
 
-      <ImageCarousel />
+      <ImageCarousel1 />
+      <div className="mt-2"></div>
+      <ImageCarousel2 />
       {/* <div className="pb-[100px]">
         <div>
           <h1 className="text-gray-900 uppercase text-4xl text-center mb-20">

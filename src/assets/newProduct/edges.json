@@ -1,16 +1,28 @@
 [
   {
-    "mainSrc": "/assets/images/AddProducts/principalpicture16.jpg",
-    "backSrc": "/assets/images/AddProducts/ratingsystemedgeguard1.jpg",
-    "content": "Alliance Edgeguard uses the very best raw materials to construct it’s boards. No seconds or trim stock is used. Only 100% made to order raw materials paired with the high solid content in our glue recipe is used to ensure the highest quality board. Trust Alliance Edgeguard to get your products to their destination safely. Utilize Alliance Edgeguard to stabilize your loads, protect against edge damage, and reduce the cost of rejected product. Safely double and triple stack skids with Edgeguard’s industrial leading stacking strength.",
-    "title": "EDGEGUARD",
-    "pathView": "/products/productsviewedgeguard1"
+    "mainSrc": "/assets/images/AddProducts/edgeguard_dxl.png",
+    "title": "DX",
+    "subtitle": "For Stacking Strength",
+    "content": [
+      "Replaces standard board",
+      "Thinner but stronger",
+      "Printing available",
+      "11-14% Margins = Savings",
+      "All sizes available 2\" to 200+ \"",
+      "Fully Wrapped white 100% recycled EQ board"
+    ]
   },
   {
-    "mainSrc": "/assets/images/AddProducts/principalpicture17.jpg",
-    "backSrc": "/assets/images/AddProducts/ratingsystemedgeguarddx.jpg",
-    "content": "Raw materials make all the difference. Edge Guard DX will reduce waste, increase margin, and save your customers money. We buy a specific paper from the highest quality US made paper board. It’s made for us, slit for us and produced with our specifications. The controlling factors are density, moisture levels and the basis weight.",
-    "title": "EDGEGUARD DX",
-    "pathView": "/products/productsviewedgeguard2"
+    "mainSrc": "/assets/images/AddProducts/edgeguard_dx.png",
+    "title": "DX Edge protection",
+    "subtitle": "For Stacking Strength",
+    "content": [
+      "Replaces standard board",
+      "Thinner but stronger",
+      "Printing available",
+      "11-14% Margins = Savings",
+      "All sizes available 2\" to 200+ \"",
+      "Fully Wrapped white 100% recycled EQ board"
+    ]
   }
 ]

@@ -30,7 +30,7 @@ const CarouselImage = ({ src }) => {
       }}
     >
       <img
-        className="w-full h-full object-cover group-hover:scale-110 transition-all duration-300 ease-linear"
+        className="w-full h-full object-cover group-hover:scale-110 transition-all duration-300 ease-linear max-h-96"
         src={src}
         alt="carousel"
       />

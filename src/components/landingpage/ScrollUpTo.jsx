@@ -35,7 +35,7 @@ const ScrollUpTo = () => {
   }, [scrollY]);
 
   return (
-    <div>
+    <div className="bg-white">
       <button
         className={`invisible ${
           scrollY < 500 ? "" : "visible"
