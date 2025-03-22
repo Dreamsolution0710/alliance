@@ -1,13 +1,23 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
-const NewAddProductCard = ({ mainSrc, markSrc, content, benefits }) => {
+const NewAddProductCard = ({
+  mainSrc,
+  markSrc,
+  content,
+  benefits,
+  current,
+}) => {
   const [isVisible, setIsVisible] = useState(false);
   const { ref, inView } = useInView({
     threshold: 0.2,
     triggerOnce: true,
   });
+
+  useEffect(() => {
+    setIsVisible(false);
+  }, [current]);
 
   return (
     <motion.div

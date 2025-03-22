@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { ArrowRightIcon, Download, FileText } from "lucide-react";
+import { Download, FileText } from "lucide-react";
 import films from "./../../assets/newProduct/films.json";
 import NewAddProductCard from "./NewAddProductCard";
 import HeaderSlot from "../utils/HeaderSlot";
@@ -95,8 +95,7 @@ const ProductFilms = () => {
                         markSrc={film.markSrc}
                         content={film.content}
                         benefits={film.benefits}
-                        backSrc={film.backSrc}
-                        pathView={film.pathView}
+                        current={current}
                       />
                     ))
                   : films
@@ -108,8 +107,7 @@ const ProductFilms = () => {
                           markSrc={film.markSrc}
                           content={film.content}
                           benefits={film.benefits}
-                          backSrc={film.backSrc}
-                          pathView={film.pathView}
+                          current={current}
                         />
                       ))}
               </div>
