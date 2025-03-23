@@ -42,7 +42,7 @@ const NewAddProductCard = ({
         </button>
       </div>
 
-      <div className="flex justify-center items-center w-[60%] ">
+      <div className="flex justify-center items-center md:w-[60%] w-[100%]">
         <img
           src={mainSrc}
           width={"100%"}
@@ -50,16 +50,16 @@ const NewAddProductCard = ({
         />
       </div>
 
-      <div className="m-[30px] text-[#151515] flex flex-col justify-center items-center relative overflow-hidden w-[40%]">
+      <div className="m-[30px] text-[#151515] flex flex-col justify-center items-center relative overflow-hidden md:w-[40%]">
         <img
           src={markSrc}
           width={"100px"}
-          className="object-contain absolute top-0 left-0"
+          className="object-contain absolute top-0 left-0 max-h-[50px]"
         />
 
         {/* Content Animation - shown when 'back' is clicked */}
         <motion.div
-          className="flex flex-col gap-5 mt-[30px]"
+          className="flex flex-col gap-5 mt-[50px]"
           initial={{ opacity: 0, y: 20 }}
           animate={{
             opacity: !isVisible ? 1 : 0, // Show content when not visible
@@ -82,21 +82,22 @@ const NewAddProductCard = ({
             y: isVisible ? 0 : 20, // Slide up when showing features
           }}
           transition={{ duration: 0.5 }}
+          className="md:w-[-webkit-fill-available]"
         >
           {isVisible && (
-            <>
-              <h5 className="text-[24px] bg-[#1977cc] w-fit py-[5px] px-[15px] text-white font-medium rounded-xl translate-y-[30px]">
+            <div>
+              <h5 className="text-[24px] bg-[#1977cc] w-fit py-[5px] px-[15px] text-white font-medium rounded-xl translate-y-[25px]">
                 Features & Benefits
               </h5>
-              <div className="flex border-1 border-[#1977cc] rounded-2xl w-full">
-                <ul className="list-disc text-[18px] p-[30px]">
+              <div className="border-1 border-[#1977cc] rounded-2xl w-auto ">
+                <ul className="list-disc text-[18px] px-[30px] pt-[45px] pb-[30px]">
                   {benefits &&
                     benefits.map((benefit, index) => (
                       <li key={index}>{benefit}</li>
                     ))}
                 </ul>
               </div>
-            </>
+            </div>
           )}
         </motion.div>
       </div>
