@@ -1,0 +1,37 @@
+@keyframes shimmer {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.shimmer-button {
+  background: linear-gradient(
+    135deg,
+    #1977cc,
+    #54c1e5,
+    #ffffff,
+    #54c1e5,
+    #1977cc
+  );
+  background-size: 300% 300%;
+  animation: shimmer 3s infinite linear;
+}
+
+/* .shimmer-dropdown {
+  background: linear-gradient(
+    135deg,
+    #1977cc,
+    #54c1e5,
+    #ffffff,
+    #54c1e5,
+    #1977cc
+  );
+  background-size: 300% 300%;
+  animation: shimmer 3s infinite linear;
+} */

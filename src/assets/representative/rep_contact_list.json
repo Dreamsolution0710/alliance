@@ -1,0 +1,65 @@
+[
+  {
+    "photo": "/assets/images/representative/representative/ron.png",
+    "name": "Ron Grubbs",
+    "postion": "Preseident, Alliance Plastics",
+    "email": "ron@allianceplastics.net",
+    "pnumber": "(704) 942-1627"
+  },
+  {
+    "photo": "/assets/images/representative/representative/troy.png",
+    "name": "Troy Wolf",
+    "postion": "President, Alliance Films",
+    "email": "troy@allianceplastics.net",
+    "pnumber": "(920) 376-0142"
+  },
+  {
+    "photo": "/assets/images/representative/representative/marc.png",
+    "name": "Marc Delatte",
+    "postion": "Vice President",
+    "email": "marc@allianceplastics.net",
+    "pnumber": "(704) 962-7168"
+  },
+  {
+    "photo": "/assets/images/representative/representative/Gale-Marcus-AP.png",
+    "name": "Gale Marcus",
+    "postion": "EVP of EdgeGuard",
+    "email": "gale@allianceplastics.net",
+    "pnumber": "(818) 613-2500"
+  },
+  {
+    "photo": "/assets/images/representative/representative/chuck.png",
+    "name": "Chuck Magee",
+    "postion": "VP of Sales",
+    "email": "chuck@allianceplastics.net",
+    "pnumber": "(901) 619-8438"
+  },
+  {
+    "photo": "/assets/images/representative/representative/russ.png",
+    "name": "Russ Vossen",
+    "postion": "West Coast",
+    "email": "russ@allianceplastics.net",
+    "pnumber": "(775) 895-6448"
+  },
+  {
+    "photo": "/assets/images/representative/representative/erik.png",
+    "name": "Eric Baranczyk",
+    "postion": "Midwest",
+    "email": "eric@allianceplastics.net",
+    "pnumber": "(920) 639-1950"
+  },
+  {
+    "photo": "/assets/images/representative/representative/matthew.png",
+    "name": "Matthew Mondelli",
+    "postion": "Southwest / Midsouth",
+    "email": "matt@allianceplastics.net",
+    "pnumber": "(615) 977-7247"
+  },
+  {
+    "photo": "/assets/images/representative/representative/yvone.jpg",
+    "name": "Yvonne Valentin",
+    "postion": "Inside Sales",
+    "email": "yvonne@allianceplastics.net",
+    "pnumber": "(704) 774-0193"
+  }
+]
