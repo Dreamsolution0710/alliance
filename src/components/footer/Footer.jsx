@@ -1,4 +1,10 @@
-import { FaFacebookF, FaTwitter, FaInstagram, FaGoogle } from "react-icons/fa";
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaInstagram,
+  FaGoogle,
+  FaYoutube,
+} from "react-icons/fa";
 import { IoIosPaperPlane } from "react-icons/io";
 import { useInView } from "../landingpage/useInView";
 import { Link } from "react-router-dom";
@@ -105,13 +111,8 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li className=" mt-[12px] p-3 bg-[rgba(255,255,255,0.1)]  hover:bg-[#54c1e5] transition duration-300 ease-in-out">
-                  <Link>
-                    <FaInstagram />
-                  </Link>
-                </li>
-                <li className="mt-[12px] p-3 bg-[rgba(255,255,255,0.1)]  hover:bg-[#54c1e5] transition duration-300 ease-in-out">
-                  <Link onClick={handleEmail}>
-                    <FaGoogle />
+                  <Link to={"https://www.youtube.com/user/allianceplastics1"}>
+                    <FaYoutube />
                   </Link>
                 </li>
               </ul>

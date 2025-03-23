@@ -8,12 +8,7 @@ import {
   SearchIcon,
   User,
 } from "lucide-react";
-import {
-  FaFacebookF,
-  FaGooglePlusG,
-  FaInstagram,
-  FaTwitter,
-} from "react-icons/fa";
+import { FaFacebookF, FaTwitter, FaYoutube } from "react-icons/fa";
 
 const BlogPost = () => {
   useEffect(() => {
@@ -346,11 +341,12 @@ const BlogPost = () => {
                       >
                         <FaTwitter className="m-[5px] p-[-5px]" />
                       </Link>
-                      <Link className="hover:text-[#57a4e0]">
-                        <FaInstagram className="m-[5px] p-[-5px]" />
-                      </Link>
-                      <Link className="hover:text-[#57a4e0]">
-                        <FaGooglePlusG className="m-[5px] p-[-5px]" />
+                      <Link
+                        className="hover:text-[#57a4e0]"
+                        to={"https://www.youtube.com/user/allianceplastics1"}
+                        target="_blank"
+                      >
+                        <FaYoutube className="m-[5px] p-[-5px]" />
                       </Link>
                     </div>
                   </div>
