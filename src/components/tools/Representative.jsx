@@ -44,7 +44,7 @@ const Representative = () => {
   }, [selected]);
 
   return (
-    <div>
+    <div className="overflow-hidden min-h-[700px]">
       <HeaderSlot
         imgSrc={"/assets/images/representative1.webp"}
         title={"United States of America"}
@@ -68,7 +68,7 @@ const Representative = () => {
               <div>
                 <motion.div
                   ref={dropdownRef}
-                  className="w-full max-w-xs relative"
+                  className="w-full max-w-xs relative mx-[50px]"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5 }}
@@ -121,7 +121,7 @@ const Representative = () => {
                   )}
                 </motion.div>
               </div>
-              <div>
+              <div className="mx-[50px]">
                 {selected !== "Select an option" &&
                   selected !== "Customer Expreience Reps" && (
                     <motion.div
@@ -161,8 +161,8 @@ const Representative = () => {
                     >
                       <img src="/assets/images/representative/USA_map.png" />
                     </motion.div>
-                    <div className="flex">
-                      <motion.div className="absolute top-[40%] -left-[15%]">
+                    <div className="md:grid md:grid-cols-2 gap-30 flex justify-center items-center flex-col">
+                      <motion.div className="lg:absolute lg:top-[40%] lg:-left-[15%]">
                         <ContactCard
                           photo={
                             "/assets/images/representative/representative/russ.png"
@@ -175,7 +175,7 @@ const Representative = () => {
                           delay={1}
                         />
                       </motion.div>
-                      <motion.div className="absolute -top-[20%] right-[20%]">
+                      <motion.div className="lg:absolute lg:-top-[20%] lg:right-[20%]">
                         <ContactCard
                           photo={
                             "/assets/images/representative/representative/erik.png"
@@ -188,7 +188,7 @@ const Representative = () => {
                           delay={2}
                         />
                       </motion.div>
-                      <motion.div className="absolute top-[30%] -right-[15%] ">
+                      <motion.div className="lg:absolute lg:top-[30%] lg:-right-[15%] ">
                         <ContactCard
                           photo={
                             "/assets/images/representative/representative/marc.png"
@@ -201,7 +201,7 @@ const Representative = () => {
                           delay={3}
                         />
                       </motion.div>
-                      <motion.div className="absolute -bottom-[15%] -right-[5%]">
+                      <motion.div className="lg:absolute lg:-bottom-[15%] lg:-right-[5%]">
                         <ContactCard
                           photo={
                             "/assets/images/representative/representative/matthew.png"
@@ -217,7 +217,7 @@ const Representative = () => {
                     </div>
                   </div>
                 ) : (
-                  <div className="grid grid-cols-3">
+                  <div className="md:grid lg:grid-cols-3 md:grid-cols-2 flex flex-col justify-center items-center">
                     {repContact.map((oneCsr, index) => (
                       <ContactDetailCard
                         photo={oneCsr.photo}
@@ -244,8 +244,8 @@ const Representative = () => {
                     >
                       <img src="/assets/images/representative/USA_map2.png" />
                     </motion.div>
-                    <div className="flex">
-                      <motion.div className="absolute top-[30%] -left-[15%]">
+                    <div className="md:grid md:grid-cols-2 gap-30 flex justify-center items-center flex-col">
+                      <motion.div className="lg:absolute lg:top-[30%] lg:-left-[15%]">
                         <ContactCard
                           photo={
                             "/assets/images/representative/representative/nikki.jpg"
@@ -258,7 +258,7 @@ const Representative = () => {
                           delay={1}
                         />
                       </motion.div>
-                      <motion.div className="absolute -top-[20%] right-[20%]">
+                      <motion.div className="lg:absolute lg:-top-[20%] lg:right-[20%]">
                         <ContactCard
                           photo={
                             "/assets/images/representative/representative/taranew.jpg"
@@ -271,7 +271,7 @@ const Representative = () => {
                           delay={2}
                         />
                       </motion.div>
-                      <motion.div className="absolute bottom-[20%] -right-[10%]">
+                      <motion.div className="lg:absolute lg:bottom-[20%] lg:-right-[10%]">
                         <ContactCard
                           photo={
                             "/assets/images/representative/representative/yvone.jpg"
@@ -287,7 +287,7 @@ const Representative = () => {
                     </div>
                   </div>
                 ) : (
-                  <div className="grid grid-cols-2">
+                  <div className="lg:grid lg:grid-cols-2 flex flex-col justify-center items-center">
                     {csrList.map((oneCsr, index) => (
                       <ContactDetailCard
                         photo={oneCsr.photo}
@@ -312,8 +312,8 @@ const Representative = () => {
                 >
                   <img src="/assets/images/representative/USA_map2.png" />
                 </motion.div>
-                <div className="flex">
-                  <motion.div className="absolute top-[10%] -left-[15%]">
+                <div className="md:grid md:grid-cols-2 gap-30 flex justify-center items-center flex-col">
+                  <motion.div className="lg:absolute lg:top-[10%] lg:-left-[15%]">
                     <ContactCard
                       photo={
                         "/assets/images/representative/representative/ian.png"
@@ -326,7 +326,7 @@ const Representative = () => {
                       delay={1}
                     />
                   </motion.div>
-                  <motion.div className="absolute bottom-[10%] -left-[15%]">
+                  <motion.div className="lg:absolute lg:bottom-[10%] lg:-left-[15%]">
                     <ContactCard
                       photo={
                         "/assets/images/representative/representative/karen.png"
@@ -339,7 +339,7 @@ const Representative = () => {
                       delay={2}
                     />
                   </motion.div>
-                  <motion.div className="absolute -top-[20%] right-[20%]">
+                  <motion.div className="lg:absolute lg:-top-[20%] lg:right-[20%]">
                     <ContactCard
                       photo={
                         "/assets/images/representative/representative/Geraldine.jpg"
@@ -352,7 +352,7 @@ const Representative = () => {
                       delay={3}
                     />
                   </motion.div>
-                  <motion.div className="absolute bottom-[20%] -right-[10%]">
+                  <motion.div className="lg:absolute lg:bottom-[20%] lg:-right-[10%]">
                     <ContactCard
                       photo={
                         "/assets/images/representative/representative/miguel.png"
