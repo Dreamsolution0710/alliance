@@ -135,7 +135,7 @@ export default function Header() {
             Home
           </Link>
           <Popover className="relative">
-            <PopoverButton className="flex items-center gap-x-1 text-md/6 font-semibold text-gray-900 hover:text-[#54c1e5]  hover:cursor-pointer">
+            <PopoverButton className="flex items-center gap-x-1 text-md/6 font-semibold text-gray-900 hover:text-[#54c1e5]  hover:cursor-pointer outline-none">
               Products
               <ChevronDownIcon
                 aria-hidden="true"
@@ -174,7 +174,7 @@ export default function Header() {
             </PopoverPanel>
           </Popover>
           <Popover className="relative">
-            <PopoverButton className="flex items-center gap-x-1 text-md/6 font-semibold text-gray-900 hover:text-[#54c1e5]  hover:cursor-pointer">
+            <PopoverButton className="flex items-center gap-x-1 text-md/6 font-semibold text-gray-900 hover:text-[#54c1e5]  hover:cursor-pointer outline-none">
               Our Company
               <ChevronDownIcon
                 aria-hidden="true"
