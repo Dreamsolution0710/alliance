@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import PlayButton from "./PlayButton";
 
 const imageStyles =
   "object-cover w-full sm:max-w-[412px] sm:min-w-[412px] sm:max-h-[450px] sm:min-h-[450px] rounded-t-lg sm:rounded-none";
@@ -11,6 +12,7 @@ const NewAddProductCard = ({
   content,
   benefits,
   current,
+  videoUrl,
 }) => {
   const [isVisible, setIsVisible] = useState(false);
   const { ref, inView } = useInView({ threshold: 0.2, triggerOnce: true });
@@ -38,8 +40,12 @@ const NewAddProductCard = ({
           {isVisible ? "Back" : "View"}
         </button>
       </div>
-
-      <img src={mainSrc} className={imageStyles} alt="Product" />
+      <div className="relative">
+        <img src={mainSrc} className={imageStyles} alt="Product" />
+        <div className="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]">
+          <PlayButton videoUrl={videoUrl} />
+        </div>
+      </div>
 
       <div className="md:m-[20px] my-[20px] text-[#151515] flex flex-col justify-center items-center relative overflow-hidden w-full px-[15px] sm:px-[20px]">
         <img
@@ -48,7 +54,6 @@ const NewAddProductCard = ({
           className="object-contain absolute top-0 left-0 max-h-[40px]"
           alt="Mark"
         />
-
         <motion.div
           className="flex flex-col gap-4 mt-[40px]"
           initial={{ opacity: 0, y: 20 }}

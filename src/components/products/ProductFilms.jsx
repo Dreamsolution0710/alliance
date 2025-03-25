@@ -6,6 +6,7 @@ import NewAddProductCard from "./NewAddProductCard";
 import HeaderSlot from "../utils/HeaderSlot";
 import EdgeGuardCard from "./EdgeGuardCard";
 import EdgeGuardCard1 from "./EdgeGuardCard1";
+import VideoModal from "../utils/VideoModal";
 
 const categories = [
   "all",
