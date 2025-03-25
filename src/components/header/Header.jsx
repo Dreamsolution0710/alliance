@@ -142,45 +142,6 @@ export default function Header() {
             Products
           </Link>
 
-          {/* <Popover className="relative">
-            <PopoverButton className="flex items-center gap-x-1 text-md/6 font-semibold text-gray-900 hover:text-[#54c1e5]  hover:cursor-pointer outline-none">
-              Products
-              <ChevronDownIcon
-                aria-hidden="true"
-                className="size-5 flex-none text-gray-400"
-              />
-            </PopoverButton>
-
-            <PopoverPanel
-              transition
-              className="absolute top-full -left-8 z-10 mt-3 w-[250px]  overflow-hidden bg-white ring-1 shadow-lg ring-gray-900/5 transition data-closed:translate-y-1 data-closed:opacity-0 data-enter:duration-200 data-enter:ease-out data-leave:duration-150 data-leave:ease-in"
-            >
-              <div className="p-2">
-                {products.map((item) => (
-                  <div
-                    key={item.name}
-                    className="group relative flex items-center gap-x-4 rounded-lg p-2 text-md/6 hover:text-[#54c1e5]"
-                  >
-                    <div className="flex size-11 flex-none items-center justify-center rounded-lg text-orange-500 group-hover:bg-white">
-                      <item.icon
-                        aria-hidden="true"
-                        className="size-6 text-gray-600 group-hover:text-indigo-600"
-                      />
-                    </div>
-                    <div className="flex-auto">
-                      <Link
-                        to={item.href}
-                        className="block font-semibold text-gray-900 hover:text-[#54c1e5]"
-                      >
-                        {item.name}
-                        {/* <span className="absolute inset-0" /> */}
-          {/* </Link>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </PopoverPanel>
-          </Popover> */}
           <Popover className="relative">
             <PopoverButton className="flex items-center gap-x-1 text-md/6 font-semibold text-gray-900 hover:text-[#54c1e5]  hover:cursor-pointer outline-none">
               Our Company
@@ -201,16 +162,16 @@ export default function Header() {
                     className="group relative flex items-center gap-x-4 rounded-lg p-2 text-md/6 hover:text-[#54c1e5]"
                   >
                     <div className="relative flex size-11 flex-none flex-col items-center justify-center rounded-lg text-orange-500 group-hover:bg-white">
+                      {/* {(item.name === "CoreLess Machine Film" ||
+                        item.name === "ELEVATION 67 Machine Film") && (
+                        <div>
+                          <RainbowNewLogo />
+                        </div>
+                      )} */}
                       <item.icon
                         aria-hidden="true"
                         className="size-6 text-gray-600 group-hover:text-indigo-600"
                       />
-                      {(item.name === "CoreLess Machine Film" ||
-                        item.name === "ELEVATION 67 Machine Film") && (
-                        <div className="absolute">
-                          <RainbowNewLogo />
-                        </div>
-                      )}
                     </div>
                     <div className="flex-auto">
                       <Link
@@ -347,12 +308,12 @@ export default function Header() {
                         className="relative block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:text-[#54c1e5] flex gap-5 items-center"
                       >
                         {item.name}
-                        {(item.name === "CoreLess Machine Film" ||
+                        {/* {(item.name === "CoreLess Machine Film" ||
                           item.name === "ELEVATION 67 Machine Film") && (
                           <div className="">
                             <RainbowNewLogo />
                           </div>
-                        )}
+                        )} */}
                       </DisclosureButton>
                     ))}
                   </DisclosurePanel>

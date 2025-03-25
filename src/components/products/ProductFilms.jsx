@@ -18,6 +18,7 @@ const categories = [
 
 const ProductFilms = () => {
   const [current, setCurrent] = useState("all");
+  const [isDownload, setIsDownload] = useState(true);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -29,16 +30,22 @@ const ProductFilms = () => {
   return (
     <div>
       <HeaderSlot
-        imgSrc="/assets/images/film.webp"
-        title="films"
+        imgSrc={"/assets/images/film.webp"}
+        title={"films"}
         router={[
-          { title: "home", src: "/" },
-          { title: "products", src: "/products/films" },
+          {
+            title: "home",
+            src: "/",
+          },
+          {
+            title: "products",
+            src: "/products/films",
+          },
           "films",
         ]}
       />
       <div className="flex justify-center lg:py-[90px] py-[50px]">
-        <div className="max-w-[1200px] w-[1200px]">
+        <div className="max-w-[1200px] w-[1200px] ">
           <div className="lg:grid lg:grid-cols-5 gap-4 flex flex-col items-center lg:items-start">
             <div className="col-span-4 px-[15px]">
               <div className="mb-[50px] flex flex-col items-center">
@@ -71,37 +78,53 @@ const ProductFilms = () => {
                   </div>
                 )}
               </div>
+              <div className="flex text-[#151515] justify-center"></div>
             </div>
-            <div className="flex flex-col gap-5 px-[30px] md:w-[50%] lg:w-[100%] justify-center animate-fade animate-duration-1000 animate-delay-1000 animate-ease-linear">
-              <Link to="/representative" className="flex justify-center">
-                <img
-                  src="/assets/images/representative/imgtopbannerblue.jpg"
-                  className="object-cover"
-                />
-              </Link>
-              <Link to="/download">
-                <div className="bg-[#54c1e5] text-white hover:bg-[#eeaf5e] hover:text-black flex p-[20px] gap-5 justify-center items-center transition-all duration-300 ease-in">
-                  <div className="flex flex-col items-center">
-                    <p className="uppercase text-[15px] font-bold">
-                      Download Our
+            <div className="flex flex-col gap-5 md:px-0 px-[30px] md:w-[50%] lg:w-[100%] justify-center animate-fade animate-duration-1000 animate-delay-1000 animate-ease-linear">
+              <div className="flex justify-center">
+                <Link to="/representative">
+                  <img
+                    src="/assets/images/representative/imgtopbannerblue.jpg"
+                    className="object-cover"
+                  />
+                </Link>
+              </div>
+              <Link to="/donwnload">
+                <div
+                  className="bg-[#54c1e5] text-[#ffffff] hover:bg-[#eeaf5e] hover:text-black flex p-[20px] gap-5 justify-center items-center transition-all duration-300 ease-in"
+                  onMouseEnter={() => setIsDownload(true)}
+                  onMouseLeave={() => setIsDownload(false)}
+                >
+                  <div className="flex flex-col items-center group-hover:animate-fade-up group-hover:animate-duration-300 group-hover:animate-ease-linear">
+                    <p className="uppercase text-[15px] font-bold text-center">
+                      download our
                     </p>
-                    <p className="uppercase text-[20px] font-extrabold tracking-[0.3em]">
-                      Catalog
+                    <p className="uppercase text-[20px] font-extrabold tracking-[0.3em] text-center">
+                      catalog
                     </p>
                   </div>
-                  <Download className="w-16 h-16 group-hover:hidden" />
-                  <FileText className="w-16 h-16 hidden group-hover:block" />
+                  {isDownload ? (
+                    <div className="">
+                      <Download className="w-12 h-12" />
+                    </div>
+                  ) : (
+                    <div className="group-hover:animate-duration-300 group-hover:animate-ease-linear">
+                      <FileText className="w-12 h-12" />
+                    </div>
+                  )}
                 </div>
               </Link>
               <div className="group">
-                <div className="bg-[#54c1e5] text-white p-[20px] gap-5 flex flex-col items-center hover:bg-[#eea660] hover:text-black transition-all duration-300 ease-linear">
-                  <p className="uppercase text-[20px] font-bold">
-                    Download Our
-                  </p>
-                  <p className="uppercase text-[22px] font-extrabold tracking-[0.3em]">
-                    Alliance App
-                  </p>
-                  <div className="flex flex-col items-center gap-5">
+                <div className="bg-[#54c1e5] text-[#ffffff] p-[20px] gap-5 flex flex-col justify-center items-center group-hover:bg-[#eea660] group-hover:text-black transition-all duration-300 ease-linear">
+                  <div className="flex flex-col items-center group-hover:animate-fade-up group-hover:animate-duration-300 group-hover:animate-ease-linear">
+                    <p className="uppercase text-[20px] font-bold text-center">
+                      download our
+                    </p>
+                    <p className="uppercase text-[22px] font-extrabold tracking-[0.3em] text-center">
+                      alliance app
+                    </p>
+                  </div>
+                  <div className="flex flex-col items-center justify-center gap-5">
                     <Link
                       to="https://itunes.apple.com/us/app/alliance-plastics/id959236111?mt=8"
                       target="_blank"

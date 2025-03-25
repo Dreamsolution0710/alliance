@@ -20,7 +20,7 @@ const options = [
 ];
 
 const Representative = () => {
-  const [selected, setSelected] = useState("Select an option");
+  const [selected, setSelected] = useState("Regional Sales Reps");
   const [isExpanded, setIsExpanded] = useState(false);
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.2 });
   const [isOpen, setIsOpen] = useState(false);
@@ -47,7 +47,7 @@ const Representative = () => {
     <div className="overflow-hidden min-h-[700px]">
       <HeaderSlot
         imgSrc={"/assets/images/representative1.webp"}
-        title={"United States of America"}
+        title={"locate a representative"}
         router={[
           {
             title: "home",
@@ -122,31 +122,30 @@ const Representative = () => {
                 </motion.div>
               </div>
               <div className="mx-[50px]">
-                {selected !== "Select an option" &&
-                  selected !== "Customer Expreience Reps" && (
-                    <motion.div
-                      ref={ref}
-                      className="mt-4 relative"
-                      initial={{ opacity: 0, y: 20 }}
-                      animate={inView ? { opacity: 1, y: 0 } : {}}
-                      transition={{ duration: 0.5, delay: 0.3 }}
-                    >
-                      <button
-                        onClick={() => setIsExpanded(!isExpanded)}
-                        className={`relative px-6 py-3 font-semibold text-white transition-all duration-300 rounded-lg shadow-lg overflow-hidden
+                {selected !== "Customer Expreience Reps" && (
+                  <motion.div
+                    ref={ref}
+                    className="mt-4 relative"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={inView ? { opacity: 1, y: 0 } : {}}
+                    transition={{ duration: 0.5, delay: 0.3 }}
+                  >
+                    <button
+                      onClick={() => setIsExpanded(!isExpanded)}
+                      className={`relative px-6 py-3 font-semibold text-white transition-all duration-300 rounded-lg shadow-lg overflow-hidden
           hover:scale-105 active:scale-95 shimmer-button`}
-                      >
-                        <span className="relative flex items-center gap-2">
-                          {isExpanded ? "Show Less" : "View More"}
-                          {isExpanded ? (
-                            <ChevronUpIcon className="w-5 h-5 text-white animate-bounce" />
-                          ) : (
-                            <ChevronDownIcon className="w-5 h-5 text-white animate-bounce" />
-                          )}
-                        </span>
-                      </button>
-                    </motion.div>
-                  )}
+                    >
+                      <span className="relative flex items-center gap-2">
+                        {isExpanded ? "Show Less" : "View More"}
+                        {isExpanded ? (
+                          <ChevronUpIcon className="w-5 h-5 text-white animate-bounce" />
+                        ) : (
+                          <ChevronDownIcon className="w-5 h-5 text-white animate-bounce" />
+                        )}
+                      </span>
+                    </button>
+                  </motion.div>
+                )}
               </div>
             </div>
             {selected === "Regional Sales Reps" && (
