@@ -4,6 +4,8 @@ import { Download, FileText } from "lucide-react";
 import films from "./../../assets/newProduct/films.json";
 import NewAddProductCard from "./NewAddProductCard";
 import HeaderSlot from "../utils/HeaderSlot";
+import EdgeGuardCard from "./EdgeGuardCard";
+import EdgeGuardCard1 from "./EdgeGuardCard1";
 
 const ProductFilms = () => {
   const [current, setCurrent] = useState("all");
@@ -86,6 +88,16 @@ const ProductFilms = () => {
                   >
                     Specialty
                   </li>
+                  <li
+                    className={`px-[25px] mb-[10px] hover:text-[#54c1e5] cursor-pointer ${
+                      current === "edgeguard"
+                        ? "text-[#54c1e5] border-b-2 md:border-0 border-[#54c1e5]"
+                        : ""
+                    } transition-all duration-300 ease-linear`}
+                    onClick={() => setCurrent("edgeguard")}
+                  >
+                    Edgeguard
+                  </li>
                 </ul>
                 {current === "all"
                   ? films.map((film, index) => (
@@ -110,6 +122,14 @@ const ProductFilms = () => {
                           current={current}
                         />
                       ))}
+                {(current === "sustainable" ||
+                  current === "edgeguard" ||
+                  current === "all") && (
+                  <div className="flex flex-col">
+                    <EdgeGuardCard />
+                    <EdgeGuardCard1 />
+                  </div>
+                )}
               </div>
               <div className="flex text-[#151515] justify-center"></div>
             </div>

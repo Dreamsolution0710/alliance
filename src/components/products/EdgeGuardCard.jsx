@@ -15,7 +15,7 @@ const EdgeGuardCard = () => {
         "opacity-100 animate-fade-up animate-duration-300 animate-ease-linear"
       }`}
     >
-      <div className="group flex justify-center  items-center">
+      <div className="group flex justify-center  items-center  flex-col md:flex-row">
         <img
           src={"/assets/images/AddProducts/edgeguard_dxl.png"}
           height={"480px"}
@@ -26,21 +26,6 @@ const EdgeGuardCard = () => {
           className="object-cover md:min-w-[450px]"
         />
       </div>
-      {/* <div className="m-[30px] text-[#151515] flex flex-col relative overflow-hidden">
-        <div>
-          <h5 className="lg:text-[36px] text-[24px] mb-[20px]">{title}</h5>
-          <p className="text-wrap">{content}</p>
-        </div>
-
-        {pathView !== "/coming" && (
-          <Link
-            className="absolute right-0 bottom-0 text-[#151515] hover:text-[#54c1e5]"
-            to={pathView}
-          >
-            View More
-          </Link>
-        )}
-      </div> */}
     </div>
   );
 };

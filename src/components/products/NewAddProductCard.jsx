@@ -42,15 +42,15 @@ const NewAddProductCard = ({
         </button>
       </div>
 
-      <div className="flex justify-center items-center md:w-[60%] w-[100%]">
+      <div className="md:w-[55%] w-[100%]">
         <img
           src={mainSrc}
           width={"100%"}
-          className={`object-cover h-full w-full min-w-[400px]`}
+          className={`object-cover min-w-[400px] lg:max-w-[476px] md:max-w-[416px]`}
         />
       </div>
 
-      <div className="m-[30px] text-[#151515] flex flex-col justify-center items-center relative overflow-hidden md:w-[40%]">
+      <div className="m-[30px] text-[#151515] flex flex-col justify-center items-center relative overflow-hidden md:w-[45%]">
         <img
           src={markSrc}
           width={"100px"}

@@ -16,7 +16,7 @@ import {
   Bars3Icon,
   CalculatorIcon,
   ChartPieIcon,
-  CursorArrowRaysIcon,
+  CubeTransparentIcon,
   RectangleGroupIcon,
   SparklesIcon,
   UsersIcon,
@@ -25,6 +25,7 @@ import {
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import { FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import "./../landingpage/style.css";
+import RainbowNewLogo from "./RainbowNewLogo";
 
 const products = [
   {
@@ -51,12 +52,12 @@ const company = [
     icon: CalculatorIcon,
   },
   {
-    name: "Learn About Our Commitment To Duty",
+    name: "CoreLess Machine Film",
     href: "/commitment",
-    icon: CursorArrowRaysIcon,
+    icon: CubeTransparentIcon,
   },
   {
-    name: "Nano 67",
+    name: "ELEVATION 67 Machine Film",
     href: "/nanotech",
     icon: SparklesIcon,
   },
@@ -134,7 +135,14 @@ export default function Header() {
           >
             Home
           </Link>
-          <Popover className="relative">
+          <Link
+            to="/products/films"
+            className="text-md/6 font-semibold text-gray-900 hover:text-[#54c1e5]"
+          >
+            Products
+          </Link>
+
+          {/* <Popover className="relative">
             <PopoverButton className="flex items-center gap-x-1 text-md/6 font-semibold text-gray-900 hover:text-[#54c1e5]  hover:cursor-pointer outline-none">
               Products
               <ChevronDownIcon
@@ -166,13 +174,13 @@ export default function Header() {
                       >
                         {item.name}
                         {/* <span className="absolute inset-0" /> */}
-                      </Link>
+          {/* </Link>
                     </div>
                   </div>
                 ))}
               </div>
             </PopoverPanel>
-          </Popover>
+          </Popover> */}
           <Popover className="relative">
             <PopoverButton className="flex items-center gap-x-1 text-md/6 font-semibold text-gray-900 hover:text-[#54c1e5]  hover:cursor-pointer outline-none">
               Our Company
@@ -192,11 +200,17 @@ export default function Header() {
                     key={item.name}
                     className="group relative flex items-center gap-x-4 rounded-lg p-2 text-md/6 hover:text-[#54c1e5]"
                   >
-                    <div className="flex size-11 flex-none items-center justify-center rounded-lg text-orange-500 group-hover:bg-white">
+                    <div className="relative flex size-11 flex-none flex-col items-center justify-center rounded-lg text-orange-500 group-hover:bg-white">
                       <item.icon
                         aria-hidden="true"
                         className="size-6 text-gray-600 group-hover:text-indigo-600"
                       />
+                      {(item.name === "CoreLess Machine Film" ||
+                        item.name === "ELEVATION 67 Machine Film") && (
+                        <div className="absolute">
+                          <RainbowNewLogo />
+                        </div>
+                      )}
                     </div>
                     <div className="flex-auto">
                       <Link
@@ -330,9 +344,15 @@ export default function Header() {
                         key={item.name}
                         as="a"
                         href={item.href}
-                        className="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:text-[#54c1e5]"
+                        className="relative block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:text-[#54c1e5] flex gap-5 items-center"
                       >
                         {item.name}
+                        {(item.name === "CoreLess Machine Film" ||
+                          item.name === "ELEVATION 67 Machine Film") && (
+                          <div className="">
+                            <RainbowNewLogo />
+                          </div>
+                        )}
                       </DisclosureButton>
                     ))}
                   </DisclosurePanel>
