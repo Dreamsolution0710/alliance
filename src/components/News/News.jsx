@@ -14,7 +14,7 @@ const News = () => {
   }, []);
 
   return (
-    <div>
+    <div className="bg-white">
       <HeaderSlot
         imgSrc={"/assets/images/download.webp"}
         title={"news"}

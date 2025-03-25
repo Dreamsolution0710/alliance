@@ -57,7 +57,7 @@ const company = [
     icon: CubeTransparentIcon,
   },
   {
-    name: "ELEVATION 67 Machine Film",
+    name: "Elevation 67 Machine Film",
     href: "/nanotech",
     icon: SparklesIcon,
   },

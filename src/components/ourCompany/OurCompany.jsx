@@ -105,7 +105,7 @@ const OurCompany = () => {
   }, []);
 
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-hidden bg-white">
       <HeaderSlot
         imgSrc={"/assets/images/aboutus.webp"}
         title={"about us"}
@@ -343,7 +343,7 @@ const OurCompany = () => {
                     style={{
                       animationDelay: isInView3 ? `${index * 200}ms` : "0ms",
                       width: "270px",
-                      height: "365px",
+                      height: "400px",
                     }}
                   >
                     <MemberCard

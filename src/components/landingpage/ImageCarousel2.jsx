@@ -40,16 +40,16 @@ const images = [
     src: "/assets/images/horizontal_image/carouse_image1(10).jpeg",
   },
   {
-    src: "/assets/images/horizontal_image/carouse_image1(11).jpeg",
+    src: "/assets/images/horizontal_image/carouse_image1(11).webp",
   },
   {
-    src: "/assets/images/horizontal_image/carouse_image1(12).jpeg",
+    src: "/assets/images/horizontal_image/carouse_image1(12).webp",
   },
   {
-    src: "/assets/images/horizontal_image/carouse_image1(13).jpeg",
+    src: "/assets/images/horizontal_image/carouse_image1(13).webp",
   },
   {
-    src: "/assets/images/horizontal_image/carouse_image1(14).jpeg",
+    src: "/assets/images/horizontal_image/carouse_image1(14).webp",
   },
 ];
 
@@ -73,16 +73,16 @@ const ImageCarousel2 = () => {
         slidesPerView={1}
         dir="rtl"
         spaceBetween={10}
-        loop = {true}
+        loop={true}
         autoplay={{ delay: 2500, disableOnInteraction: false }}
         modules={[Grid, Pagination, Autoplay]}
         className="w-full px-4"
         breakpoints={{
           640: {
-            slidesPerView: 2, // For medium screens (md)
+            slidesPerView: 3, // For medium screens (md)
           },
           1024: {
-            slidesPerView: 3, // For large screens (lg)
+            slidesPerView: 6, // For large screens (lg)
           },
         }}
       >

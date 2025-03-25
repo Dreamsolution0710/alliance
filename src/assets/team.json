@@ -1,21 +1,100 @@
 [
   {
     "src": "/assets/images/team/ron.jpg",
-    "position": "President",
+    "position": "President, Alliance Plastics",
     "name": "Ron Grubbs",
     "email": "ron@allianceplastics.net"
   },
   {
+    "src": "/assets/images/team/troy.png",
+    "position": "President, Alliance Films",
+    "name": "Troy Wolf",
+    "email": "troy@allianceplastics.net"
+  },
+  {
     "src": "/assets/images/team/Gale-Marcus-AP.png",
-    "position": "West coast manager",
+    "position": "VP of National Accounts/West Coast",
     "name": "Gale marcus",
     "email": "gale@allianceplastics.net"
   },
   {
+    "src": "/assets/images/team/marcd.jpg",
+    "position": "Vice President",
+    "name": "Marc Delatte",
+    "email": "marc@allianceplastics.net"
+  },
+  {
+    "src": "/assets/images/team/chuck.png",
+    "position": "VP of Sales, East Coast/Midwest",
+    "name": "Chuck Magee",
+    "email": "chuck@allianceplastics.net"
+  },
+  {
+    "src": "/assets/images/team/russ.png",
+    "position": "VP of Sales, East Coast/Midwest",
+    "name": "Russ Vossen",
+    "email": "russ@allianceplastics.net"
+  },
+  {
     "src": "/assets/images/team/erik.png",
-    "position": "Regional sales manager ",
+    "position": "MideWest Manager ",
     "name": "Eric Baranczyk",
     "email": "eric@allianceplastics.net"
+  },
+  {
+    "src": "/assets/images/team/matthew.png",
+    "position": "Southwest/Midsouth Manager ",
+    "name": "Matthew Mondelli",
+    "email": "matt@allianceplastics.net"
+  },
+
+  {
+    "src": "/assets/images/team/yvone.jpg",
+    "position": "Inside Sales(GM)",
+    "name": "Yvonne Valentin",
+    "email": "yvonne@allianceplastics.net"
+  },
+  {
+    "src": "/assets/images/team/wanda.png",
+    "position": "Customer service representative",
+    "name": "Wanda King",
+    "email": "nikki@allianceplastics.net"
+  },
+  {
+    "src": "/assets/images/team/ian.png",
+    "position": "Inside Sales Rep",
+    "name": "Ian Salazar",
+    "email": "films@allianceplastics.net"
+  },
+  {
+    "src": "/assets/images/team/nikki.jpg",
+    "position": "CSR West/Southwest",
+    "name": "Nikki Pressley",
+    "email": "nikki@allianceplastics.net"
+  },
+  {
+    "src": "/assets/images/team/miguel.png",
+    "position": "CSR Southeast",
+    "name": "Miguel Heredia",
+    "email": "csr2@allianceplastics.net"
+  },
+  {
+    "src": "/assets/images/team/karen.png",
+    "position": "CSR West / Southwest",
+    "name": "Karen Cerreño",
+    "email": "csr3@allianceplastics.net"
+  },
+  {
+    "src": "/assets/images/team/Geraldine.jpg",
+    "position": "Customer Support Specialist",
+    "name": "Geraldine Aguilar",
+    "email": "csr1@allianceplastics.net"
+  },
+  {
+    "src": "/assets/images/team/taranew.jpg",
+    "position": "Csr, midwest region",
+    "name": "Tara Wilson",
+    "email": "tara@allianceplastics.net"
   },
   {
     "src": "/assets/images/team/sarah.jpg",
@@ -24,29 +103,12 @@
     "email": "lisa@allianceplastics.net"
   },
   {
-    "src": "/assets/images/team/marcd.jpg",
-    "position": "Regional sales manager",
-    "name": "Marc Delatte",
-    "email": "marc@allianceplastics.net"
-  },
-  {
     "src": "/assets/images/team/danielrivas.jpg",
     "position": "Quality control",
     "name": "Daniel Rivas",
     "email": ""
   },
-  {
-    "src": "/assets/images/team/nikki.jpg",
-    "position": "Customer service representative",
-    "name": "Nikki Pressley",
-    "email": "nikki@allianceplastics.net"
-  },
-  {
-    "src": "/assets/images/team/Geraldine.jpg",
-    "position": "Customer Support Specialist",
-    "name": "Geraldine Aguilar",
-    "email": "csr1@allianceplastics.net"
-  },
+
   {
     "src": "/assets/images/team/lucas.jpg",
     "position": "Maintenance manager",
@@ -59,23 +121,12 @@
     "name": "Rocco Burgos",
     "email": "rburgos@allianceplastics.net"
   },
-  {
-    "src": "/assets/images/team/taranew.jpg",
-    "position": "Csr, midwest region",
-    "name": "Tara Wilson",
-    "email": "tara@allianceplastics.net"
-  },
+
   {
     "src": "/assets/images/team/donlong.jpg",
     "position": "Facility manager",
     "name": "Don Long",
     "email": "don@allianceplastics.net"
-  },
-  {
-    "src": "/assets/images/team/yvone.jpg",
-    "position": "Regional sales manager",
-    "name": "Yvonne Valentin",
-    "email": "yvonne@allianceplastics.net"
   },
   {
     "src": "/assets/images/team/michaela.jpg",

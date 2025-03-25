@@ -140,7 +140,7 @@ const NanoTechnology = () => {
     <div className="relative overflow-hidden">
       <HeaderSlot
         imgSrc={"/assets/images/nano67.webp"}
-        title={"Nano 67"}
+        title={"Elevation 67 Machine Film"}
         router={[
           {
             title: "home",
@@ -153,7 +153,7 @@ const NanoTechnology = () => {
           "Nano 67",
         ]}
       />
-      <div className="flex justify-center bg-white">
+      <div className="flex justify-center bg-white py-[50px]">
         <div className="max-w-[1200px] w-full">
           <div ref={summaryRef}>
             <div className="mt-[50px]">
@@ -722,7 +722,7 @@ const NanoTechnology = () => {
 
               {/* Description */}
               <motion.div
-                className="flex items-center justify-center mt-5"// Reference for intersection observer
+                className="flex items-center justify-center mt-5" // Reference for intersection observer
                 initial={{ opacity: 0 }}
                 animate={{ opacity: titleInView ? 1 : 0 }}
                 exit={{ opacity: 0 }}

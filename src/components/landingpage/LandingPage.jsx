@@ -22,6 +22,7 @@ import ServicesSection from "./ServicesSection";
 import ImageCarousel1 from "./ImageCarousel1";
 import ImageCarousel2 from "./ImageCarousel2";
 import teams from "/src/assets/team.json";
+import Sustainability from "./Sustainability";
 
 const colors = ["bg-gray-100", "bg-sky-300", "bg-orange-300"];
 
@@ -48,11 +49,7 @@ const slides = [
 
 export default function LandingPage() {
   const [colorIndex, setColorIndex] = useState(0);
-  const [currentSlide, setCurrentSlide] = useState(0);
 
-  const [ref1, isInview1] = useInView(0.1);
-  const [ref2, isInview2] = useInView(0.3);
-  const [ref3, isInview3] = useInView(0.1);
   const [ref4, isInview4] = useInView(0.1);
 
   useEffect(() => {
@@ -67,50 +64,50 @@ export default function LandingPage() {
   }, []);
 
   return (
-    <div className="relative bg-white z-10 overflow-hidden">
+    <div className="relative z-10 overflow-hidden">
       <HeaderCarousels className="mySwiper1" />
-      <ServicesSection />
+      <div className="flex justify-center items-center bg-white py-[70px]">
+        <ServicesSection />
+      </div>
 
+      <div className="flex justify-center items-center bg-[rgba(255,255,255,0.8)]">
+        <Sustainability />
+      </div>
       <ToolsComponent />
       {/* our team*/}
-      <div>
-        <div className="hidden lg:flex lg:justify-center lg:my-[100px]">
+
+      <div className="bg-white">
+        <div className="hidden lg:flex lg:justify-center lg:py-[70px]">
           <div className="max-w-[1200px]">
             <div
               className="grid grid-cols-4 gap-5 flex flex-col text-left"
               ref={ref4}
             >
               {/* Team's header */}
-              <div className="mb-[30px] px-[15px] w-auto mt-[30px] w-full">
+              <div className="mb-[30px] px-[15px] w-auto mt-[30px] w-full text-[#151515]">
                 <div>
-                  <h3
-                    className={`uppercase text-[#151515] text-[44px] leading-[1.22727] font-normal tracking-[0.1em] ${
-                      isInview4
-                        ? "animate-fade-right animate-duration-300 animate-ease-in-out"
-                        : ""
-                    }`}
-                  >
-                    our team
-                  </h3>
+                  <h2 className="text-4xl font-bold uppercase tracking-wide relative">
+                    Our Team
+                  </h2>
                   <h6
                     className={`${
                       isInview4
                         ? "animate-fade-left animate-duration-300 animate-ease-in-out animate-delay-200"
                         : ""
-                    } uppercase text-[#54c1e5] mt-[22px] font-normal tracking-[0.05em] leading-[1.33333]`}
+                    } uppercase text-[#1977cc] mt-[22px] tracking-[0.05em] leading-[1.33333] text-xl font-medium`}
                   >
                     Dedicated Packaging Experts
                   </h6>
                   <p
-                    className={`text-[#777777] mt-[24px] text-[15px] ${
+                    className={`text-[#777777] mt-[24px] text-[18px] ${
                       isInview4
-                        ? "animate-fade-right animate-duration-300 animate-ease-in-out animate-delay-500"
+                        ? "animate-fade-right animate-duration-300 animate-ease-in-out animate-delay-500 text-lg"
                         : ""
                     }`}
                   >
-                    Alliance Plastics is a dedicated team focused on service,
-                    quality, and innovation, providing flexible solutions and
-                    strong partnerships to support distributor success.
+                    Alliance Plastics delivers service, quality, and
+                    innovation—offering flexible solutions and strong
+                    partnerships for distributors.
                   </p>
                 </div>
                 <div className={`flex gap-4 mt-[35px]`}>
@@ -172,7 +169,7 @@ export default function LandingPage() {
                   {teams.map((member, index) => (
                     <SwiperSlide
                       key={index}
-                      style={{ width: "270px", height: "365px" }}
+                      style={{ width: "270px", height: "400px" }}
                     >
                       <MemberCard
                         position={member.position}
@@ -195,11 +192,12 @@ export default function LandingPage() {
                   our team
                 </h3>
                 <h6 className="uppercase text-[#eeaF520] mt-[22px] font-normal tracking-[0.05em] text-[#eeaf5e] leading-[1.33333]">
-                  professional mining management
+                  Dedicated Packaging Experts
                 </h6>
                 <p className="text-[#777777] mt-[24px] text-[15px] tracking-widest">
-                  Minerals is a team of dedicated mining professionals with more
-                  than 20 years of experience
+                  Alliance Plastics delivers service, quality, and
+                  innovation—offering flexible solutions and strong partnerships
+                  for distributors.
                 </p>
               </div>
               <div className="flex gap-5 mt-[35px] justify-center">
@@ -254,10 +252,10 @@ export default function LandingPage() {
           </div>
         </div>
       </div>
-
-      <ImageCarousel1 />
-      <div className="mt-2"></div>
-      <ImageCarousel2 />
+      <div className="py-[70px] flex flex-col gap-2 bg-white">
+        <ImageCarousel1 />
+        <ImageCarousel2 />
+      </div>
       {/* <div className="pb-[100px]">
         <div>
           <h1 className="text-gray-900 uppercase text-4xl text-center mb-20">

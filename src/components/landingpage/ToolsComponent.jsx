@@ -5,7 +5,7 @@ import { useInView } from "react-intersection-observer";
 
 const slides = [
   {
-    title: "WE ARE ALLIANCE PLASITICS",
+    title: "We are Alliance Plastics",
     text: "Alliance Plastics is a Veteran-Owned company focused on building strong relationships with partners, offering innovative products and services with nationwide reach, integrity, quality, and efficiency.",
     path: "/ourcompany",
     section: "ABOUT US",
@@ -17,7 +17,7 @@ const slides = [
     section: "ALLIANCE ACADEMY",
   },
   {
-    title: "NEWS",
+    title: "News",
     text: "Sign up to get interesting news and updates delivered to your inbox.",
     path: "/news",
     section: "NEWS",
@@ -28,8 +28,8 @@ const ToolsComponent = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [animationKey, setAnimationKey] = useState(0);
   const [ref3, isInview3] = useInView({
-    threshold: 0.1,
-    triggerOnce: false,
+    threshold: 0.2,
+    triggerOnce: true,
   });
 
   const handleSlideChange = (index) => {
@@ -43,7 +43,7 @@ const ToolsComponent = () => {
   };
 
   return (
-    <div className="relative w-full overflow-hidden flex flex-col lg:flex-row">
+    <div className="relative w-full overflow-hidden flex flex-col lg:flex-row h-120">
       {/* Left Side - Image */}
       <img
         src="/assets/images/1280x768images/image5.jpg"
@@ -53,11 +53,11 @@ const ToolsComponent = () => {
       />
       <div className="z-[3] lg:w-1/2 flex flex-col-reverse lg:flex-row">
         {/* Middle Side - Text */}
-        <div className="w-full lg:w-3/5 bg-gray-100 flex flex-col justify-center p-6">
+        <div className="w-full lg:w-3/5 flex flex-col justify-center p-6">
           <h2
             key={`title-${animationKey}`}
             ref={ref3}
-            className={`font-playfair text-2xl md:text-4xl text-transparent opacity-0 tracking-[0.2em] text-center lg:text-left transition-all duration-700 ease-in-out leading-relaxed ${
+            className={`text-2xl md:text-4xl text-transparent opacity-0 tracking-wide text-center lg:text-left transition-all duration-700 ease-in-out leading-relaxed ${
               isInview3
                 ? "animate-fade-down animate-duration-700 opacity-100 translate-y-0 animate-ease-in-out animate-delay-200 bg-gradient-to-r from-sky-600 to-sky-400 bg-clip-text font-semibold"
                 : ""
@@ -68,7 +68,7 @@ const ToolsComponent = () => {
           <p
             key={`text-${animationKey}`}
             ref={ref3}
-            className={`font-poppins text-base md:text-lg text-gray-600 mt-8 opacity-0 text-center lg:text-left transition-all duration-700 ease-in-out leading-loose tracking-wider ${
+            className={`text-base md:text-lg text-gray-600 mt-8 opacity-0 text-center lg:text-left transition-all duration-700 ease-in-out leading-loose tracking-wider ${
               isInview3
                 ? "animate-fade animate-duration-500 opacity-100 translate-y-0 animate-ease-in-out animate-delay-300"
                 : ""
@@ -86,7 +86,7 @@ const ToolsComponent = () => {
                 : ""
             }`}
           >
-            <p className="font-poppins bg-gradient-to-r from-sky-500 to-sky-400 tracking-[0.25em] font-bold group-hover:from-sky-400 group-hover:to-sky-500 text-white px-12 py-6 transition-all duration-500 ease-in-out flex items-center text-sm md:text-base max-h-[72px] hover:shadow-xl ">
+            <p className="bg-gradient-to-r from-sky-500 to-sky-400 tracking-[0.25em] font-bold group-hover:from-sky-400 group-hover:to-sky-500 text-white px-12 py-6 transition-all duration-500 ease-in-out flex items-center text-sm md:text-base max-h-[72px] hover:shadow-xl ">
               READ MORE
             </p>
             <span className="group-hover:bg-sky-500 bg-[#54c1e5] p-6 transition-all duration-500 ease-in-out flex items-center justify-center hover:shadow-xl  bg-gradient-to-r from-sky-400 to-sky-500 group-hover:from-sky-500 group-hover:to-sky-400 border-l-1">

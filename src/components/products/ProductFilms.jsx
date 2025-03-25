@@ -41,7 +41,7 @@ const ProductFilms = () => {
           "Productssss",
         ]}
       />
-      <div className="flex justify-center lg:py-[90px] py-[50px]">
+      <div className="flex justify-center lg:py-[90px] py-[50px] bg-white">
         <div className="max-w-[1200px] w-[1200px] ">
           <div className="lg:grid lg:grid-cols-5 gap-4 flex flex-col items-center lg:items-start">
             <div className="col-span-4 px-[15px]">

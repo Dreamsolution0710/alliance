@@ -41,7 +41,7 @@ const Calculator = () => {
     setSelectedTag("weight per roll");
   }, []);
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-hidden bg-white">
       <HeaderSlot
         imgSrc={"/assets/images/calculator.webp"}
         title={"calculator"}

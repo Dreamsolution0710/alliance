@@ -44,7 +44,7 @@ const Representative = () => {
   }, [selected]);
 
   return (
-    <div className="overflow-hidden min-h-[700px]">
+    <div className="overflow-hidden  bg-white">
       <HeaderSlot
         imgSrc={"/assets/images/representative1.webp"}
         title={"locate a representative"}
@@ -161,6 +161,19 @@ const Representative = () => {
                       <img src="/assets/images/representative/USA_map.png" />
                     </motion.div>
                     <div className="md:grid md:grid-cols-2 gap-30 flex justify-center items-center flex-col">
+                      <motion.div className="lg:absolute lg:-top-[5%] lg:-left-[15%]">
+                        <ContactCard
+                          photo={
+                            "/assets/images/representative/representative/Gale-Marcus-AP.png"
+                          }
+                          name="Gale Marcus"
+                          email="gale@allianceplastics.net"
+                          phone="(818) 613-2500"
+                          bgColor="bg-[#113788]"
+                          borderColor="border-[#113788]"
+                          delay={1}
+                        />
+                      </motion.div>
                       <motion.div className="lg:absolute lg:top-[40%] lg:-left-[15%]">
                         <ContactCard
                           photo={
@@ -171,7 +184,20 @@ const Representative = () => {
                           phone="(775) 895-6448"
                           bgColor="bg-[#113788]"
                           borderColor="border-[#113788]"
-                          delay={1}
+                          delay={2}
+                        />
+                      </motion.div>
+                      <motion.div className="lg:absolute lg:-bottom-[10%] lg:-left-[15%]">
+                        <ContactCard
+                          photo={
+                            "/assets/images/representative/representative/ron.png"
+                          }
+                          name="Ron Grubbs"
+                          email="ron@allianceplastics.net"
+                          phone="(704) 942-1627"
+                          bgColor="bg-[#073763]"
+                          borderColor="border-[#073763]"
+                          delay={3}
                         />
                       </motion.div>
                       <motion.div className="lg:absolute lg:-top-[20%] lg:right-[20%]">
@@ -184,7 +210,7 @@ const Representative = () => {
                           phone="(920) 639-1950"
                           bgColor="bg-[#1163C0]"
                           borderColor="border-[#1163C0]"
-                          delay={2}
+                          delay={4}
                         />
                       </motion.div>
                       <motion.div className="lg:absolute lg:top-[30%] lg:-right-[15%] ">
@@ -197,7 +223,7 @@ const Representative = () => {
                           phone="(704) 962-7168"
                           bgColor="bg-[#3D85C6]"
                           borderColor="border-[#3D85C6]"
-                          delay={3}
+                          delay={5}
                         />
                       </motion.div>
                       <motion.div className="lg:absolute lg:-bottom-[15%] lg:-right-[5%]">
@@ -210,7 +236,7 @@ const Representative = () => {
                           phone="(615) 977-7247"
                           bgColor="bg-[#46BFFF]"
                           borderColor="border-[#46BFFF]"
-                          delay={4}
+                          delay={6}
                         />
                       </motion.div>
                     </div>
@@ -273,9 +299,9 @@ const Representative = () => {
                       <motion.div className="lg:absolute lg:bottom-[20%] lg:-right-[10%]">
                         <ContactCard
                           photo={
-                            "/assets/images/representative/representative/yvone.jpg"
+                            "/assets/images/representative/representative/wanda.png"
                           }
-                          name="Yvonne Valentin"
+                          name="Wanda King"
                           email="yvonne@allianceplastics.net"
                           phone="(704) 774-0193"
                           bgColor="bg-[#3D85C6]"
@@ -286,7 +312,7 @@ const Representative = () => {
                     </div>
                   </div>
                 ) : (
-                  <div className="lg:grid lg:grid-cols-2 flex flex-col justify-center items-center">
+                  <div className="lg:grid lg:grid-cols-3 flex flex-col justify-center items-center">
                     {csrList.map((oneCsr, index) => (
                       <ContactDetailCard
                         photo={oneCsr.photo}

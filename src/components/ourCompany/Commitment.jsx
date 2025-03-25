@@ -62,11 +62,11 @@ const Commitment = () => {
     }),
   };
   return (
-    <div className=" overflow-hidden">
+    <div className=" overflow-hidden bg-white">
       {/* <div className="bg-[url(/assets/images/headerslides/headerslide3.png)] bg-no-repeat  fixed  z-[-1] w-[1000%] h-[1000%]"></div> */}
       <HeaderSlot
         imgSrc={"/assets/images/sustainable.webp"}
-        title={"Learn About Our Commitment To Duty"}
+        title={"Coreless Machine film"}
         router={[
           {
             title: "home",

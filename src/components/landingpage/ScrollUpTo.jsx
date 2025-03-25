@@ -35,7 +35,7 @@ const ScrollUpTo = () => {
   }, [scrollY]);
 
   return (
-    <div className="bg-white">
+    <div className="w-fit">
       <button
         className={`invisible ${
           scrollY < 500 ? "" : "visible"
@@ -44,7 +44,6 @@ const ScrollUpTo = () => {
       >
         <ArrowUpIcon className="text-white w-8 h-8" />
       </button>
-      ;
     </div>
   );
 };

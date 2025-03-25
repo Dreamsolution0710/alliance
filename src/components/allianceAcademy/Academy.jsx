@@ -82,7 +82,7 @@ const Academy = () => {
   }, []);
 
   return (
-    <div>
+    <div className="bg-white">
       <HeaderSlot
         imgSrc={"/assets/images/academy.webp"}
         title={"Alliance Academy"}

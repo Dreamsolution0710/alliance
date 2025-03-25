@@ -150,7 +150,7 @@ const HeaderCarousels = () => {
               }}
             >
               <p
-                className="text-lg md:text-2xl font-bold uppercase py-5 text-white bg-clip-text bg-gradient-to-r from-white to-white/80 tracking-[0.15em] transform hover:scale-105 transition-all duration-500 ease-in-out font-poppins opacity-0 animate-fade-up text-center"
+                className="text-lg md:text-2xl font-bold uppercase py-5 text-white bg-clip-text bg-gradient-to-r from-white to-white/80 tracking-[0.15em] transform hover:scale-105 transition-all duration-500 ease-in-out  opacity-0 animate-fade-up text-center"
                 style={{
                   animationDelay: "1700ms",
                   animationDuration: "800ms",
@@ -166,7 +166,7 @@ const HeaderCarousels = () => {
                   ))}
               </p>
               <h2
-                className="lg:text-4xl md:text-3xl uppercase text-3xl  font-extrabold text-center lg:mt-3 lg:my-4 leading-relaxed text-white bg-clip-text bg-gradient-to-r from-white to-white/80 tracking-[0.1em] transform hover:scale-105 transition-all duration-500 ease-in-out font-playfair opacity-0 animate-fade-up"
+                className="lg:text-4xl md:text-3xl uppercase text-3xl  font-extrabold text-center lg:mt-3 lg:my-4 leading-relaxed text-white bg-clip-text bg-gradient-to-r from-white to-white/80 tracking-[0.1em] transform hover:scale-105 transition-all duration-500 ease-in-out opacity-0 animate-fade-up"
                 style={{
                   animationDelay: "2500ms",
                   animationDuration: "800ms",
@@ -187,7 +187,7 @@ const HeaderCarousels = () => {
       </Swiper>
 
       {!allowPageScroll && (
-        <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-amber-200 font-poppins text-lg animate-bounce">
+        <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-amber-200  text-lg animate-bounce">
           Scroll down ↓
         </div>
       )}

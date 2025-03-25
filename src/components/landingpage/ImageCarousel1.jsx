@@ -145,7 +145,7 @@ const ImageCarousel1 = () => {
   return (
     <div className=" flex items-center justify-center">
       <Swiper
-        slidesPerView={1}
+        slidesPerView={3}
         spaceBetween={10}
         autoplay={{ delay: 2500, disableOnInteraction: false }}
         modules={[Grid, Pagination, Autoplay]}
@@ -153,10 +153,10 @@ const ImageCarousel1 = () => {
         loop={true}
         breakpoints={{
           640: {
-            slidesPerView: 3, // For medium screens (md)
+            slidesPerView: 5, // For medium screens (md)
           },
           1024: {
-            slidesPerView: 5, // For large screens (lg)
+            slidesPerView: 10, // For large screens (lg)
           },
         }}
       >

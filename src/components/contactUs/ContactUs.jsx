@@ -179,7 +179,7 @@ const ContactUs = () => {
   };
 
   return (
-    <div>
+    <div className="bg-white">
       {isLoading && (
         <div className="fixed z-5 w-[100%] h-[100%] bg-[#5455] ">
           <div className="fixed top-[400px] left-[50%]">
