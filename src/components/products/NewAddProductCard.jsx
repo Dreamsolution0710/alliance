@@ -2,6 +2,9 @@ import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
+const imageStyles =
+  "object-cover w-full sm:max-w-[412px] sm:min-w-[412px] sm:max-h-[450px] sm:min-h-[450px] rounded-t-lg sm:rounded-none";
+
 const NewAddProductCard = ({
   mainSrc,
   markSrc,
@@ -10,10 +13,7 @@ const NewAddProductCard = ({
   current,
 }) => {
   const [isVisible, setIsVisible] = useState(false);
-  const { ref, inView } = useInView({
-    threshold: 0.2,
-    triggerOnce: true,
-  });
+  const { ref, inView } = useInView({ threshold: 0.2, triggerOnce: true });
 
   useEffect(() => {
     setIsVisible(false);
@@ -22,12 +22,9 @@ const NewAddProductCard = ({
   return (
     <motion.div
       ref={ref}
-      className="relative flex flex-col md:flex-row shadow-[0_0_8px_2px_rgba(0,0,0,0.09)] w-full my-[10px]"
+      className="relative flex flex-col sm:flex-row shadow-md w-full my-[10px] bg-white rounded-lg overflow-hidden"
       initial={{ opacity: 0, y: 100 }}
-      animate={{
-        opacity: inView ? 1 : 0,
-        y: inView ? 0 : 100,
-      }}
+      animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 100 }}
       transition={{
         opacity: { duration: 0.5 },
         y: { type: "spring", stiffness: 100, damping: 25 },
@@ -35,66 +32,52 @@ const NewAddProductCard = ({
     >
       <div className="absolute top-0 right-0 z-10">
         <button
-          className="uppercase bg-[#1977cc] border-2 border-[#1977cc] transition-all duration-300 ease-linear pl-10 pr-7 py-3 rounded-bl-full text-[24px] font-bold text-white cursor-pointer hover:bg-white hover:text-[#1977cc] active:translate-y-1 active:transition-x-1"
+          className="uppercase bg-[#1977cc] border-2 border-[#1977cc] transition-all duration-300 ease-linear px-6 py-2 rounded-bl-full text-lg font-bold text-white cursor-pointer hover:bg-white hover:text-[#1977cc] active:translate-y-1"
           onClick={() => setIsVisible(!isVisible)}
         >
-          {isVisible ? "back" : "view"}
+          {isVisible ? "Back" : "View"}
         </button>
       </div>
 
-      <div className="md:w-[55%] w-[100%]">
-        <img
-          src={mainSrc}
-          width={"100%"}
-          className={`object-cover min-w-[400px] lg:max-w-[476px] md:max-w-[416px]`}
-        />
-      </div>
+      <img src={mainSrc} className={imageStyles} alt="Product" />
 
-      <div className="m-[30px] text-[#151515] flex flex-col justify-center items-center relative overflow-hidden md:w-[45%]">
+      <div className="md:m-[20px] my-[20px] text-[#151515] flex flex-col justify-center items-center relative overflow-hidden w-full px-[15px] sm:px-[20px]">
         <img
           src={markSrc}
-          width={"100px"}
-          className="object-contain absolute top-0 left-0 max-h-[50px]"
+          width="120"
+          className="object-contain absolute top-0 left-0 max-h-[40px]"
+          alt="Mark"
         />
 
-        {/* Content Animation - shown when 'back' is clicked */}
         <motion.div
-          className="flex flex-col gap-5 mt-[50px]"
+          className="flex flex-col gap-4 mt-[40px]"
           initial={{ opacity: 0, y: 20 }}
-          animate={{
-            opacity: !isVisible ? 1 : 0, // Show content when not visible
-            y: !isVisible ? 0 : 20, // Slide up when showing content
-          }}
+          animate={{ opacity: isVisible ? 0 : 1, y: isVisible ? 20 : 0 }}
           transition={{ duration: 0.5 }}
         >
           {!isVisible && (
-            <p className="text-wrap text-[18px] tracking-[0.05em] leading-[1.8]">
+            <p className="text-wrap text-[16px] sm:text-[18px] tracking-wide leading-[1.6]">
               {content}
             </p>
           )}
         </motion.div>
 
-        {/* Features & Benefits Animation - shown when 'view' is clicked */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
-          animate={{
-            opacity: isVisible ? 1 : 0, // Show features when visible
-            y: isVisible ? 0 : 20, // Slide up when showing features
-          }}
+          animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 20 }}
           transition={{ duration: 0.5 }}
-          className="md:w-[-webkit-fill-available]"
+          className="w-full"
         >
           {isVisible && (
             <div>
-              <h5 className="text-[24px] bg-[#1977cc] w-fit py-[5px] px-[15px] text-white font-medium rounded-xl translate-y-[25px]">
+              <h5 className="text-lg sm:text-xl bg-[#1977cc] w-fit py-2 px-4 text-white font-medium rounded-lg translate-y-[20px]">
                 Features & Benefits
               </h5>
-              <div className="border-1 border-[#1977cc] rounded-2xl w-auto ">
-                <ul className="list-disc text-[18px] px-[30px] pt-[45px] pb-[30px]">
-                  {benefits &&
-                    benefits.map((benefit, index) => (
-                      <li key={index}>{benefit}</li>
-                    ))}
+              <div className="border border-[#1977cc] rounded-xl w-auto px-[15px] pb-[15px] pt-[25px] sm:px-[20px] sm:pb-[20px] sm:pt-[30px] bg-gray-50">
+                <ul className="list-disc text-[16px] sm:text-[18px] px-[10px] space-y-1">
+                  {benefits?.map((benefit, index) => (
+                    <li key={index}>{benefit}</li>
+                  ))}
                 </ul>
               </div>
             </div>
