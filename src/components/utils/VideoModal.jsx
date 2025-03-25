@@ -39,7 +39,7 @@ const VideoModal = () => {
       >
         <button
           onClick={() => setIsOpen(false)}
-          className="absolute top-2 right-2 text-white z-10 bg-black/50 p-2 rounded-full"
+          className="absolute top-2 right-2 text-white z-10 bg-black/50 p-2 rounded-full hover:cursor-pointer"
         >
           <X size={30} />
         </button>
