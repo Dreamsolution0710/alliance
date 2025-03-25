@@ -101,8 +101,11 @@ const HeaderSlot = ({ imgSrc, title, router }) => {
   return (
     <div>
       <div
-        className="relative py-[116px]"
-        style={{ backgroundImage: `url(${imgSrc})`, backgroundSize: "cover" }}
+        className={`relative py-[116px] bg-[url(${imgSrc})] lg:bg-cover mb:bg-contain bg-center bg-no-repeat `}
+        style={{
+          backgroundImage: `url(${imgSrc})`,
+          backgroundSize: "cover",
+        }}
       >
         <canvas
           ref={canvasRef}
@@ -110,10 +113,17 @@ const HeaderSlot = ({ imgSrc, title, router }) => {
         />
         <div className="flex items-center justify-center">
           <div className="max-w-[1200px] w-auto px-[15px] flex flex-col justify-center items-center">
-            <h3 className="text-[44px] text-white uppercase tracking-[0.1em] font-bold text-center">
+            <h3
+              className={`${
+                title ? "text-[44px]" : "py-[33px]"
+              } text-white uppercase tracking-[0.1em] font-bold text-center`}
+            >
               {title}
             </h3>
-            <div className="border-b-4 border-[rgba(255,255,255,0.6)] w-[64px] h-[44px]"></div>
+
+            <div
+              className={`border-b-4 border-[rgba(255,255,255,0.6)] w-[64px] h-[44px]`}
+            ></div>
           </div>
         </div>
       </div>
