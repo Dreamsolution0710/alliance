@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import { ArrowRightIcon } from "lucide-react";
 import HeaderSlot from "../utils/HeaderSlot";
 import ContactCard from "./ContactCard";
-import profilePic from "/assets/images/representative/yvone.jpg";
 import ContactDetailCard from "./ContactDetailCard";
 import { motion } from "framer-motion";
 import repContact from "/src/assets/representative/rep_contact_list.json";

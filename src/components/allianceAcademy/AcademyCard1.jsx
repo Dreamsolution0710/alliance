@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
+import { XMarkIcon } from "@heroicons/react/24/solid";
 
 const AcademyCard = ({ src, title, index, imgLink }) => {
   const { ref, inView: isInView } = useInView({ threshold: 0.01 });
@@ -59,17 +60,17 @@ const AcademyCard = ({ src, title, index, imgLink }) => {
       {isOpen && (
         <div
           className="fixed inset-0 bg-black/70 flex justify-center items-center z-150 overflow-auto"
-          onClick={closeModal} // Close modal when clicking outside
+          onClick={closeModal}
         >
           <div
             className="relative rounded-lg shadow-lg w-[90%] max-w-[800px] max-h-[90vh] flex flex-col items-center overflow-auto mt-10"
-            onClick={(e) => e.stopPropagation()} // Prevent closing when clicking inside
+            onClick={(e) => e.stopPropagation()}
           >
             <button
-              className="absolute top-2 right-2 text-white bg-red-500 rounded-full px-3 py-1 hover:cursor-pointer"
+              className="absolute top-2 right-2 text-white bg-[#1977cc] rounded-full p-2 hover:cursor-pointer"
               onClick={closeModal}
             >
-              X
+              <XMarkIcon className="w-6 h-6" />
             </button>
             <img src={imgLink} className="w-full h-auto object-contain" />
           </div>
