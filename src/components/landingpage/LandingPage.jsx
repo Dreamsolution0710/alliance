@@ -8,6 +8,8 @@ import {
   EnvelopeIcon,
 } from "@heroicons/react/24/outline";
 
+import M from "materialize-css";
+
 import "./style.css";
 import HeaderCarousels from "./HeaderCarousels";
 // import MultipleCarousel from "./MultipleCarousel";
@@ -63,6 +65,15 @@ export default function LandingPage() {
     window.scrollTo(0, 0);
   }, []);
 
+  useEffect(() => {
+    const elems = document.querySelectorAll(".parallax");
+    setTimeout(() => {
+      if (window.M && window.M.Parallax) {
+        M.Parallax.init(elems);
+      }
+    }, 100); // Delay initialization
+  }, []);
+
   return (
     <div className="relative z-10 overflow-hidden">
       <HeaderCarousels className="mySwiper1" />
@@ -70,7 +81,17 @@ export default function LandingPage() {
         <ServicesSection />
       </div>
 
-      <div className="flex justify-center items-center bg-[rgba(255,255,255,0.8)]">
+      <div className="flex justify-center items-center bg-[rgba(255,255,255,0.8)] relative">
+        <div className="parallax">
+          <img
+            className="absolute bottom-0 z-[-1] min-w-screen left-[50%]"
+            style={{
+              opacity: 1,
+              transform: "translate3d(-50%, 353.071px, 0px)",
+            }}
+            src="/assets/images/background.webp"
+          ></img>
+        </div>
         <Sustainability />
       </div>
       <ToolsComponent />

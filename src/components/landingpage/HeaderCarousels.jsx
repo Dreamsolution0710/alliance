@@ -149,7 +149,7 @@ const HeaderCarousels = () => {
                 }, 500);
               }}
             >
-              <p
+              <div
                 className="text-lg md:text-2xl font-bold uppercase py-5 text-white bg-clip-text bg-gradient-to-r from-white to-white/80 tracking-[0.15em] transform hover:scale-105 transition-all duration-500 ease-in-out  opacity-0 animate-fade-up text-center"
                 style={{
                   animationDelay: "1700ms",
@@ -159,13 +159,13 @@ const HeaderCarousels = () => {
               >
                 {image.subScript &&
                   image.subScript.split(",").map((item, index) => (
-                    <>
+                    <p key={index}>
                       {item}
                       <br />
-                    </>
+                    </p>
                   ))}
-              </p>
-              <h2
+              </div>
+              <div
                 className="lg:text-4xl md:text-3xl uppercase text-3xl  font-extrabold text-center lg:mt-3 lg:my-4 leading-relaxed text-white bg-clip-text bg-gradient-to-r from-white to-white/80 tracking-[0.1em] transform hover:scale-105 transition-all duration-500 ease-in-out opacity-0 animate-fade-up"
                 style={{
                   animationDelay: "2500ms",
@@ -175,12 +175,12 @@ const HeaderCarousels = () => {
               >
                 {image.content &&
                   image.content.split(",").map((item, index) => (
-                    <>
+                    <h2 key={index}>
                       {item}
                       <br />
-                    </>
+                    </h2>
                   ))}
-              </h2>
+              </div>
             </div>
           </SwiperSlide>
         ))}

@@ -20,6 +20,7 @@
     "d3-geo": "^3.1.1",
     "framer-motion": "^12.5.0",
     "lucide-react": "^0.477.0",
+    "materialize-css": "^1.0.0",
     "pdfjs-dist": "^4.8.69",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
