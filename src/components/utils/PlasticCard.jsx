@@ -9,7 +9,7 @@ const PlasticCard = ({ src, title, content, delay }) => {
   return (
     <div
       ref={ref}
-      className={`flex justify-center group flex-col  max-w-[570px] shadow-md shadow-[0_0_8px_2px_rgba(0,0,0,0.09)] opacity-0 ${
+      className={`flex justify-center group flex-col  max-w-[570px] opacity-0 ${
         inView &&
         "opacity-100 animate-fade-up animate-duration-300 animate-ease-linear"
       } `}
