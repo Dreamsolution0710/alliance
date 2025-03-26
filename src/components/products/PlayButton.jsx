@@ -1,20 +1,20 @@
 import { DocumentPlusIcon, PlayIcon } from "@heroicons/react/24/solid";
 import { useState, useContext } from "react";
 import VideoContext from "./VideoContext";
-import PdfContext from "./PdfContext";
+// import PdfContext from "./PdfContext";
 
-const PlayButton = ({ videoUrl, pdfUrl }) => {
+const PlayButton = ({ videoUrl }) => {
   const { setVideoLink, setIsOpen } = useContext(VideoContext);
-  const { setPdfLink, setIsPdfOpen } = useContext(PdfContext);
+  // const { setPdfLink, setIsPdfOpen } = useContext(PdfContext);
 
   const handleOpen = () => {
     setVideoLink(videoUrl);
     setIsOpen(true);
   };
-  const handlePDF = () => {
-    setPdfLink(pdfUrl);
-    setIsPdfOpen(true);
-  };
+  // const handlePDF = () => {
+  //   setPdfLink(pdfUrl);
+  //   setIsPdfOpen(true);
+  // };
   return (
     <div className="flex gap-5">
       {videoUrl && (
@@ -28,7 +28,7 @@ const PlayButton = ({ videoUrl, pdfUrl }) => {
           </span>
         </div>
       )}
-      {pdfUrl && (
+      {/* {pdfUrl && (
         <div
           className="relative group border-2 border-[#1977cc] rounded-full flex justify-center items-center w-16 h-16 hover:cursor-pointer bg-white"
           onClick={handlePDF}
@@ -38,7 +38,7 @@ const PlayButton = ({ videoUrl, pdfUrl }) => {
             <span className="w-16 h-16 rounded-full opacity-75 group-hover:animate-ping group-hover:bg-[#54c1e5]"></span>
           </span>
         </div>
-      )}
+      )} */}
     </div>
   );
 };
