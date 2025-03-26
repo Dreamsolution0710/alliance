@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRightIcon, Download, FileText } from "lucide-react";
 import AcademyCard from "./AcademyCard";
+import AcademyCard1 from "./AcademyCard1";
 import Youtuber from "./Youtuber";
 import HeaderSlot from "../utils/HeaderSlot";
 
@@ -66,10 +67,12 @@ const infographics = [
   {
     src: "/assets/images/academy/Edgeguard_DX_Faq’s.png",
     title: "Edgeguard DX Faq",
+    img: "/assets/images/academy/edgeguard dx faq.jpg",
   },
   {
     src: "/assets/images/academy/SteelFlex_Secure.png",
     title: "SteelFlex Secure",
+    img: "/assets/images/academy/Steelflex secure.jpg",
   },
 ];
 
@@ -183,11 +186,12 @@ const Academy = () => {
 
                   {current === 2 &&
                     infographics.map((info, index) => (
-                      <AcademyCard
+                      <AcademyCard1
                         src={info.src}
                         title={info.title}
                         key={index}
                         index={index}
+                        imgLink={info.img}
                       />
                     ))}
                   {/* </div> */}
