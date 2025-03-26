@@ -83,7 +83,7 @@ const PdfViewButton = () => {
                 Previous
               </button>
               <span className="text-[#151515]">
-                {pageNumber} of {numPages}
+                {String(pageNumber).padStart(2, "0")} of {numPages}
               </span>
               <button
                 disabled={pageNumber >= numPages}
