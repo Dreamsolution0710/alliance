@@ -1,4 +1,4 @@
-import { useContext, useState, useRef, useEffect } from "react";
+import { useContext, useState, useRef, useEffect, useCallback } from "react";
 import { X } from "lucide-react";
 import { Document, Page } from "react-pdf";
 import "react-pdf/dist/esm/Page/TextLayer.css";
@@ -15,7 +15,7 @@ const PdfViewButton = () => {
   const [numPages, setNumPages] = useState(null);
   const [pageNumber, setPageNumber] = useState(1);
   const pdfContainerRef = useRef(null);
-  const [containerWidth, setContainerWidth] = useState(600); // Fixed width
+  const [containerWidth, setContainerWidth] = useState(600);
 
   useEffect(() => {
     if (pdfContainerRef.current) {
@@ -27,7 +27,26 @@ const PdfViewButton = () => {
     setNumPages(numPages);
   };
 
-  console.log(pdfLink);
+  const handleScroll = useCallback(
+    (event) => {
+      event.preventDefault(); // Prevent scrolling beyond layout
+
+      if (event.deltaY > 0 && pageNumber < numPages) {
+        setPageNumber((prev) => prev + 1);
+      } else if (event.deltaY < 0 && pageNumber > 1) {
+        setPageNumber((prev) => prev - 1);
+      }
+    },
+    [pageNumber, numPages]
+  );
+
+  useEffect(() => {
+    const container = pdfContainerRef.current;
+    if (container) {
+      container.addEventListener("wheel", handleScroll, { passive: false }); // Prevents page scrolling
+      return () => container.removeEventListener("wheel", handleScroll);
+    }
+  }, [handleScroll]);
 
   return (
     <div>
@@ -41,7 +60,7 @@ const PdfViewButton = () => {
               <X size={30} />
             </button>
 
-            {/* Fixed Size PDF Viewer */}
+            {/* PDF Container */}
             <div
               ref={pdfContainerRef}
               className="w-[600px] h-[800px] overflow-hidden flex justify-center items-center border border-gray-300"
@@ -55,7 +74,7 @@ const PdfViewButton = () => {
             </div>
 
             {/* Navigation Buttons */}
-            <div className="mt-2 flex gap-4 justify-center">
+            <div className="mt-2 flex gap-4 justify-center items-center">
               <button
                 disabled={pageNumber <= 1}
                 onClick={() => setPageNumber(pageNumber - 1)}
@@ -63,8 +82,8 @@ const PdfViewButton = () => {
               >
                 Previous
               </button>
-              <span>
-                Page {pageNumber} of {numPages}
+              <span className="text-[#151515]">
+                {pageNumber} of {numPages}
               </span>
               <button
                 disabled={pageNumber >= numPages}
