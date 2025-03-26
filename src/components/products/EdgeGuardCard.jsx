@@ -24,7 +24,10 @@ const EdgeGuardCard = () => {
             alt="Edge Guard DXL"
           />
           <div className="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]">
-            <PlayButton videoUrl={""} />
+            <PlayButton
+              videoUrl={"https://youtu.be/nwMV7bjnk2g"}
+              pdfUrl={"Edgeguard DX Lite brochure 2024 (1).pdf"}
+            />
           </div>
         </div>
         <img

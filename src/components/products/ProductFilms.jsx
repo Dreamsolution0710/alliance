@@ -32,7 +32,7 @@ const ProductFilms = () => {
     <div>
       <HeaderSlot
         imgSrc={"/assets/images/film.webp"}
-        title={""}
+        title={"Our Products"}
         router={[
           {
             title: "home",

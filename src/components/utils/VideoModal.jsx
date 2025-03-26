@@ -4,18 +4,15 @@ import { X } from "lucide-react";
 import ReactPlayer from "react-player";
 import VideoContext from "../products/VideoContext";
 
-const publicUrl = "http://allianceplastics.net/upgrade/videos";
-
 const VideoModal = () => {
   const { videoLink, isOpen, setIsOpen } = useContext(VideoContext);
   const [videoSize, setVideoSize] = useState({ width: 1280, height: 720 });
-  console.log(videoLink);
 
   useEffect(() => {
     if (!videoLink) return;
 
     const video = document.createElement("video");
-    video.src = `${publicUrl}/${videoLink}`;
+    video.src = `${videoLink}`;
     video.onloadedmetadata = () => {
       setVideoSize({ width: video.videoWidth, height: video.videoHeight });
     };
@@ -44,7 +41,7 @@ const VideoModal = () => {
           <X size={30} />
         </button>
         <ReactPlayer
-          url={`${publicUrl}/${videoLink}`}
+          url={`${videoLink}`}
           playing
           controls
           width="100%"

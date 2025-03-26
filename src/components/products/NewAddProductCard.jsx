@@ -13,6 +13,7 @@ const NewAddProductCard = ({
   benefits,
   current,
   videoUrl,
+  pdfUrl,
 }) => {
   const [isVisible, setIsVisible] = useState(false);
   const { ref, inView } = useInView({ threshold: 0.2, triggerOnce: true });
@@ -43,7 +44,7 @@ const NewAddProductCard = ({
       <div className="relative">
         <img src={mainSrc} className={imageStyles} alt="Product" />
         <div className="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]">
-          <PlayButton videoUrl={videoUrl} />
+          <PlayButton videoUrl={videoUrl} pdfUrl={pdfUrl} />
         </div>
       </div>
 

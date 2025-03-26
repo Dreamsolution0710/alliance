@@ -132,7 +132,7 @@ const HeaderSlot = ({ imgSrc, title, router }) => {
           <div className="max-w-[1200px] flex justify-center items-center">
             <div className="flex items-center">
               {remainingPaths.map((item, index) => (
-                <div className="flex items-center">
+                <div className="flex items-center" key={index}>
                   <Link
                     to={item.src}
                     className="text-[12px] text-[#777777] hover:text-[#54c1e5] uppercase cursor-pointer px-[17px] font-medium leading-[1.5] tracking-[0.13em]"
