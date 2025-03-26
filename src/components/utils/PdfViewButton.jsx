@@ -78,7 +78,7 @@ const PdfViewButton = () => {
               <button
                 disabled={pageNumber <= 1}
                 onClick={() => setPageNumber(pageNumber - 1)}
-                className="px-3 py-1 bg-gray-300 rounded disabled:opacity-50"
+                className="px-3 py-1 bg-[#1977cc] rounded disabled:opacity-50"
               >
                 Previous
               </button>
@@ -88,7 +88,7 @@ const PdfViewButton = () => {
               <button
                 disabled={pageNumber >= numPages}
                 onClick={() => setPageNumber(pageNumber + 1)}
-                className="px-3 py-1 bg-gray-300 rounded disabled:opacity-50"
+                className="px-3 py-1 bg-[#1977cc] rounded disabled:opacity-50"
               >
                 Next
               </button>
