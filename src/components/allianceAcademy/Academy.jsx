@@ -12,10 +12,12 @@ const ebooks = [
   {
     src: "/assets/images/academy/Download_Stretch_film_101.png",
     title: "Download Stretch film 101",
+    file: "101stretchfilm.pdf",
   },
   {
     src: "/assets/images/academy/Download_Airforce_films_101.png",
     title: "Download Airforce films 101",
+    file: "Airforce-stretch-Film (1).pptx",
   },
 ];
 
@@ -171,6 +173,7 @@ const Academy = () => {
                   {current === 0 &&
                     ebooks.map((book, index) => (
                       <AcademyCard
+                        file={book.file}
                         src={book.src}
                         title={book.title}
                         key={index}

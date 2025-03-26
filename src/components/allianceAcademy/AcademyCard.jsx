@@ -1,16 +1,35 @@
 import React from "react";
 import { useInView } from "../landingpage/useInView";
 
-const AcademyCard = ({ src, title, index }) => {
+const AcademyCard = ({ src, title, index, file }) => {
+  const handleDownload = async () => {
+    try {
+      const response = await fetch(`/assets/pdf/${file}`);
+      if (!response.ok) throw new Error("Failed to download PDF");
+
+      const blob = await response.blob();
+      const url = window.URL.createObjectURL(blob);
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = `${file}`;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      window.URL.revokeObjectURL(url);
+    } catch (error) {
+      console.error("Error downloading PDF:", error);
+    }
+  };
   const [ref, isInView] = useInView(0.01);
   return (
     <div
-      className={`relative flex justify-center group flex-col  max-w-[570px] shadow-md shadow-[0_0_8px_0_rgba(0,0,0,0.09)] ${
+      className={`relative flex justify-center group flex-col  max-w-[570px] shadow-md shadow-[0_0_8px_0_rgba(0,0,0,0.09)] hover:cursor-pointer ${
         isInView
           ? `animate-fade-right animate-linear animate-duration-700 opacity-100`
           : ""
       }`}
       ref={ref}
+      onClick={handleDownload}
       style={{
         animationDelay: isInView ? `${index * 200}ms` : "0ms",
       }}
