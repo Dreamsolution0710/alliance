@@ -1,4 +1,5 @@
 import { useContext, useState, useRef, useEffect } from "react";
+import { X } from "lucide-react";
 import { Document, Page } from "react-pdf";
 import "react-pdf/dist/esm/Page/TextLayer.css";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
@@ -32,12 +33,12 @@ const PdfViewButton = () => {
     <div>
       {isPdfOpen && (
         <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-[rgba(0,0,0,0.8)] bg-opacity-50 z-[150]">
-          <div className="bg-white p-4 rounded-lg shadow-lg w-[80%] max-w-2xl flex flex-col items-center">
+          <div className="bg-white p-4 rounded-lg shadow-lg w-[80%] max-w-2xl flex flex-col items-center relative">
             <button
               onClick={() => setIsPdfOpen(false)}
-              className="mb-4 px-3 py-1 bg-red-500 text-white rounded"
+              className="absolute top-2 right-2 text-white z-10 bg-black/50 p-2 rounded-full hover:cursor-pointer"
             >
-              Close
+              <X size={30} />
             </button>
 
             {/* Fixed Size PDF Viewer */}
