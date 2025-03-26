@@ -31,7 +31,7 @@ const PlasticCard = ({ src, title, content, delay }) => {
         </div>
       </div>
       <div className=" -translate-y-[30px] group-hover:translate-y-0 transition-all duration-200 ease-linear flex justify-center items-center overflow-hidden">
-        <div className="uppercase py-[30px] px-[15px] w-[80%] group-hover:w-[100%]  bg-white flex justify-center items-center group-hover:animate-ping transition-all duration-300  ease-linear  md:min-h-[114px] rounded-sm">
+        <div className="uppercase py-[30px] px-[15px] w-[80%] group-hover:w-[100%]  bg-white flex justify-center items-center group-hover:animate-ping group-hover:animate-once transition-all duration-300  ease-linear  md:min-h-[114px] rounded-sm">
           <p className="text-[18px] lg:text-[16px] text-[#1977cc] tracking-[0.1em] text-center font-semibold">
             {title}
           </p>

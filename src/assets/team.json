@@ -11,17 +11,18 @@
     "name": "Troy Wolf",
     "email": "troy@allianceplastics.net"
   },
-  {
-    "src": "/assets/images/team/Gale-Marcus-AP.png",
-    "position": "VP of National Accounts/West Coast",
-    "name": "Gale marcus",
-    "email": "gale@allianceplastics.net"
-  },
+
   {
     "src": "/assets/images/team/marcd.jpg",
     "position": "Vice President",
     "name": "Marc Delatte",
     "email": "marc@allianceplastics.net"
+  },
+  {
+    "src": "/assets/images/team/Gale-Marcus-AP.png",
+    "position": "VP of National Accounts/West Coast",
+    "name": "Gale marcus",
+    "email": "gale@allianceplastics.net"
   },
   {
     "src": "/assets/images/team/chuck.png",
