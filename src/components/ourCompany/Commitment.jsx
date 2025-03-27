@@ -404,7 +404,7 @@ const Commitment = () => {
         </div>
       </div>
 
-      <div className="flex justify-center mt-[50px]">
+      <div className="flex justify-center my-[50px]">
         <div className="max-w-[1200px]">
           <div className="flex flex-col md:flex-row">
             {/* Left Section (Images) */}
