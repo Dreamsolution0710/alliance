@@ -34,7 +34,7 @@ const BlogPost = () => {
         ]}
       />
 
-      <div className="mt-[100px]">
+      <div className="my-[100px]">
         <div className="text-[#151515] flex justify-center">
           <div className="max-w-[1200px] lg:w-[1200px]">
             <div className="lg:grid lg:grid-cols-3 flex flex-col">
