@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import {
   ArrowRightIcon,
@@ -16,6 +16,7 @@ import {
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import HeaderSlot from "../utils/HeaderSlot";
+import M from "materialize-css";
 
 const Commitment = () => {
   const { ref: firstElementRef, inView: firstElementInView } = useInView({
@@ -61,9 +62,17 @@ const Commitment = () => {
       },
     }),
   };
+  useEffect(() => {
+    const elems = document.querySelectorAll(".parallax");
+    setTimeout(() => {
+      if (window.M && window.M.Parallax) {
+        M.Parallax.init(elems);
+      }
+    }, 0); // Delay initialization
+  }, []);
+
   return (
-    <div className=" overflow-hidden bg-white">
-      {/* <div className="bg-[url(/assets/images/headerslides/headerslide3.png)] bg-no-repeat  fixed  z-[-1] w-[1000%] h-[1000%]"></div> */}
+    <div className=" overflow-hidden ">
       <HeaderSlot
         imgSrc={"/assets/images/sustainable.webp"}
         title={"Coreless Machine film"}
@@ -76,11 +85,21 @@ const Commitment = () => {
             title: "our Company",
             src: "/",
           },
-          "Sustainability",
+          "Coreless machine film",
         ]}
       />
 
-      <div className="flex justify-center pt-[50px] relative  bg-white">
+      <div className="flex justify-center py-[50px] relative  bg-white/90 ">
+        <div className="parallax">
+          <img
+            className="absolute bottom-0 filter grayscale contrast-200 z-[-1] min-w-screen left-[50%] object-cover hidden lg:block"
+            style={{
+              opacity: 1,
+              transform: "translate3d(-50%, 350px, 0px)",
+            }}
+            src="/assets/images/sustainable/beahero.webp"
+          ></img>
+        </div>
         <div className="max-w-[1200px]">
           <div ref={firstElementRef}>
             <div className="flex justify-center items-center flex-col md:flex-row">
@@ -224,6 +243,10 @@ const Commitment = () => {
               ))}
             </motion.div>
           </div>
+        </div>
+      </div>
+      <div className="flex justify-center py-[50px] relative  bg-white">
+        <div className="max-w-[1200px]">
           <div ref={middleRef}>
             {/* First Image Section with Animation */}
             <motion.div
@@ -293,7 +316,18 @@ const Commitment = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-center">
+
+      <div className="flex justify-center py-[50px] relative bg-white/80">
+        <div className="parallax">
+          <img
+            className="absolute bottom-0 filter grayscale contrast-200 z-[-1] min-w-screen left-[50%] object-cover hidden lg:block"
+            style={{
+              opacity: 1,
+              transform: "translate3d(-50%, 350px, 0px)",
+            }}
+            src="/assets/images/sustainable/coreless.webp"
+          ></img>
+        </div>
         <div className="max-w-[1200px]">
           <div className="flex flex-col md:flex-row">
             {/* Left Section with Text and Circles */}
@@ -404,7 +438,7 @@ const Commitment = () => {
         </div>
       </div>
 
-      <div className="flex justify-center my-[50px]">
+      <div className="flex justify-center py-[50px] bg-white">
         <div className="max-w-[1200px]">
           <div className="flex flex-col md:flex-row">
             {/* Left Section (Images) */}

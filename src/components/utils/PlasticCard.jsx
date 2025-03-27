@@ -14,7 +14,7 @@ const PlasticCard = ({ src, title, content, delay }) => {
         "opacity-100 animate-fade-up animate-duration-300 animate-ease-linear"
       } `}
       style={{
-        animationDelay: `${delay * 300}ms`,
+        animationDelay: `${delay * 500}ms`,
       }}
     >
       <div className="block relative overflow-hidden">

@@ -9,7 +9,8 @@ import {
   TriangleIcon,
 } from "lucide-react";
 import { useInView } from "react-intersection-observer";
-import { delay, motion } from "framer-motion";
+import { motion } from "framer-motion";
+import M from "materialize-css";
 
 const data = [
   {
@@ -136,6 +137,15 @@ const NanoTechnology = () => {
     if (resultInView) setAnimate(true);
   }, [resultInView]);
 
+  useEffect(() => {
+    const elems = document.querySelectorAll(".parallax");
+    setTimeout(() => {
+      if (window.M && window.M.Parallax) {
+        M.Parallax.init(elems);
+      }
+    }, 0); // Delay initialization
+  }, []);
+
   return (
     <div className="relative overflow-hidden">
       <HeaderSlot
@@ -150,10 +160,20 @@ const NanoTechnology = () => {
             title: "our Company",
             src: "/",
           },
-          "Nano 67",
+          "Elevation 67 Machine film",
         ]}
       />
-      <div className="flex justify-center bg-white py-[50px]">
+      <div className="flex  flex-col items-center py-[50px] relative bg-white/85">
+        <div className="parallax">
+          <img
+            className="absolute bottom-0 filter grayscale contrast-200 z-[-1] min-w-screen left-[50%] object-cover hidden lg:block"
+            style={{
+              opacity: 1,
+              transform: "translate3d(-50%, 350px, 0px)",
+            }}
+            src="/assets/images/nano67/summary.webp"
+          ></img>
+        </div>
         <div className="max-w-[1200px] w-full">
           <div ref={summaryRef}>
             <div className="mt-[50px]">
@@ -179,6 +199,7 @@ const NanoTechnology = () => {
               >
                 Summary
               </motion.h3>
+
               <div className="flex items-center justify-center mt-[50px]">
                 <motion.p
                   className="md:text-[36px] text-[24px] w-[70%] text-left text-[#151515] tracking-[0.075em]"
@@ -324,6 +345,10 @@ const NanoTechnology = () => {
               </motion.div>
             </div>
           </div>
+        </div>
+      </div>
+      <div className="flex  flex-col items-center py-[50px] bg-white">
+        <div className="max-w-[1200px] w-full">
           <div ref={historyRef}>
             <div className="mt-[50px] w-fit">
               <motion.h3
@@ -701,6 +726,20 @@ const NanoTechnology = () => {
               </div>
             </div>
           </div>
+        </div>
+      </div>
+      <div className="flex  flex-col items-center py-[50px] relative bg-white/85">
+        <div className="parallax">
+          <img
+            className="absolute bottom-0 filter grayscale contrast-200 z-[-1] min-w-screen left-[50%] object-cover hidden scale-120 lg:block"
+            style={{
+              opacity: 1,
+              transform: "translate3d(-50%, 350.071px, 0px)",
+            }}
+            src="/assets/images/nano67/structure.webp"
+          ></img>
+        </div>
+        <div className="max-w-[1200px] w-full">
           <div ref={titleRef}>
             <div className="mt-[50px]">
               <motion.h3
@@ -877,6 +916,10 @@ const NanoTechnology = () => {
               </div>
             </div>
           </div>
+        </div>
+      </div>
+      <div className="flex  flex-col items-center py-[50px] bg-white">
+        <div className="max-w-[1200px] w-full">
           <div ref={refBlock}>
             <div className="mt-[50px] w-fit">
               <motion.h3
@@ -970,6 +1013,10 @@ const NanoTechnology = () => {
               ))}
             </div>
           </div>
+        </div>
+      </div>
+      <div className="flex  flex-col items-center py-[50px] bg-white">
+        <div className="max-w-[1200px] w-full">
           <div className="mt-[50px]" ref={machineRef}>
             <motion.img
               src="/assets/images/nano67/nano67bg.png"
@@ -979,7 +1026,20 @@ const NanoTechnology = () => {
               className="w-full h-auto"
             />
           </div>
-
+        </div>
+      </div>
+      <div className="flex  flex-col items-center py-[50px] relative bg-white/85">
+        <div className="parallax">
+          <img
+            className="absolute bottom-0 filter grayscale contrast-200 z-[-1] min-w-screen left-[50%] object-cover hidden lg:block"
+            style={{
+              opacity: 1,
+              transform: "translate3d(-50%, 350.071px, 0px)",
+            }}
+            src="/assets/images/nano67/test.webp"
+          ></img>
+        </div>
+        <div className="max-w-[1200px] w-full">
           <div ref={testingResult}>
             <div className="mt-[50px] w-fit">
               <motion.h3
@@ -1143,6 +1203,10 @@ const NanoTechnology = () => {
               </div>
             </div>
           </div>
+        </div>
+      </div>
+      <div className="flex  flex-col items-center py-[50px] bg-white">
+        <div className="max-w-[1200px] w-full">
           <div ref={chartRef}>
             <div className="mt-[50px] w-fit">
               <motion.h3

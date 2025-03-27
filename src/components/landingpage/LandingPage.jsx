@@ -31,7 +31,7 @@ const colors = ["bg-gray-100", "bg-sky-300", "bg-orange-300"];
 export default function LandingPage() {
   const [colorIndex, setColorIndex] = useState(0);
 
-  const [ref4, isInview4] = useInView(0.1);
+  const [ref4, isInview4] = useInView(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -50,16 +50,7 @@ export default function LandingPage() {
       if (window.M && window.M.Parallax) {
         M.Parallax.init(elems);
       }
-    }, 100); // Delay initialization
-  }, []);
-
-  useEffect(() => {
-    const elems = document.querySelectorAll(".second-parallax");
-    setTimeout(() => {
-      if (window.M && window.M.Parallax) {
-        M.Parallax.init(elems);
-      }
-    }, 100); // Delay initialization
+    }); // Delay initialization
   }, []);
 
   return (
@@ -72,8 +63,7 @@ export default function LandingPage() {
       <div className="flex justify-center items-center bg-[rgba(255,255,255,0.8)] relative">
         <div className="parallax">
           <img
-            className="absolute bottom-0  z-[-1] min-w-screen left-[50%] max-h-[800px] object-cover hidden lg:block"
-            height={"800px"}
+            className="absolute left-[50%] bottom-0  z-[-1] min-w-screen  object-cover hidden lg:block"
             style={{
               opacity: 1,
               transform: "translate3d(-50%, 353.071px, 0px)",
@@ -87,9 +77,9 @@ export default function LandingPage() {
       {/* our team*/}
 
       <div className="bg-white/80 relative">
-        <div className="parallax second-parallax">
+        <div className="parallax">
           <img
-            className="absolute bottom-0 object-cover z-[-1] min-w-screen left-[50%] filter grayscale contrast-200 max-h-[800px] hidden lg:block"
+            className="absolute  bottom-0 object-cover z-[-1] min-w-screen left-[50%] filter grayscale contrast-200 max-h-[800px] hidden lg:block"
             style={{
               opacity: 1,
               transform: "translate3d(-50%, 353px, 0px)",
