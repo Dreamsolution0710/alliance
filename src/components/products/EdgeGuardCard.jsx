@@ -32,7 +32,7 @@ const EdgeGuardCard = () => {
         </div>
         <img
           src="/assets/images/AddProducts/edgeguard_dxl_content.png"
-          className="object-cover w-full sm:w-auto md:min-w-[450px] "
+          className="pl-[20px] object-cover w-full sm:w-auto md:min-w-[450px]"
           alt="Edge Guard DXL Content"
         />
       </div>

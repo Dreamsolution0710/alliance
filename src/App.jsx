@@ -6,11 +6,9 @@ import { Commet } from "react-loading-indicators";
 import ScrollUpTo from "./components/landingpage/ScrollUpTo";
 import { useLocation } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css"; // Import the CSS for toast styling
+import "react-toastify/dist/ReactToastify.css";
 import VideoModal from "./components/utils/VideoModal";
 import { VideoProvider } from "./components/products/VideoContext";
-import { PdfProvider } from "./components/products/PdfContext";
-import PdfViewButton from "./components/utils/PdfViewButton";
 
 function App() {
   const [isloading, setIsloading] = useState(false);
@@ -19,7 +17,6 @@ function App() {
 
   useEffect(() => {
     setIsloading(true);
-    console.log(location.pathname);
     const timer = setTimeout(() => {
       setIsloading(false);
       setShowContent(true);
@@ -62,10 +59,7 @@ function App() {
           >
             <Header />
             <VideoProvider>
-              <PdfProvider>
-                <AppRouter />
-                <PdfViewButton />
-              </PdfProvider>
+              <AppRouter />
               <VideoModal />
             </VideoProvider>
             <ScrollUpTo />

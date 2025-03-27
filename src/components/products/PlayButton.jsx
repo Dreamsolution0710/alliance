@@ -1,20 +1,14 @@
 import { DocumentPlusIcon, PlayIcon } from "@heroicons/react/24/solid";
 import { useState, useContext } from "react";
 import VideoContext from "./VideoContext";
-// import PdfContext from "./PdfContext";
 
 const PlayButton = ({ videoUrl }) => {
   const { setVideoLink, setIsOpen } = useContext(VideoContext);
-  // const { setPdfLink, setIsPdfOpen } = useContext(PdfContext);
 
   const handleOpen = () => {
     setVideoLink(videoUrl);
     setIsOpen(true);
   };
-  // const handlePDF = () => {
-  //   setPdfLink(pdfUrl);
-  //   setIsPdfOpen(true);
-  // };
   return (
     <div className="flex gap-5">
       {videoUrl && (
