@@ -43,7 +43,7 @@ const ToolsComponent = () => {
   };
 
   return (
-    <div className="relative w-full overflow-hidden flex flex-col lg:flex-row h-120">
+    <div className="relative w-full overflow-hidden flex flex-col lg:flex-row lg:h-120">
       {/* Left Side - Image */}
       <img
         src="/assets/images/1280x768images/image5.jpg"
