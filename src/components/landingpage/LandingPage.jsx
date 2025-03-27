@@ -28,27 +28,6 @@ import Sustainability from "./Sustainability";
 
 const colors = ["bg-gray-100", "bg-sky-300", "bg-orange-300"];
 
-const slides = [
-  {
-    title: "WE ARE ALLIANCE PLASITICS",
-    text: "Alliance Plastics is a Veteran-Owned company focused on building strong relationships with partners, offering innovative products and services with nationwide reach, integrity, quality, and efficiency.",
-    path: "/ourcompany",
-    section: "ABOUT US",
-  },
-  {
-    title: "Alliance Academy",
-    text: "Alliance Academy offers educational resources, product training, and marketing strategies to help Alliance Plastics' partners and distributors gain valuable knowledge and boost sales for mutual success.",
-    path: "/academy",
-    section: "ALLIANCE ACADEMY",
-  },
-  {
-    title: "NEWS",
-    text: "Sign up to get interesting news and updates delivered to your inbox.",
-    path: "/news",
-    section: "NEWS",
-  },
-];
-
 export default function LandingPage() {
   const [colorIndex, setColorIndex] = useState(0);
 
@@ -74,6 +53,15 @@ export default function LandingPage() {
     }, 100); // Delay initialization
   }, []);
 
+  useEffect(() => {
+    const elems = document.querySelectorAll(".second-parallax");
+    setTimeout(() => {
+      if (window.M && window.M.Parallax) {
+        M.Parallax.init(elems);
+      }
+    }, 100); // Delay initialization
+  }, []);
+
   return (
     <div className="relative z-10 overflow-hidden">
       <HeaderCarousels className="mySwiper1" />
@@ -84,7 +72,8 @@ export default function LandingPage() {
       <div className="flex justify-center items-center bg-[rgba(255,255,255,0.8)] relative">
         <div className="parallax">
           <img
-            className="absolute bottom-0 z-[-1] min-w-screen left-[50%]"
+            className="absolute bottom-0  z-[-1] min-w-screen left-[50%] max-h-[800px] object-cover hidden lg:block"
+            height={"800px"}
             style={{
               opacity: 1,
               transform: "translate3d(-50%, 353.071px, 0px)",
@@ -97,7 +86,18 @@ export default function LandingPage() {
       <ToolsComponent />
       {/* our team*/}
 
-      <div className="bg-white">
+      <div className="bg-white/80 relative">
+        <div className="parallax second-parallax">
+          <img
+            className="absolute bottom-0 object-cover z-[-1] min-w-screen left-[50%] filter grayscale contrast-200 max-h-[800px] hidden lg:block"
+            style={{
+              opacity: 1,
+              transform: "translate3d(-50%, 353px, 0px)",
+            }}
+            height={"800px"}
+            src="/assets/images/teambg.jpg"
+          ></img>
+        </div>
         <div className="hidden lg:flex lg:justify-center lg:py-[70px]">
           <div className="max-w-[1200px]">
             <div
@@ -164,12 +164,12 @@ export default function LandingPage() {
                     }`}
                   >
                     <div className="group z-[-1]">
-                      <button className="custom-prev1 bg-white lg:w-18 lg:h-18 w-16 h-16 border-2 flex items-center justify-center border-gray-800 group-hover:border-[#57a4e0] group-hover:bg-[#57a4e0] group-hover:transition-all group-hover:ease-in-out group-hover:duration-300">
+                      <button className="custom-prev1 lg:w-18 lg:h-18 w-16 h-16 border-2 flex items-center justify-center border-gray-800 group-hover:border-[#57a4e0] group-hover:bg-[#57a4e0] group-hover:transition-all group-hover:ease-in-out group-hover:duration-300">
                         <ArrowLeftIcon className="lg:w-8 lg:h-8 w-6 h-6 text-gray-800 group-hover:text-white group-hover:transition-all group-hover:ease-in-out group-hover:duration-300" />
                       </button>
                     </div>
                     <div className="group">
-                      <button className="custom-next1 lg:w-18 bg-white lg:h-18 w-16 h-16 border-2 flex items-center justify-center border-gray-800 group-hover:border-[#57a4e0]  group-hover:bg-[#57a4e0] group-hover:transition-all group-hover:ease-in-out group-hover:duration-300">
+                      <button className="custom-next1 lg:w-18  lg:h-18 w-16 h-16 border-2 flex items-center justify-center border-gray-800 group-hover:border-[#57a4e0]  group-hover:bg-[#57a4e0] group-hover:transition-all group-hover:ease-in-out group-hover:duration-300">
                         <ArrowRightIcon className="lg:w-8 lg:h-8 w-6 h-6 text-gray-800 group-hover:text-white group-hover:transition-all group-hover:ease-in-out group-hover:duration-300" />
                       </button>
                     </div>

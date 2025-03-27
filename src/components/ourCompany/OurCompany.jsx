@@ -1,7 +1,7 @@
 import { ArrowRightIcon, Gem, Rocket, ShieldCheck } from "lucide-react";
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { Autoplay, A11y, Grid } from "swiper/modules";
+import { Autoplay, A11y } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -12,6 +12,8 @@ import { useInView } from "./../landingpage/useInView";
 import Youtuber from "../allianceAcademy/Youtuber";
 import HeaderSlot from "../utils/HeaderSlot";
 import teams from "/src/assets/team.json";
+
+import M from "materialize-css";
 
 const aboutus = [
   {
@@ -104,8 +106,17 @@ const OurCompany = () => {
     window.scrollTo(0, 0);
   }, []);
 
+  useEffect(() => {
+    const elems = document.querySelectorAll(".parallax");
+    setTimeout(() => {
+      if (window.M && window.M.Parallax) {
+        M.Parallax.init(elems);
+      }
+    }, 100); // Delay initialization
+  }, []);
+
   return (
-    <div className="overflow-hidden bg-white">
+    <div className="overflow-hidden">
       <HeaderSlot
         imgSrc={"/assets/images/aboutus.webp"}
         title={"about us"}
@@ -121,7 +132,7 @@ const OurCompany = () => {
           "about us",
         ]}
       />
-      <div className="flex items-center justify-center">
+      <div className="flex items-center justify-center bg-white">
         <div className="max-w-[1200px] py-[80px] lg:w-[1200px]">
           <div className="lg:grid lg:grid-cols-4 flex flex-col-reverse text-[#151515]">
             <div className="col-span-3 px-[15px] flex flex-col justify-center">
@@ -223,7 +234,17 @@ const OurCompany = () => {
           </div>
         </div>
       </div>
-      <div className="bg-[#f5f5f5] py-[90px] text-[#151515]">
+      <div className="bg-[#f5f5f5]/80 py-[90px] text-[#151515] relative">
+        <div className="parallax">
+          <img
+            className="absolute bottom-0 z-[-1] min-w-screen left-[50%]"
+            style={{
+              opacity: 1,
+              transform: "translate3d(-50%, 353.071px, 0px)",
+            }}
+            src="/assets/images/background.webp"
+          ></img>
+        </div>
         <div className="flex justify-center items-center">
           <div className="max-w-[1200px] lg:w-[1200px]">
             <div className="lg:grid lg:grid-cols-3" ref={ref2}>
@@ -309,7 +330,7 @@ const OurCompany = () => {
           </div>
         </div>
       </div>
-      <div className="py-[90px] text-[#151515]">
+      <div className="py-[90px] text-[#151515] bg-white">
         <div className="flex justify-center">
           <div className="max-w-[1200px] w-[1200px] px-[15px]">
             <div>
@@ -403,7 +424,7 @@ const OurCompany = () => {
           </div>
         </div>
       </div>
-      <div className="bg-[#f5f5f5] pt-[90px]  pb-[140px] mb-[100px] text-[#151515] relative overflow-hidden">
+      <div className="bg-[#f5f5f5] pt-[90px]  pb-[140px] mb-[100px] text-[#151515] relative overflow-hidden ">
         <div className="flex justify-center items-center" ref={ref5}>
           <div className="hidden lg:block max-w-[1200px] w-[1200px]">
             <div className="grid grid-cols-2">

@@ -8,7 +8,7 @@ import { useInView } from "../landingpage/useInView";
 //   lng: -122.4194, // Longitude
 // };
 
-export const MapCard = ({ position, role, url, Icon, index }) => {
+export const MapCard = ({ position, role, url, Icon, index, center }) => {
   // console.log(center, position, role, Icon);
   const [ref, isInView] = useInView(0.01);
   return (

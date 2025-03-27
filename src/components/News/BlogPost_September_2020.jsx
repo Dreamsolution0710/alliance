@@ -9,6 +9,7 @@ import {
   User,
 } from "lucide-react";
 import { FaFacebookF, FaTwitter, FaYoutube } from "react-icons/fa";
+import HeaderSlot from "../utils/HeaderSlot";
 
 const BlogPost = () => {
   useEffect(() => {
@@ -16,44 +17,22 @@ const BlogPost = () => {
   }, []);
   return (
     <div>
-      <div className="mb-[80px]">
-        <div className="py-[116px] bg-[url(/assets/images/download.webp)] bg-cover">
-          <div className="flex items-center justify-center">
-            <div className="max-w-[1200px] w-auto px-[15px] flex flex-col justify-center items-center">
-              <h3 className="text-[44px] text-white uppercase tracking-[0.1em] font-bold">
-                News
-              </h3>
-              <div className="border-b-4 border-[rgba(255,255,255,0.6)] w-[64px] h-[44px]"></div>
-            </div>
-          </div>
-        </div>
-        <div className="py-[20px] bg-[#f3f3f3]">
-          <div className="flex item-center justify-center">
-            <div className="max-w-[1200px] flex justify-center items-center">
-              <div className="flex items-center">
-                <Link
-                  to="/"
-                  className="text-[12px] text-[#777777] hover:text-[#54c1e5] uppercase cursor-pointer px-[17px] font-medium leading-[1.5] tracking-[0.13em]"
-                >
-                  home
-                </Link>
-                <ArrowRightIcon className="text-[#151515] font-black w-[16px] h-[14px]" />
-                <Link
-                  to="/news"
-                  className="text-[12px] text-[#777777] hover:text-[#54c1e5] uppercase cursor-pointer px-[17px] font-medium leading-[1.5] tracking-[0.13em]"
-                >
-                  news
-                </Link>
-                <ArrowRightIcon className="text-[#151515] font-black w-[16px] h-[14px]" />
-                <span className="text-[12px] text-[#151515] uppercase font-black px-[17px] leading-[1.5] tracking-[0.13em]">
-                  view
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div>
+      <HeaderSlot
+        imgSrc={"/assets/images/download.webp"}
+        title={"Ron’s Market Review September 2020"}
+        router={[
+          {
+            title: "home",
+            src: "/",
+          },
+          {
+            title: "news",
+            src: "/",
+          },
+          "view",
+        ]}
+      />
+      <div className="mt-[100px]">
         <div className="text-[#151515] flex justify-center">
           <div className="max-w-[1200px] lg:w-[1200px]">
             <div className="lg:grid lg:grid-cols-3 flex flex-col">

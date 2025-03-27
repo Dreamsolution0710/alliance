@@ -1,6 +1,7 @@
 import React from "react";
 import { useInView } from "react-intersection-observer";
 import ServiceCard from "../utils/ServiceCard";
+import { Link } from "react-router-dom";
 
 const services = [
   {
@@ -51,14 +52,14 @@ const OurServices = () => {
       </div>
       <div className="flex justify-between gap-4 items-center flex-col md:flex-row">
         {services.map((service, index) => (
-          <div className="px-[15px]" key={index}>
+          <Link className="px-[15px]" key={index} to={"/products/films"}>
             <ServiceCard
               src={service.src}
               title={service.title}
               delay={index}
               content={service.content}
             />
-          </div>
+          </Link>
         ))}
       </div>
     </div>
