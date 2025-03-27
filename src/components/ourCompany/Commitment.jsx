@@ -370,8 +370,8 @@ const Commitment = () => {
                 }}
               >
                 <div className="flex gap-10 justify-center mt-[50px]">
-                  <div className="w-28 h-28 border-28 border-[#c1c1c1] rounded-full bg-white"></div>
-                  <div className="w-28 h-28 border-22 border-[#c1c1c1] rounded-full bg-white">
+                  <div className="w-28 h-28 border-28 border-[#aaaaaa] rounded-full bg-white/80"></div>
+                  <div className="w-28 h-28 border-22 border-[#aaaaaa] rounded-full bg-white/80">
                     <div className="border-10 border-[#734d45] w-full h-full rounded-full"></div>
                   </div>
                 </div>
