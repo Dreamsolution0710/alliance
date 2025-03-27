@@ -99,7 +99,7 @@ const HeaderSlot = ({ imgSrc, title, router }) => {
   }, []);
 
   return (
-    <div>
+    <div className="bg-white">
       <div
         className={`relative py-[116px] bg-[url(${imgSrc})] lg:bg-cover mb:bg-contain bg-center bg-no-repeat `}
         style={{
