@@ -1116,36 +1116,36 @@ const NanoTechnology = () => {
               </ul>
 
               <div
-                className={`overflow-x-auto bg-white/80 opacity-0 backdrop-blur-lg shadow-lg rounded-xl max-w-5xl mx-auto ${
+                className={`overflow-hidden opacity-0 backdrop-blur-lg shadow-lg max-w-5xl mx-auto ${
                   resultInView
-                    ? "animate-flip-down animate-duration-1000 animate-delay-1750 opacity-100 animate-ease-linear"
+                    ? "animate-flip-down animate-duration-1000 animate-delay-1750 opacity-80 animate-ease-linear"
                     : ""
                 }`}
               >
-                <table className="min-w-full border border-gray-300 text-xs sm:text-sm text-gray-700">
-                  <thead className="bg-gradient-to-r from-gray-800 to-gray-600 text-white">
+                <table className="min-w-full text-xs sm:text-sm text-[#151515] border-1 border-gray-800/50">
+                  <thead className=" text-[#151515] border-1 border-gray-800/50">
                     <tr>
-                      <th className="px-3 py-2 border border-gray-500 text-left uppercase tracking-wider">
+                      <th className="px-3 py-2  text-left uppercase tracking-wider">
                         Extruder
                       </th>
-                      <th className="px-3 py-2 border border-gray-500 text-left uppercase tracking-wider">
+                      <th className="px-3 py-2  text-left uppercase tracking-wider">
                         Dosing Station
                       </th>
-                      <th className="px-3 py-2 border border-gray-500 text-left uppercase tracking-wider">
+                      <th className="px-3 py-2  text-left uppercase tracking-wider">
                         Weight Ratio (%)
                       </th>
-                      <th className="px-3 py-2 border border-gray-500 text-left uppercase tracking-wider">
+                      <th className="px-3 py-2  text-left uppercase tracking-wider">
                         Producer Material
                       </th>
-                      <th className="px-3 py-2 border border-gray-500 text-left uppercase tracking-wider">
+                      <th className="px-3 py-2  text-left uppercase tracking-wider">
                         Density (g/cm³)
                       </th>
-                      <th className="px-3 py-2 border border-gray-500 text-left uppercase tracking-wider">
+                      <th className="px-3 py-2  text-left uppercase tracking-wider">
                         Thickness Ratio (%)
                       </th>
                     </tr>
                   </thead>
-                  <tbody className="divide-y divide-gray-300">
+                  <tbody className="divide-y divide-gray-800/50">
                     {data.map((row, index) =>
                       row.dosing.map((dosing, i) => (
                         <motion.tr
@@ -1160,36 +1160,32 @@ const NanoTechnology = () => {
                                 }
                               : {}
                           }
-                          className="odd:bg-gray-800 even:bg-gray-700 text-white hover:bg-blue-500 hover:shadow-[0_0_8px_#3b82f6] transition-all duration-300"
+                          className=" text-[#151515]  hover:shadow-[0_0_4px_#3b82f6] transition-all duration-300 hover:scale-101"
                         >
                           {i === 0 && (
                             <td
                               rowSpan={row.rows}
-                              className="px-3 py-2 border border-gray-500 text-center font-semibold bg-gray-600"
+                              className="px-3 py-2  text-center font-semibold "
                             >
                               {row.extruder}
                             </td>
                           )}
-                          <td className="px-3 py-2 border border-gray-500 text-center">
-                            {dosing}
-                          </td>
-                          <td className="px-3 py-2 border border-gray-500 text-center">
+                          <td className="px-3 py-2  text-center">{dosing}</td>
+                          <td className="px-3 py-2  text-center">
                             {row.weight[i]}
                           </td>
-                          <td className="px-3 py-2 border border-gray-500">
-                            {row.material[i]}
-                          </td>
+                          <td className="px-3 py-2 ">{row.material[i]}</td>
                           {i === 0 && (
                             <>
                               <td
                                 rowSpan={row.rows}
-                                className="px-3 py-2 border border-gray-500 text-center bg-gray-600"
+                                className="px-3 py-2  text-center "
                               >
                                 {row.density}
                               </td>
                               <td
                                 rowSpan={row.rows}
-                                className="px-3 py-2 border border-gray-500 text-center bg-gray-600"
+                                className="px-3 py-2  text-center "
                               >
                                 {row.thickness}
                               </td>
