@@ -41,8 +41,9 @@ const NewAddProductCard = ({
           {isVisible ? "Back" : "View"}
         </button>
       </div>
-      <div className="relative">
+      <div className="relative group">
         <img src={mainSrc} className={imageStyles} alt="Product" />
+        <div className="absolute inset-0 bg-[rgba(0,0,0,0.4)] opacity-0 group-hover:opacity-100 transition-all duration-300 ease-linear"></div>
         <div className="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]">
           <PlayButton videoUrl={videoUrl} pdfUrl={pdfUrl} />
         </div>
