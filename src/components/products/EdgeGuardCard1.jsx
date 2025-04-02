@@ -16,7 +16,7 @@ const EdgeGuardCard = () => {
       }`}
     >
       <div className="flex flex-col md:flex-row justify-center items-center w-full">
-        <div className="relative">
+        <div className="relative group">
           <img
             src="/assets/images/AddProducts/edgeguard_dx.png"
             height="450"
