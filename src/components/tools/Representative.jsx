@@ -207,9 +207,9 @@ const Representative = () => {
                       </motion.div>
                       <motion.div className="lg:absolute lg:-bottom-[15%] lg:-right-[5%]">
                         <ContactCard
-                          photo={"/assets/images/team/matthew.png"}
-                          name="Matthew Caveny"
-                          email="matthew@allianceplastics.net"
+                          photo={"/assets/images/team/matt.png"}
+                          name="Matt Mondelli"
+                          email="matt@allianceplastics.net"
                           phone="(615) 977-7247"
                           bgColor="bg-[#46BFFF]"
                           borderColor="border-[#46BFFF]"

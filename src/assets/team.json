@@ -36,18 +36,10 @@
     "bio": "/assets/images/team/specific/bioplaceholder.jpg",
     "email": "spencer@allianceplastics.net"
   },
-  {
-    "src": "/assets/images/team/loren.png",
-    "name": "Loren Don",
-    "position": "West Coast Manager",
-    "path": "/ourteam/lorendon",
-    "content": "",
-    "bio": "/assets/images/team/specific/bioplaceholder.jpg",
-    "email": "loren@allianceplastics.net"
-  },
+
   {
     "src": "/assets/images/team/chuck.png",
-    "position": "VP of Sales, East Coast/Midwest",
+    "position": "VP of Sales",
     "name": "Chuck Magee",
     "path": "/ourteam/chuckmagee",
     "content": "",
@@ -55,8 +47,17 @@
     "email": "chuck@allianceplastics.net"
   },
   {
+    "src": "/assets/images/team/loren.png",
+    "name": "Loren Don",
+    "position": "West Coast Sales Rep",
+    "path": "/ourteam/lorendon",
+    "content": "",
+    "bio": "/assets/images/team/specific/bioplaceholder.jpg",
+    "email": "loren@allianceplastics.net"
+  },
+  {
     "src": "/assets/images/team/marcd.jpg",
-    "position": "Mid Atlantic/Northeast Manager",
+    "position": "Mid Atlantic/Northeast Sales Rep",
     "name": "Marc Delatte",
     "path": "/ourteam/marcdelatte",
     "content": "Marc and his family reside in Lake Wylie SC, just outside of Charlotte. 18 years experience in packaging starting with Sealed Air, then Berry Plastics before joining the Alliance plastics team. True to the Alliance Plastics motto of putting our customer first, Marc brings a overall solution to the table. Focusing on the right product to ensure the best possible outcome for you and your customer. When not working and traveling, he enjoys football, tailgating, and projects around the house.",
@@ -65,12 +66,22 @@
   },
   {
     "src": "/assets/images/team/erik.png",
-    "position": "Mid West Manager ",
+    "position": "Mid West Sales Rep ",
     "name": "Eric Baranczyk",
     "path": "/ourteam/ericbaranczyk",
     "content": "Based out of Green Bay WI I cover: Wisconsin, Minnesota, North Dakota, South Dakota, Iowa, Nebraska, Missouri, and Kansas. Residing, and growing up in Green Bay, naturally I am a huge Packer fan. Well, actually a huge football fan in general along with an avid hunter. I have been in packaging for 10+ years. My specialty is stretch film and stretch equipment. With the unique and innovative products that Alliance Plastics offers, makes it a perfect place for me to assist companies to be more profitable and deliver their products safely and effectively.",
     "bio": "/assets/images/team/specific/rep_eric.jpg",
     "email": "eric@allianceplastics.net"
+  },
+
+  {
+    "src": "/assets/images/team/matt.png",
+    "name": "Matt Mondelli",
+    "position": "Southwest/Midsouth Sales Rep",
+    "email": "matt@allianceplastics.net",
+    "path": "/ourteam/mattmondelli",
+    "content": "/assets/images/team/specific/bioplaceholder.jpg",
+    "bio": "/assets/images/team/specific/bioplaceholder.jpg"
   },
   {
     "src": "/assets/images/team/chris.png",
@@ -83,12 +94,12 @@
   },
   {
     "src": "/assets/images/team/matthew.png",
-    "position": "Southwest/Midsouth Manager",
+    "position": "Plant Manager",
     "name": "Matthew Caveny",
     "path": "/ourteam/matthewcaveny",
     "content": "",
     "bio": "/assets/images/team/specific/bioplaceholder.jpg",
-    "email": "matt@allianceplastics.net"
+    "email": "matthew@allianceplastics.net"
   },
   {
     "src": "/assets/images/team/yvone.jpg",
@@ -100,15 +111,6 @@
     "email": "yvonne@allianceplastics.net"
   },
   {
-    "src": "/assets/images/team/wanda.png",
-    "position": "Customer service representative",
-    "name": "Wanda King",
-    "path": "/ourteam/wandaking",
-    "content": "",
-    "bio": "/assets/images/team/specific/bioplaceholder.jpg",
-    "email": "wanda@allianceplastics.net"
-  },
-  {
     "src": "/assets/images/team/ian.png",
     "position": "Inside Sales Rep",
     "name": "Ian Salazar",
@@ -117,6 +119,16 @@
     "bio": "/assets/images/team/specific/bioplaceholder.jpg",
     "email": "films@allianceplastics.net"
   },
+  {
+    "src": "/assets/images/team/wanda.png",
+    "position": "CSR Southeast/Northeast",
+    "name": "Wanda King",
+    "path": "/ourteam/wandaking",
+    "content": "",
+    "bio": "/assets/images/team/specific/bioplaceholder.jpg",
+    "email": "wanda@allianceplastics.net"
+  },
+
   {
     "src": "/assets/images/team/nikki.jpg",
     "position": "CSR West/Southwest",
@@ -155,7 +167,7 @@
   },
   {
     "src": "/assets/images/team/taranew.jpg",
-    "position": "CSR, Midwest Region",
+    "position": "CSR Midwest",
     "name": "Tara Noviello",
     "path": "/ourteam/taranoviello",
     "content": "",
@@ -173,7 +185,7 @@
   },
   {
     "src": "/assets/images/team/Parker.png",
-    "position": "QC and Safety",
+    "position": "QC & Safety",
     "name": "Parker Hice",
     "path": "/ourteam/parkerhice",
     "content": "",

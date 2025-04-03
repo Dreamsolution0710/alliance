@@ -23,7 +23,7 @@
   {
     "photo": "/assets/images/team/loren.png",
     "name": "Loren Don",
-    "position": "West Coast Manager",
+    "position": "West Coast Sales Rep",
     "email": "loren@allianceplastics.net",
     "pnumber": "(702) 503-7162"
   },
@@ -37,15 +37,15 @@
   {
     "photo": "/assets/images/team/erik.png",
     "name": "Eric Baranczyk",
-    "position": "Midwest Manager",
+    "position": "Midwest Sales Rep",
     "email": "eric@allianceplastics.net",
     "pnumber": "(920) 639-1950"
   },
   {
-    "photo": "/assets/images/team/matthew.png",
-    "name": "Matthew Caveny",
-    "position": "Southwest/Midsouth Manager",
-    "email": "matthew@allianceplastics.net",
+    "photo": "/assets/images/team/matt.png",
+    "name": "Matt Mondelli",
+    "position": "Southwest/Midsouth Sales Rep",
+    "email": "matt@allianceplastics.net",
     "pnumber": "(615) 977-7247"
   },
   {

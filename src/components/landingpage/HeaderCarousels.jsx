@@ -4,14 +4,14 @@ import { Autoplay, Mousewheel } from "swiper/modules";
 import "swiper/css";
 
 const images = [
+  // {
+  //   src: "/assets/images/headerslides/headerslide1.webp",
+  //   alt: "Slide 1",
+  //   subScript: "Alliance Plastics, A Foundation of Trust",
+  //   content: " Built on service, reliability, lasting partnerships",
+  // },
   {
-    src: "/assets/images/headerslides/headerslide1.webp",
-    alt: "Slide 1",
-    subScript: "Alliance Plastics, A Foundation of Trust",
-    content: " Built on service, reliability, lasting partnerships",
-  },
-  {
-    src: "/assets/images/headerslides/headerslide2.jpg",
+    src: "/assets/images/headerslides/headerslide2.png",
     alt: "Slide 2",
     subScript: "Strategically Located, for Efficiency",
     content: "Fast delivery, precision, seamless operations",
