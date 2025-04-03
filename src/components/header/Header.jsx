@@ -43,7 +43,7 @@ const products = [
 const company = [
   {
     name: "About US",
-    href: "/ourcompany",
+    href: "/aboutus",
     icon: ChartPieIcon,
   },
   {

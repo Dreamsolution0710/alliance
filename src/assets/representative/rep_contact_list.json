@@ -1,62 +1,55 @@
 [
   {
-    "photo": "/assets/images/representative/representative/ron.png",
+    "photo": "/assets/images/team/ron.jpg",
     "name": "Ron Grubbs",
     "position": "Preseident, Alliance Plastics",
     "email": "ron@allianceplastics.net",
     "pnumber": "(704) 942-1627"
   },
   {
-    "photo": "/assets/images/representative/representative/troy.png",
+    "photo": "/assets/images/team/troy.png",
     "name": "Troy Wolf",
     "position": "President, Alliance Films",
     "email": "troy@allianceplastics.net",
     "pnumber": "(920) 376-0142"
   },
   {
-    "photo": "/assets/images/representative/representative/marc.png",
+    "photo": "/assets/images/team/marcd.jpg",
     "name": "Marc Delatte",
     "position": "Vice President",
     "email": "marc@allianceplastics.net",
     "pnumber": "(704) 962-7168"
   },
   {
-    "photo": "/assets/images/representative/representative/Gale-Marcus-AP.png",
-    "name": "Gale Marcus",
-    "position": "EVP of EdgeGuard",
-    "email": "gale@allianceplastics.net",
-    "pnumber": "(818) 613-2500"
+    "photo": "/assets/images/team/loren.png",
+    "name": "Loren Don",
+    "position": "West Coast Manager",
+    "email": "loren@allianceplastics.net",
+    "pnumber": "(702) 503-7162"
   },
   {
-    "photo": "/assets/images/representative/representative/chuck.png",
+    "photo": "/assets/images/team/chuck.png",
     "name": "Chuck Magee",
     "position": "VP of Sales",
     "email": "chuck@allianceplastics.net",
     "pnumber": "(901) 619-8438"
   },
   {
-    "photo": "/assets/images/representative/representative/russ.png",
-    "name": "Russ Vossen",
-    "position": "West Coast",
-    "email": "russ@allianceplastics.net",
-    "pnumber": "(775) 895-6448"
-  },
-  {
-    "photo": "/assets/images/representative/representative/erik.png",
+    "photo": "/assets/images/team/erik.png",
     "name": "Eric Baranczyk",
-    "position": "Midwest",
+    "position": "Midwest Manager",
     "email": "eric@allianceplastics.net",
     "pnumber": "(920) 639-1950"
   },
   {
-    "photo": "/assets/images/representative/representative/matthew.png",
+    "photo": "/assets/images/team/matthew.png",
     "name": "Matthew Mondelli",
-    "position": "Southwest / Midsouth",
+    "position": "Southwest / Midsouth Manager",
     "email": "matt@allianceplastics.net",
     "pnumber": "(615) 977-7247"
   },
   {
-    "photo": "/assets/images/representative/representative/yvone.jpg",
+    "photo": "/assets/images/team/yvone.jpg",
     "name": "Yvonne Valentin",
     "position": "Inside Sales(GM)",
     "email": "yvonne@allianceplastics.net",

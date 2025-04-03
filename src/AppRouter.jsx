@@ -17,14 +17,11 @@ import Products from "./components/products/Products";
 import Representative from "./components/tools/Representative";
 import ProductTapes from "./components/products/ProductTapes";
 import ProductEdges from "./components/products/ProductEdges";
-// import viewData from "./assets/productsview.json";
 import Commitment from "./components/ourCompany/Commitment";
 import Calculator from "./components/calculator/Calculator";
 import NanoTechnology from "./components/ourCompany/NanoTechnology";
-
-// const Productview = React.lazy(() =>
-//   import("./components/products/productsView/Productview")
-// );
+import teamData from "/src/assets/team.json";
+import OurTeam from "./components/ourCompany/OurTeam";
 
 const AppRouter = () => {
   return (
@@ -32,7 +29,7 @@ const AppRouter = () => {
       <Route path="/home" element={<Navigate to="/" replace />} />
       <Route path="/" Component={LandingPage} />
       <Route path="/contactus" Component={ContactUs} />
-      <Route path="/ourcompany" Component={OurCompany} />
+      <Route path="/aboutus" Component={OurCompany} />
       <Route path="/news" Component={News} />
       <Route path="/calculator" Component={Calculator} />
       <Route path="/news/blogview202010" Component={BlogPost_October_2020} />
@@ -43,25 +40,23 @@ const AppRouter = () => {
       <Route path="/news/blogview202006" Component={BlogPost_June_2020} />
       <Route path="/academy" Component={Academy} />
       <Route path="/products" Component={Products} />
-      {/* {viewData.map((view, index) => (
+      {teamData.map((member, index) => (
         <Route
-          path={`${view.route}`}
+          path={`${member.path}`}
           element={
-            <Productview
-              title={view.title}
-              description={view.description}
-              carouselImg={view.carouselImg}
-              contextImg={view.contextImg}
-              youtubeId={view.youtubeId}
-              prevLink={view.prevLink}
-              headerImg={view.headerImg}
-              headerTitle={view.headerTitle}
-              router={view.router}
+            <OurTeam
+              name={member.name}
+              photo={member.src}
+              bio={member.bio}
+              email={member.email}
+              content={member.content}
+              phone={member.phone}
+              position={member.position}
             />
           }
           key={index}
         />
-      ))} */}
+      ))}
       <Route path="/products/films" Component={ProductFilms} />
       <Route path="/products/tapes" Component={ProductTapes} />
       <Route path="/products/edges" Component={ProductEdges} />

@@ -3,160 +3,246 @@
     "src": "/assets/images/team/ron.jpg",
     "position": "President, Alliance Plastics",
     "name": "Ron Grubbs",
+    "path": "/ourteam/rongrubbs",
+    "content": "I grew up an Army Brat and traveled all around the world. We were accustomed to moving every 2 years. I joined the Army and served in Korea and was called back to active duty for Operation Desert Storm. After graduating from the University of Louisville, I joined Unisource and then worked for many different stretch film manufacturers. I had the luxury of being trained by the best of the best and had many great mentors in my life. My most rewarding professional moment was starting Alliance Plastics with my Father who instilled in me the notion of duty, honor and integrity. My Dad served 4 tours in Vietnam and 30 years in the Army and my Mother survived war torn Korea nearly starving to death. I am truly grateful for the values that they gave me. At Alliance Plastics, we think differently, we want to make the greatest and most innovative products in what has become a stale and bland industry. We push the limits because we don’t know any other way. It permeates through our entire staff and what makes me so proud is their pride which is displayed from the products that come off the line to the highest measure we put on customer service.",
+    "bio": "/assets/images/team/specific/bio_ron.jpg",
     "email": "ron@allianceplastics.net"
   },
+
   {
     "src": "/assets/images/team/troy.png",
     "position": "President, Alliance Films",
     "name": "Troy Wolf",
+    "path": "/ourteam/troywolf",
+    "content": "",
+    "bio": "/assets/images/team/specific/bioplaceholder.jpg",
     "email": "troy@allianceplastics.net"
-  },
-
-  {
-    "src": "/assets/images/team/marcd.jpg",
-    "position": "Vice President",
-    "name": "Marc Delatte",
-    "email": "marc@allianceplastics.net"
   },
   {
     "src": "/assets/images/team/Gale-Marcus-AP.png",
-    "position": "VP of National Accounts/West Coast",
+    "position": "EVP of EdgeGuard",
     "name": "Gale Marcus",
+    "path": "/ourteam/galemarcus",
+    "content": "Welcome to Alliance Plastics West Coast! My name is Gale Marcus and it is truly a pleasure to handle Nevada, Utah, Arizona, California, Idaho, Montana, Oregon, Washington & New Mexico! I give you my commitment in offering a great product, competitive pricing with exceptional service and follow through! Living in Las Vegas, near our manufacturing warehouse is a convenient an easy commute to your location. We can keep freight cost down with the proximity and eliminate long lead times. Our innovative Vented Line and DX corner board will keep your clients on technologies cutting edge! I will work with you and focus on the needs of the end user. Together, we can determine the best product and price point.\n\"If you succeed, we succeed\"\nI look forward to meeting your packaging needs and introducing you to our product line! Here’s a toast to great success and a continued partnership!",
+    "bio": "/assets/images/team/specific/rep_gale.jpg",
     "email": "gale@allianceplastics.net"
+  },
+  {
+    "src": "/assets/images/team/spencer.jpg",
+    "position": "Supply Chain Manager",
+    "name": "Spencer Grubbs",
+    "path": "/ourteam/spencergrubbs",
+    "content": "",
+    "bio": "/assets/images/team/specific/bioplaceholder.jpg",
+    "email": "spencer@allianceplastics.net"
+  },
+  {
+    "src": "/assets/images/team/loren.png",
+    "name": "Loren Don",
+    "position": "West Coast Manager",
+    "path": "/ourteam/lorendon",
+    "content": "",
+    "bio": "/assets/images/team/specific/bioplaceholder.jpg",
+    "email": "loren@allianceplastics.net"
   },
   {
     "src": "/assets/images/team/chuck.png",
     "position": "VP of Sales, East Coast/Midwest",
     "name": "Chuck Magee",
+    "path": "/ourteam/chuckmagee",
+    "content": "",
+    "bio": "/assets/images/team/specific/bioplaceholder.jpg",
     "email": "chuck@allianceplastics.net"
   },
   {
-    "src": "/assets/images/team/russ.png",
-    "position": "VP of Sales, East Coast/Midwest",
-    "name": "Russ Vossen",
-    "email": "russ@allianceplastics.net"
+    "src": "/assets/images/team/marcd.jpg",
+    "position": "Mid Atlantic/Northeast Manager",
+    "name": "Marc Delatte",
+    "path": "/ourteam/marcdelatte",
+    "content": "Marc and his family reside in Lake Wylie SC, just outside of Charlotte. 18 years experience in packaging starting with Sealed Air, then Berry Plastics before joining the Alliance plastics team. True to the Alliance Plastics motto of putting our customer first, Marc brings a overall solution to the table. Focusing on the right product to ensure the best possible outcome for you and your customer. When not working and traveling, he enjoys football, tailgating, and projects around the house.",
+    "bio": "/assets/images/team/specific/rep_marc.jpg",
+    "email": "marc@allianceplastics.net"
   },
   {
     "src": "/assets/images/team/erik.png",
-    "position": "MideWest Manager ",
+    "position": "Mid West Manager ",
     "name": "Eric Baranczyk",
+    "path": "/ourteam/ericbaranczyk",
+    "content": "Based out of Green Bay WI I cover: Wisconsin, Minnesota, North Dakota, South Dakota, Iowa, Nebraska, Missouri, and Kansas. Residing, and growing up in Green Bay, naturally I am a huge Packer fan. Well, actually a huge football fan in general along with an avid hunter. I have been in packaging for 10+ years. My specialty is stretch film and stretch equipment. With the unique and innovative products that Alliance Plastics offers, makes it a perfect place for me to assist companies to be more profitable and deliver their products safely and effectively.",
+    "bio": "/assets/images/team/specific/rep_eric.jpg",
     "email": "eric@allianceplastics.net"
   },
   {
+    "src": "/assets/images/team/chris.png",
+    "position": "Plant Manager, EdgeGuard Wisconsin",
+    "name": "Chris Urbanek",
+    "path": "/ourteam/chrisurbanek",
+    "content": "",
+    "bio": "/assets/images/team/specific/bioplaceholder.jpg",
+    "email": "chris@allianceplastics.net"
+  },
+  {
     "src": "/assets/images/team/matthew.png",
-    "position": "Southwest/Midsouth Manager ",
+    "position": "Southwest/Midsouth Manager",
     "name": "Matthew Mondelli",
+    "path": "/ourteam/matthewmondelli",
+    "content": "",
+    "bio": "/assets/images/team/specific/bioplaceholder.jpg",
     "email": "matt@allianceplastics.net"
   },
-
   {
     "src": "/assets/images/team/yvone.jpg",
     "position": "Inside Sales(GM)",
     "name": "Yvonne Valentin",
+    "path": "/ourteam/yvonnevalentin",
+    "content": "",
+    "bio": "/assets/images/team/specific/rep_2018yvonne.jpg",
     "email": "yvonne@allianceplastics.net"
   },
   {
     "src": "/assets/images/team/wanda.png",
     "position": "Customer service representative",
     "name": "Wanda King",
-    "email": "nikki@allianceplastics.net"
+    "path": "/ourteam/wandaking",
+    "content": "",
+    "bio": "/assets/images/team/specific/bioplaceholder.jpg",
+    "email": "wanda@allianceplastics.net"
   },
   {
     "src": "/assets/images/team/ian.png",
     "position": "Inside Sales Rep",
     "name": "Ian Salazar",
+    "path": "/ourteam/iansalazar",
+    "content": "",
+    "bio": "/assets/images/team/specific/bioplaceholder.jpg",
     "email": "films@allianceplastics.net"
   },
   {
     "src": "/assets/images/team/nikki.jpg",
     "position": "CSR West/Southwest",
     "name": "Nikki Pressley",
+    "path": "/ourteam/nikkipressley",
+    "content": "I handle the West Coast area and have been with Alliance for 3 years now. Love my customers! and my work family is absolutely awesome. I enjoy helping others and doing all I can to meet the customers needs.I have 2 daughters, Courtney is 25, and Emily is 23 1/2, the best daughters in the world (My world anyway) and then there is Baylee, Timmy’s 4 year old Granddaugher.I am her NeNe, and she keeps me smiling.",
+    "bio": "/assets/images/team/specific/rep_pagenikk.jpg",
     "email": "nikki@allianceplastics.net"
   },
   {
     "src": "/assets/images/team/miguel.png",
     "position": "CSR Southeast",
     "name": "Miguel Heredia",
+    "path": "/ourteam/miguelheredia",
+    "content": "",
+    "bio": "/assets/images/team/specific/bioplaceholder.jpg",
     "email": "csr2@allianceplastics.net"
   },
   {
     "src": "/assets/images/team/karen.png",
     "position": "CSR West / Southwest",
     "name": "Karen Cerreño",
+    "path": "/ourteam/karencerreño",
+    "content": "",
+    "bio": "/assets/images/team/specific/bioplaceholder.jpg",
     "email": "csr3@allianceplastics.net"
   },
   {
     "src": "/assets/images/team/Geraldine.jpg",
     "position": "Customer Support Specialist",
     "name": "Geraldine Aguilar",
+    "path": "/ourteam/geraldineaguilar",
+    "content": "",
+    "bio": "/assets/images/team/specific/bioplaceholder.jpg",
     "email": "csr1@allianceplastics.net"
   },
   {
     "src": "/assets/images/team/taranew.jpg",
-    "position": "Csr, midwest region",
-    "name": "Tara Wilson",
+    "position": "CSR, Midwest Region",
+    "name": "Tara Noviello",
+    "path": "/ourteam/taranoviello",
+    "content": "",
+    "bio": "/assets/images/team/specific/bioplaceholder.jpg",
     "email": "tara@allianceplastics.net"
   },
   {
-    "src": "/assets/images/team/sarah.jpg",
-    "position": "Regional sales manager",
-    "name": "Sarah Lister",
-    "email": "lisa@allianceplastics.net"
+    "src": "/assets/images/team/danielrivas.jpg",
+    "position": "Conveting Manager",
+    "name": "Daniel Rivas",
+    "path": "/ourteam/danielrivas",
+    "content": "",
+    "bio": "/assets/images/team/specific/bioplaceholder.jpg",
+    "email": ""
   },
   {
-    "src": "/assets/images/team/danielrivas.jpg",
-    "position": "Quality control",
-    "name": "Daniel Rivas",
-    "email": ""
+    "src": "/assets/images/team/Parker.png",
+    "position": "QC and Safety",
+    "name": "Parker Hice",
+    "path": "/ourteam/parkerhice",
+    "content": "",
+    "bio": "/assets/images/team/specific/bioplaceholder.jpg",
+    "email": "parker@allianceplastics.net"
   },
 
   {
     "src": "/assets/images/team/lucas.jpg",
-    "position": "Maintenance manager",
+    "position": "Maintenance Manager",
     "name": "Lucas Russell",
+    "path": "/ourteam/lucasrussell",
+    "content": "Originally from Pennsylvania moved to this area 15 years ago. I worked on the machinery so often with another company, that I had to come and join Alliance Plastics. In a growing company, when you have this much equipment, something always needs to be fixed. Alliance is a growing company and I find that I have grown with them. I love the family atmosphere and working with people that really care.",
+    "bio": "/assets/images/team/specific/bio_lucas.jpg",
     "email": "lucas@allianceplastics.net"
   },
   {
     "src": "/assets/images/team/roco.jpg",
-    "position": "Distribution manager, rock hill",
+    "position": "Distribution Manager, rock hill",
     "name": "Rocco Burgos",
+    "path": "/ourteam/roccoburgos",
+    "content": "",
+    "bio": "/assets/images/team/specific/bio_roco.jpg",
     "email": "rburgos@allianceplastics.net"
   },
 
   {
     "src": "/assets/images/team/donlong.jpg",
-    "position": "Facility manager",
+    "position": "Facility Manager",
     "name": "Don Long",
+    "path": "/ourteam/donlong",
+    "content": "While my family roots are deep in eastern North Carolina, I have spent most of my life in South Carolina and a short time in Georgia. I attended (supported) the University of North Carolina. Some ask me when was I there. My pat answer is “I was there for 3 terms, Johnson’s, Kennedy’s and Nixon’s.”I love just some basic necessities of life: my Creator, my wife, my son, my friends, tomatoes, grits, okra, corn, sweet tea, lots of candy, almost all animals (most have a reason for being here and deserve compassionate care), my hammock, my basketball goal, my grapevine and North Carolina basketball and football plus whoever Duke is playing.“I would rather you dislike me for who I am, than like me for who I’m not”.",
+    "bio": "/assets/images/team/specific/bio_don.jpg",
     "email": "don@allianceplastics.net"
   },
   {
     "src": "/assets/images/team/michaela.jpg",
     "position": "Logistics",
     "name": "Michaela Skinner",
+    "content": "I work in Logistics I enjoy my job and the wonderful people I work with.I grew up in New Jersey but lived in several states. Spent 4 years in the United States Navy as a Corpsman.I have 2 great kids and 3 awesome grandchildren that mean the world to me",
+    "bio": "/assets/images/team/specific/bioplaceholder.jpg",
+    "path": "/ourteam/michaelaskinner",
     "email": ""
   },
   {
     "src": "/assets/images/team/nicole.jpg",
-    "position": "Customer service representative",
+    "position": "Customer Service Representative",
     "name": "Nicole Whitlock",
-    "email": ""
-  },
-  {
-    "src": "/assets/images/team/alfonso.jpg",
-    "position": "Plant manager, rock hill",
-    "name": "Alfonso Perilla",
-    "email": "alfonso@allianceplastics.net"
-  },
-  {
-    "src": "/assets/images/team/hector.jpg",
-    "position": "1st shift edgeguard lead",
-    "name": "Hector Cerda",
+    "path": "/ourteam/nicolewhitlock",
+    "content": "",
+    "bio": "/assets/images/team/specific/rep_2018nicole.jpg",
     "email": ""
   },
   {
     "src": "/assets/images/team/abel.jpg",
-    "position": "Vented film supervisor",
+    "position": "Manager of Vented/Titanium",
     "name": "Abel DeJesus",
+    "content": "",
+    "bio": "/assets/images/team/specific/bioplaceholder.jpg",
+    "path": "/ourteam/abeldeJesus",
+    "email": ""
+  },
+  {
+    "src": "/assets/images/team/bryce.png",
+    "position": "EdgeGuard Supervisor Wisconsin",
+    "name": "Bryce Urbanek",
+    "content": "",
+    "bio": "/assets/images/team/specific/bioplaceholder.jpg",
+    "path": "/ourteam/bryceurbanek",
     "email": ""
   }
 ]

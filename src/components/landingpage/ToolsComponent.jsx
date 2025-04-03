@@ -7,7 +7,7 @@ const slides = [
   {
     title: "We are Alliance Plastics",
     text: "Alliance Plastics is a Veteran-Owned company focused on building strong relationships with partners, offering innovative products and services with nationwide reach, integrity, quality, and efficiency.",
-    path: "/ourcompany",
+    path: "/aboutus",
     section: "ABOUT US",
   },
   {

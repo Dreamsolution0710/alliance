@@ -15,7 +15,7 @@ import "./rep.css";
 const options = [
   "Regional Sales Reps",
   "Customer Service Reps",
-  "Customer Expreience Reps",
+  "Customer Experience Reps",
 ];
 
 const Representative = () => {
@@ -121,7 +121,7 @@ const Representative = () => {
                 </motion.div>
               </div>
               <div className="mx-[50px]">
-                {selected !== "Customer Expreience Reps" && (
+                {selected !== "Customer Experience Reps" && (
                   <motion.div
                     ref={ref}
                     className="mt-4 relative"
@@ -160,82 +160,60 @@ const Representative = () => {
                       <img src="/assets/images/representative/USA_map.png" />
                     </motion.div>
                     <div className="md:grid md:grid-cols-2 gap-30 flex justify-center items-center flex-col">
-                      <motion.div className="lg:absolute lg:-top-[5%] lg:-left-[15%]">
+                      <motion.div className="lg:absolute lg:top-[5%] lg:-left-[15%]">
                         <ContactCard
-                          photo={
-                            "/assets/images/representative/representative/Gale-Marcus-AP.png"
-                          }
-                          name="Gale Marcus"
-                          email="gale@allianceplastics.net"
-                          phone="(818) 613-2500"
+                          photo={"/assets/images/team/loren.png"}
+                          name="Loren Don"
+                          email="loren@allianceplastics.net"
+                          phone="(702) 503-7162"
                           bgColor="bg-[#113788]"
                           borderColor="border-[#113788]"
                           delay={1}
                         />
                       </motion.div>
-                      <motion.div className="lg:absolute lg:top-[40%] lg:-left-[15%]">
+
+                      <motion.div className="lg:absolute lg:bottom-[10%] lg:-left-[15%]">
                         <ContactCard
-                          photo={
-                            "/assets/images/representative/representative/russ.png"
-                          }
-                          name="Russ Vossen"
-                          email="russ@allianceplastics.net"
-                          phone="(775) 895-6448"
-                          bgColor="bg-[#113788]"
-                          borderColor="border-[#113788]"
-                          delay={2}
-                        />
-                      </motion.div>
-                      <motion.div className="lg:absolute lg:-bottom-[10%] lg:-left-[15%]">
-                        <ContactCard
-                          photo={
-                            "/assets/images/representative/representative/ron.png"
-                          }
+                          photo={"/assets/images/team/ron.jpg"}
                           name="Ron Grubbs"
                           email="ron@allianceplastics.net"
                           phone="(704) 942-1627"
                           bgColor="bg-[#073763]"
                           borderColor="border-[#073763]"
-                          delay={3}
+                          delay={2}
                         />
                       </motion.div>
                       <motion.div className="lg:absolute lg:-top-[20%] lg:right-[20%]">
                         <ContactCard
-                          photo={
-                            "/assets/images/representative/representative/erik.png"
-                          }
+                          photo={"/assets/images/team/erik.png"}
                           name="Eric Baranczyk"
                           email="eric@allianceplastics.net"
                           phone="(920) 639-1950"
                           bgColor="bg-[#1163C0]"
                           borderColor="border-[#1163C0]"
-                          delay={4}
+                          delay={3}
                         />
                       </motion.div>
                       <motion.div className="lg:absolute lg:top-[30%] lg:-right-[15%] ">
                         <ContactCard
-                          photo={
-                            "/assets/images/representative/representative/marc.png"
-                          }
+                          photo={"/assets/images/team/marcd.jpg"}
                           name="Marc Delatte"
                           email="marc@allianceplastics.net"
                           phone="(704) 962-7168"
                           bgColor="bg-[#3D85C6]"
                           borderColor="border-[#3D85C6]"
-                          delay={5}
+                          delay={4}
                         />
                       </motion.div>
                       <motion.div className="lg:absolute lg:-bottom-[15%] lg:-right-[5%]">
                         <ContactCard
-                          photo={
-                            "/assets/images/representative/representative/matthew.png"
-                          }
+                          photo={"/assets/images/team/matthew.png"}
                           name="Matt Mondelli"
                           email="matt@allianceplastics.net"
                           phone="(615) 977-7247"
                           bgColor="bg-[#46BFFF]"
                           borderColor="border-[#46BFFF]"
-                          delay={6}
+                          delay={5}
                         />
                       </motion.div>
                     </div>
@@ -271,9 +249,7 @@ const Representative = () => {
                     <div className="md:grid md:grid-cols-2 gap-30 flex justify-center items-center flex-col">
                       <motion.div className="lg:absolute lg:top-[30%] lg:-left-[15%]">
                         <ContactCard
-                          photo={
-                            "/assets/images/representative/representative/nikki.jpg"
-                          }
+                          photo={"/assets/images/team/nikki.jpg"}
                           name="Nikki Pressley"
                           email="nikki@allianceplastics.net"
                           phone="(888) 643-1432"
@@ -284,9 +260,7 @@ const Representative = () => {
                       </motion.div>
                       <motion.div className="lg:absolute lg:-top-[20%] lg:right-[20%]">
                         <ContactCard
-                          photo={
-                            "/assets/images/representative/representative/taranew.jpg"
-                          }
+                          photo={"/assets/images/team/taranew.jpg"}
                           name="Tara Noviello"
                           email="tara@allianceplastics.net"
                           phone="(888) 643-1432"
@@ -297,12 +271,10 @@ const Representative = () => {
                       </motion.div>
                       <motion.div className="lg:absolute lg:bottom-[20%] lg:-right-[10%]">
                         <ContactCard
-                          photo={
-                            "/assets/images/representative/representative/wanda.png"
-                          }
+                          photo={"/assets/images/team/wanda.png"}
                           name="Wanda King"
-                          email="yvonne@allianceplastics.net"
-                          phone="(704) 774-0193"
+                          email="wanda@allianceplastics.net"
+                          phone="(888) 643-1432"
                           bgColor="bg-[#3D85C6]"
                           borderColor="border-[#3D85C6]"
                           delay={3}
@@ -326,7 +298,7 @@ const Representative = () => {
                 )}
               </>
             )}
-            {selected === "Customer Expreience Reps" && (
+            {selected === "Customer Experience Reps" && (
               <div className="relative my-[100px]">
                 <motion.div
                   className="flex justify-center"
@@ -339,9 +311,7 @@ const Representative = () => {
                 <div className="md:grid md:grid-cols-2 gap-30 flex justify-center items-center flex-col">
                   <motion.div className="lg:absolute lg:top-[10%] lg:-left-[15%]">
                     <ContactCard
-                      photo={
-                        "/assets/images/representative/representative/ian.png"
-                      }
+                      photo={"/assets/images/team/ian.png"}
                       name="Ian Salazar"
                       email="films@allianceplastics.net"
                       phone="(888) 643-1432"
@@ -352,9 +322,7 @@ const Representative = () => {
                   </motion.div>
                   <motion.div className="lg:absolute lg:bottom-[10%] lg:-left-[15%]">
                     <ContactCard
-                      photo={
-                        "/assets/images/representative/representative/karen.png"
-                      }
+                      photo={"/assets/images/team/karen.png"}
                       name="Karen Cerreño"
                       email="csr3@allianceplastics.net"
                       phone="(888) 643-1432"
@@ -365,9 +333,7 @@ const Representative = () => {
                   </motion.div>
                   <motion.div className="lg:absolute lg:-top-[20%] lg:right-[20%]">
                     <ContactCard
-                      photo={
-                        "/assets/images/representative/representative/Geraldine.jpg"
-                      }
+                      photo={"/assets/images/team/Geraldine.jpg"}
                       name="Geraldine Aguilar"
                       email="csr1@allianceplastics.net"
                       phone="(888) 643-1432"
@@ -378,9 +344,7 @@ const Representative = () => {
                   </motion.div>
                   <motion.div className="lg:absolute lg:bottom-[20%] lg:-right-[10%]">
                     <ContactCard
-                      photo={
-                        "/assets/images/representative/representative/miguel.png"
-                      }
+                      photo={"/assets/images/team/miguel.png"}
                       name="Miguel Heredia"
                       email="csr2@allianceplastics.net"
                       phone="(888) 643-1432"

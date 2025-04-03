@@ -372,6 +372,7 @@ const OurCompany = () => {
                       name={member.name}
                       src={member.src}
                       email={member.email}
+                      path={member.path}
                     />
                   </SwiperSlide>
                 ))}

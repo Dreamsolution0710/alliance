@@ -1,48 +1,48 @@
 [
   {
-    "photo": "/assets/images/representative/representative/wanda.png",
+    "photo": "/assets/images/team/wanda.png",
     "name": "Wanda King",
     "position": "CSR for the South east and Northeast",
-    "email": "",
-    "pnumber": ""
+    "email": "wanda@allianceplastics.net",
+    "pnumber": "(888) 643-1432"
   },
   {
-    "photo": "/assets/images/representative/representative/ian.png",
+    "photo": "/assets/images/team/ian.png",
     "name": "Ian Salazar",
     "position": "Inside Sales Rep",
     "email": "films@allianceplastics.net",
     "pnumber": "(888) 643-1432"
   },
   {
-    "photo": "/assets/images/representative/representative/nikki.jpg",
+    "photo": "/assets/images/team/nikki.jpg",
     "name": "Nikki Pressley",
     "position": "CSR West / Southwest",
     "email": "nikki@allianceplastics.net",
     "pnumber": "(888) 643-1432"
   },
   {
-    "photo": "/assets/images/representative/representative/miguel.png",
+    "photo": "/assets/images/team/miguel.png",
     "name": "Miguel Heredia",
     "position": "CSR Southeast",
     "email": "csr2@allianceplastics.net",
     "pnumber": "(888) 643-1432"
   },
   {
-    "photo": "/assets/images/representative/representative/karen.png",
+    "photo": "/assets/images/team/karen.png",
     "name": "Karen Cerreño",
     "position": "CSR West / Southwest",
     "email": "csr3@allianceplastics.net",
     "pnumber": "(888) 643-1432"
   },
   {
-    "photo": "/assets/images/representative/representative/Geraldine.jpg",
+    "photo": "/assets/images/team/Geraldine.jpg",
     "name": "Geraldine Aguilar",
     "position": "CSR Midwest",
     "email": "csr1@allianceplastics.net",
     "pnumber": "(888) 643-1432"
   },
   {
-    "photo": "/assets/images/representative/representative/taranew.jpg",
+    "photo": "/assets/images/team/taranew.jpg",
     "name": "Tara Noviello",
     "position": "CSR Midwest",
     "email": "tara@allianceplastics.net",

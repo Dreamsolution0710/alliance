@@ -263,7 +263,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <Link
-                      to="/ourcompany"
+                      to="/aboutus"
                       className="text-[14px] font-semibold mb-20px px-1 hover:text-[#54c1e5]"
                     >
                       ABOUT US

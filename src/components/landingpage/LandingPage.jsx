@@ -187,6 +187,7 @@ export default function LandingPage() {
                         name={member.name}
                         src={member.src}
                         email={member.email}
+                        path={member.path}
                       />
                     </SwiperSlide>
                   ))}
