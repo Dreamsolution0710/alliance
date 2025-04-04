@@ -42,7 +42,7 @@ const products = [
 
 const company = [
   {
-    name: "About US",
+    name: "About Us",
     href: "/aboutus",
     icon: ChartPieIcon,
   },
@@ -52,7 +52,7 @@ const company = [
     icon: CalculatorIcon,
   },
   {
-    name: "CoreLess Machine Film",
+    name: "Coreless Machine Film",
     href: "/commitment",
     icon: CubeTransparentIcon,
   },
